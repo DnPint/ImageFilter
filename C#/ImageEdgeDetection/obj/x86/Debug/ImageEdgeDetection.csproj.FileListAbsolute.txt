@@ -5,3 +5,14 @@ C:\Work\Projects\HowToSamples_Repository\ImageEdgeDetection\ImageEdgeDetection\I
 C:\Work\Projects\HowToSamples_Repository\ImageEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.Cache
 C:\Work\Projects\HowToSamples_Repository\ImageEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\Work\Projects\HowToSamples_Repository\ImageEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.AssemblyReference.cache
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.SuggestedBindingRedirects.cache
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb

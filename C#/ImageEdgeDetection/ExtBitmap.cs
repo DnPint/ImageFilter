@@ -16,18 +16,21 @@ namespace ImageEdgeDetection
 {
     public static class ExtBitmap
     {
+        //copy and fit the loaded image on the canvas
         public static Bitmap CopyToSquareCanvas(this Bitmap sourceBitmap, int canvasWidthLenght)
         {
-            float ratio = 1.0f;
+            //Find the biggest side of the image
             int maxSide = sourceBitmap.Width > sourceBitmap.Height ?
                           sourceBitmap.Width : sourceBitmap.Height;
 
-            ratio = (float)maxSide / (float)canvasWidthLenght;
+            float ratio = (float)maxSide / (float)canvasWidthLenght;
 
+            //Fit the image into the canvas
             Bitmap bitmapResult = (sourceBitmap.Width > sourceBitmap.Height ?
                                     new Bitmap(canvasWidthLenght, (int)(sourceBitmap.Height / ratio))
                                     : new Bitmap((int)(sourceBitmap.Width / ratio), canvasWidthLenght));
 
+            //Draw the image on the canvas
             using (Graphics graphicsResult = Graphics.FromImage(bitmapResult))
             {
                 graphicsResult.CompositingQuality = CompositingQuality.HighQuality;
@@ -46,6 +49,8 @@ namespace ImageEdgeDetection
             return bitmapResult;
         }
 
+        //https://fr.wikipedia.org/wiki/Noyau_(traitement_d%27image)
+        //Applies any filter using filter matrices
         private static Bitmap ConvolutionFilter(Bitmap sourceBitmap, 
                                              double[,] filterMatrix, 
                                                   double factor = 1, 
@@ -63,6 +68,7 @@ namespace ImageEdgeDetection
             Marshal.Copy(sourceData.Scan0, pixelBuffer, 0, pixelBuffer.Length);
             sourceBitmap.UnlockBits(sourceData);
 
+            //For filters with "Grayscale" option, makes the image gray
             if (grayscale == true)
             {
                 float rgb = 0;
@@ -93,6 +99,8 @@ namespace ImageEdgeDetection
 
             int byteOffset = 0;
 
+            //for each dimension of the image
+            //The image is redone pixel by pixel
             for (int offsetY = filterOffset; offsetY < 
                 sourceBitmap.Height - filterOffset; offsetY++)
             {
@@ -107,6 +115,7 @@ namespace ImageEdgeDetection
                                  sourceData.Stride + 
                                  offsetX * 4;
 
+                    //for each dimension of the filter
                     for (int filterY = -filterOffset; 
                         filterY <= filterOffset; filterY++)
                     {
@@ -136,6 +145,7 @@ namespace ImageEdgeDetection
                     green = factor * green + bias;
                     red = factor * red + bias;
 
+                    //RGB values are limited to 255
                     if (blue > 255)
                     { blue = 255; }
                     else if (blue < 0)
@@ -150,7 +160,7 @@ namespace ImageEdgeDetection
                     { red = 255; }
                     else if (red < 0)
                     { red = 0; }
-
+                    
                     resultBuffer[byteOffset] = (byte)(blue);
                     resultBuffer[byteOffset + 1] = (byte)(green);
                     resultBuffer[byteOffset + 2] = (byte)(red);
@@ -171,6 +181,8 @@ namespace ImageEdgeDetection
             return resultBitmap;
         }
 
+
+        //Same as above but with two filter matrices, one for each dimension
         public static Bitmap ConvolutionFilter(this Bitmap sourceBitmap,
                                                 double[,] xFilterMatrix,
                                                 double[,] yFilterMatrix,
@@ -313,6 +325,8 @@ namespace ImageEdgeDetection
             return resultBitmap;
         }
 
+        //Each method below calls on ConvoultionFilter
+        //They just pass different filter matrices and options
         public static Bitmap Laplacian3x3Filter(this Bitmap sourceBitmap, 
                                                     bool grayscale = true)
         {
