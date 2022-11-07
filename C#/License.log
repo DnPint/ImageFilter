@@ -1,0 +1,36 @@
+    ======  ======
+    Time:07.11.2022 19:36:18
+    Title: Initiate log
+    Message: 
+    Time:07.11.2022 19:36:18
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:07.11.2022 19:36:18
+    Title: Requesting EVT
+    Message: EVTP
+    Time:07.11.2022 19:36:18
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:07.11.2022 19:36:18
+    Title: LICENSER
+    Message: TRL MODE
+    Time:07.11.2022 19:36:18
+    Title: LICENSER
+    Message: DS LEFT53
+    Time:07.11.2022 19:36:18
+    Title: LICENSER
+    Message: DT MARK PASSED53.00:00:00
+    Time:07.11.2022 19:36:19
+    Title: L'accès au chemin d'accès 'C:\ProgramData\Telerik\Hash.lic' est refusé.
+    Message:    à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   à Telerik.Licensing.Licenser.ReadHashPass()
+    Time:07.11.2022 19:36:20
+    Title: Requesting Validation
+    Message: ILMValidate True
+    Time:07.11.2022 19:36:20
+    Title: Requesting Validation
+    Message: ILMValidate True Trial
+    Entering constructor for: Telerik.CommonPackage.VSPackage
+    Entering Initialize() of: Telerik.CommonPackage.VSPackage

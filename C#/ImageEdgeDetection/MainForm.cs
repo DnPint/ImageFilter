@@ -112,7 +112,6 @@ namespace ImageEdgeDetection
             Bitmap bitmapResult = null;
 
             //preview is false only when method is called from "Save Image" method
-            //Don't know what it changes
             if (preview == true)
             {
                 //apply filter on the preview image
