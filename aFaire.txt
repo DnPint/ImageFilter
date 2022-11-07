@@ -1,0 +1,3 @@
+load
+filter axe x,y 
+detecter les bords(sortir les couleurs, ne fonctionne qu'avec des images filtrées)
