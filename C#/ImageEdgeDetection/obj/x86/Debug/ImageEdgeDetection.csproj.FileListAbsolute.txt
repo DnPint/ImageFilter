@@ -16,3 +16,13 @@ C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\Im
 C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
 C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\HEVS\SoftTest\ImageProject\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.AssemblyReference.cache
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.MainForm.resources
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CoreCompileInputs.cache
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
+C:\Users\thomas.cheseaux\source\repos\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb

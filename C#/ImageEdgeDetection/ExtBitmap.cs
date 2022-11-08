@@ -26,6 +26,7 @@ namespace ImageEdgeDetection
             float ratio = (float)maxSide / (float)canvasWidthLenght;
 
             //Fit the image into the canvas
+            //TO DO put it in a function
             Bitmap bitmapResult = (sourceBitmap.Width > sourceBitmap.Height ?
                                     new Bitmap(canvasWidthLenght, (int)(sourceBitmap.Height / ratio))
                                     : new Bitmap((int)(sourceBitmap.Width / ratio), canvasWidthLenght));
@@ -57,6 +58,7 @@ namespace ImageEdgeDetection
                                                        int bias = 0, 
                                              bool grayscale = false) 
         {
+            //TO DO Function to initialize
             BitmapData sourceData = sourceBitmap.LockBits(new Rectangle(0, 0,
                                      sourceBitmap.Width, sourceBitmap.Height),
                                                        ImageLockMode.ReadOnly, 
@@ -69,6 +71,7 @@ namespace ImageEdgeDetection
             sourceBitmap.UnlockBits(sourceData);
 
             //For filters with "Grayscale" option, makes the image gray
+            //TO DO create a method with a clear name
             if (grayscale == true)
             {
                 float rgb = 0;
@@ -190,6 +193,7 @@ namespace ImageEdgeDetection
                                                            int bias = 0,
                                                  bool grayscale = false)
         {
+            //TO DO look if this is already done above
             BitmapData sourceData = sourceBitmap.LockBits(new Rectangle(0, 0,
                                      sourceBitmap.Width, sourceBitmap.Height),
                                                        ImageLockMode.ReadOnly,
@@ -235,6 +239,8 @@ namespace ImageEdgeDetection
 
             int byteOffset = 0;
 
+            //TO DO : if time clearify the code below
+            //
             for (int offsetY = filterOffset; offsetY <
                 sourceBitmap.Height - filterOffset; offsetY++)
             {
