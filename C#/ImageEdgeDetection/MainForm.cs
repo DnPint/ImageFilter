@@ -222,5 +222,10 @@ namespace ImageEdgeDetection
         {
             ApplyFilter(true);
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
