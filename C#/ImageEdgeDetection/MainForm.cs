@@ -13,6 +13,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing.Imaging;
+using Emgu.CV;
+using Emgu.CV.Structure;
+using Emgu.Util;
+using DocumentFormat.OpenXml.Presentation;
 
 namespace ImageEdgeDetection
 {
@@ -27,6 +31,9 @@ namespace ImageEdgeDetection
         //Created just before saving
         private Bitmap resultBitmap = null;
         
+        System.Drawing.Image Origin;
+        Bitmap map;
+
         public MainForm()
         {
             InitializeComponent();
@@ -38,65 +45,64 @@ namespace ImageEdgeDetection
         //On "Load Image" button press
         private void btnOpenOriginal_Click(object sender, EventArgs e)
         {
-            //filters for image files
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Select an image file.";
-            ofd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            ofd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
+            ////filters for image files
+            //OpenFileDialog ofd = new OpenFileDialog();
+            //ofd.Title = "Select an image file.";
+            //ofd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
+            //ofd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
 
-            //Once we select an image on the windows navigator
-            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            ////Once we select an image on the windows navigator
+            //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //{
+            //    StreamReader streamReader = new StreamReader(ofd.FileName);
+            //    originalBitmap = (Bitmap)Bitmap.FromStream(streamReader.BaseStream);
+            //    streamReader.Close();
+
+            //    //First method of ExtBitmaps.cs
+            //    previewBitmap = originalBitmap.CopyToSquareCanvas(picPreview.Width);
+            //    //picPreview is the name of the canvas
+            //    picPreview.Image = previewBitmap;
+
+            //    ApplyFilter(true);
+            //}
+            LoadImage();
+        }
+
+        public void LoadImage()
+        {
+            OpenFileDialog op = FilterImageFile();
+            DialogResult dr = op.ShowDialog();
+           
+            if (dr == DialogResult.OK)
             {
-                StreamReader streamReader = new StreamReader(ofd.FileName);
-                originalBitmap = (Bitmap)Bitmap.FromStream(streamReader.BaseStream);
-                streamReader.Close();
-
-                //First method of ExtBitmaps.cs
-                previewBitmap = originalBitmap.CopyToSquareCanvas(picPreview.Width);
-                //picPreview is the name of the canvas
-                picPreview.Image = previewBitmap;
-
-                ApplyFilter(true);
+                string path = op.FileName;
+                picPreview.Load(path);
+                Bitmap temp = new Bitmap(picPreview.Image,
+                   new Size(picPreview.Width, picPreview.Height));
+                picPreview.Image = temp;
+                map = new Bitmap(picPreview.Image);
+                Origin = picPreview.Image;
             }
         }
 
-        //On "Save Image" button press
-        private void btnSaveNewImage_Click(object sender, EventArgs e)
+        private OpenFileDialog FilterImageFile()
         {
+            OpenFileDialog op = new OpenFileDialog();
+            op.Title = "Select an image file.";
+            op.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
+            op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
+            return op;
+        }
 
-            ApplyFilter(false);
-
-            if (resultBitmap != null)
+        public void SaveImage()
+        {
+            picPreview.SizeMode = PictureBoxSizeMode.AutoSize;
+            FolderBrowserDialog fl = new FolderBrowserDialog();
+            if (fl.ShowDialog() != DialogResult.Cancel)
             {
-                SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Title = "Specify a file name and file path";
-                sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-                sfd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
-
-                //Write the image in the selected folder
-                if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    string fileExtension = Path.GetExtension(sfd.FileName).ToUpper();
-                    ImageFormat imgFormat = ImageFormat.Png;
-
-                    //Check the file extension and set the image format
-                    if (fileExtension == "BMP")
-                    {
-                        imgFormat = ImageFormat.Bmp;
-                    }
-                    else if (fileExtension == "JPG")
-                    {
-                        imgFormat = ImageFormat.Jpeg;
-                    }
-
-                    StreamWriter streamWriter = new StreamWriter(sfd.FileName, false);
-                    resultBitmap.Save(streamWriter.BaseStream, imgFormat);
-                    streamWriter.Flush();
-                    streamWriter.Close();
-
-                    resultBitmap = null;
-                }
-            }
+                picPreview.Image.Save(fl.SelectedPath + @"\" + textBoxNameFile.Text + @".png", System.Drawing.Imaging.ImageFormat.Png);
+            };
+            picPreview.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         //Applies the filter, is called on image load, save and when the filter is changed
@@ -223,7 +229,34 @@ namespace ImageEdgeDetection
             ApplyFilter(true);
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void listBoxXFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNightFilter_Click(object sender, EventArgs e)
+        {
+            picPreview.Image = Origin;
+            picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            picPreview.Image = Origin;
+        }
+
+        private void btnSaveNewImage_Click(object sender, EventArgs e)
+        {
+            SaveImage();
+        }
+
+        private void buttonMiamiFilter_Click(object sender, EventArgs e)
+        {
+            picPreview.Image = Origin;
+            picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
+        }
+
+        private void textBoxNameFile_TextChanged(object sender, EventArgs e)
         {
 
         }

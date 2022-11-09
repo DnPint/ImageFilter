@@ -180,7 +180,7 @@
             this.trackBarThreshold.Location = new System.Drawing.Point(365, 513);
             this.trackBarThreshold.Maximum = 255;
             this.trackBarThreshold.Name = "trackBarThreshold";
-            this.trackBarThreshold.Size = new System.Drawing.Size(410, 42);
+            this.trackBarThreshold.Size = new System.Drawing.Size(410, 45);
             this.trackBarThreshold.TabIndex = 12;
             this.trackBarThreshold.Value = 100;
             // 
