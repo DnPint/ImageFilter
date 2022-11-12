@@ -38,7 +38,6 @@
             this.listBoxXFilter = new System.Windows.Forms.ListBox();
             this.listBoxYFilter = new System.Windows.Forms.ListBox();
             this.backButton = new System.Windows.Forms.Button();
-            this.textBoxNameFile = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +78,7 @@
             // 
             // buttonMiamiFilter
             // 
-            this.buttonMiamiFilter.Location = new System.Drawing.Point(237, 452);
+            this.buttonMiamiFilter.Location = new System.Drawing.Point(248, 402);
             this.buttonMiamiFilter.Name = "buttonMiamiFilter";
             this.buttonMiamiFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonMiamiFilter.TabIndex = 51;
@@ -89,7 +88,7 @@
             // 
             // buttonNightFilter
             // 
-            this.buttonNightFilter.Location = new System.Drawing.Point(133, 452);
+            this.buttonNightFilter.Location = new System.Drawing.Point(127, 402);
             this.buttonNightFilter.Name = "buttonNightFilter";
             this.buttonNightFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonNightFilter.TabIndex = 50;
@@ -155,7 +154,7 @@
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(36, 459);
+            this.backButton.Location = new System.Drawing.Point(196, 459);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(75, 23);
             this.backButton.TabIndex = 65;
@@ -163,18 +162,10 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // textBoxNameFile
-            // 
-            this.textBoxNameFile.Location = new System.Drawing.Point(352, 459);
-            this.textBoxNameFile.Name = "textBoxNameFile";
-            this.textBoxNameFile.Size = new System.Drawing.Size(100, 22);
-            this.textBoxNameFile.TabIndex = 66;
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(479, 621);
-            this.Controls.Add(this.textBoxNameFile);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -209,7 +200,6 @@
         private System.Windows.Forms.ListBox listBoxXFilter;
         private System.Windows.Forms.ListBox listBoxYFilter;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.TextBox textBoxNameFile;
     }
 }
 
