@@ -59,9 +59,10 @@
             // 
             // buttonTest
             // 
-            this.buttonTest.Location = new System.Drawing.Point(183, 376);
+            this.buttonTest.Location = new System.Drawing.Point(244, 463);
+            this.buttonTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTest.Name = "buttonTest";
-            this.buttonTest.Size = new System.Drawing.Size(75, 23);
+            this.buttonTest.Size = new System.Drawing.Size(100, 28);
             this.buttonTest.TabIndex = 0;
             this.buttonTest.Text = "Load Image";
             this.buttonTest.UseVisualStyleBackColor = true;
@@ -69,9 +70,10 @@
             // 
             // pictureBoxPreview
             // 
-            this.pictureBoxPreview.Location = new System.Drawing.Point(95, 82);
+            this.pictureBoxPreview.Location = new System.Drawing.Point(127, 101);
+            this.pictureBoxPreview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxPreview.Name = "pictureBoxPreview";
-            this.pictureBoxPreview.Size = new System.Drawing.Size(456, 288);
+            this.pictureBoxPreview.Size = new System.Drawing.Size(608, 354);
             this.pictureBoxPreview.TabIndex = 1;
             this.pictureBoxPreview.TabStop = false;
             this.pictureBoxPreview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPreview_MouseDown);
@@ -80,6 +82,7 @@
             // listBoxYFilter
             // 
             this.listBoxYFilter.FormattingEnabled = true;
+            this.listBoxYFilter.ItemHeight = 16;
             this.listBoxYFilter.Items.AddRange(new object[] {
             "",
             "Laplacian3x3",
@@ -90,14 +93,16 @@
             "Prewitt3x3Vertical",
             "Kirsch3x3Horizontal",
             "Kirsch3x3Vertical"});
-            this.listBoxYFilter.Location = new System.Drawing.Point(586, 402);
+            this.listBoxYFilter.Location = new System.Drawing.Point(781, 495);
+            this.listBoxYFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxYFilter.Name = "listBoxYFilter";
-            this.listBoxYFilter.Size = new System.Drawing.Size(120, 95);
+            this.listBoxYFilter.Size = new System.Drawing.Size(159, 116);
             this.listBoxYFilter.TabIndex = 2;
             // 
             // listBoxXFilter
             // 
             this.listBoxXFilter.FormattingEnabled = true;
+            this.listBoxXFilter.ItemHeight = 16;
             this.listBoxXFilter.Items.AddRange(new object[] {
             "",
             "Laplacian3x3",
@@ -108,34 +113,39 @@
             "Prewitt3x3Vertical",
             "Kirsch3x3Horizontal",
             "Kirsch3x3Vertical"});
-            this.listBoxXFilter.Location = new System.Drawing.Point(440, 402);
+            this.listBoxXFilter.Location = new System.Drawing.Point(587, 495);
+            this.listBoxXFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxXFilter.Name = "listBoxXFilter";
-            this.listBoxXFilter.Size = new System.Drawing.Size(120, 95);
+            this.listBoxXFilter.Size = new System.Drawing.Size(159, 116);
             this.listBoxXFilter.TabIndex = 3;
+            this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxXFilter_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(440, 383);
+            this.label1.Location = new System.Drawing.Point(587, 471);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "X Filter";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(583, 383);
+            this.label2.Location = new System.Drawing.Point(777, 471);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Y Filter";
             // 
             // buttonApplyFilters
             // 
-            this.buttonApplyFilters.Location = new System.Drawing.Point(538, 561);
+            this.buttonApplyFilters.Location = new System.Drawing.Point(717, 690);
+            this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonApplyFilters.Name = "buttonApplyFilters";
-            this.buttonApplyFilters.Size = new System.Drawing.Size(75, 23);
+            this.buttonApplyFilters.Size = new System.Drawing.Size(100, 28);
             this.buttonApplyFilters.TabIndex = 5;
             this.buttonApplyFilters.Text = "Apply Filters";
             this.buttonApplyFilters.UseVisualStyleBackColor = true;
@@ -143,77 +153,86 @@
             // 
             // labelErrors
             // 
-            this.labelErrors.Location = new System.Drawing.Point(535, 21);
+            this.labelErrors.Location = new System.Drawing.Point(713, 26);
+            this.labelErrors.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelErrors.Name = "labelErrors";
-            this.labelErrors.Size = new System.Drawing.Size(196, 50);
+            this.labelErrors.Size = new System.Drawing.Size(261, 62);
             this.labelErrors.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 57);
+            this.label3.Location = new System.Drawing.Point(127, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Original Image";
             // 
             // pictureBoxResult
             // 
-            this.pictureBoxResult.Location = new System.Drawing.Point(619, 82);
+            this.pictureBoxResult.Location = new System.Drawing.Point(825, 101);
+            this.pictureBoxResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxResult.Name = "pictureBoxResult";
-            this.pictureBoxResult.Size = new System.Drawing.Size(456, 288);
+            this.pictureBoxResult.Size = new System.Drawing.Size(608, 354);
             this.pictureBoxResult.TabIndex = 1;
             this.pictureBoxResult.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(616, 57);
+            this.label4.Location = new System.Drawing.Point(821, 70);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(86, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Result Image";
             // 
             // trackBarThreshold
             // 
             this.trackBarThreshold.LargeChange = 10;
-            this.trackBarThreshold.Location = new System.Drawing.Point(365, 513);
+            this.trackBarThreshold.Location = new System.Drawing.Point(487, 631);
+            this.trackBarThreshold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarThreshold.Maximum = 255;
             this.trackBarThreshold.Name = "trackBarThreshold";
-            this.trackBarThreshold.Size = new System.Drawing.Size(410, 45);
+            this.trackBarThreshold.Size = new System.Drawing.Size(547, 56);
             this.trackBarThreshold.TabIndex = 12;
             this.trackBarThreshold.Value = 100;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(873, 383);
+            this.label5.Location = new System.Drawing.Point(1164, 471);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 13);
+            this.label5.Size = new System.Drawing.Size(157, 16);
             this.label5.TabIndex = 13;
             this.label5.Text = "Image Green Data Points";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(305, 522);
+            this.label6.Location = new System.Drawing.Point(407, 642);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(68, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = "Threshold";
             // 
             // textBoxPos
             // 
-            this.textBoxPos.Location = new System.Drawing.Point(12, 563);
+            this.textBoxPos.Location = new System.Drawing.Point(16, 693);
+            this.textBoxPos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPos.Name = "textBoxPos";
-            this.textBoxPos.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPos.Size = new System.Drawing.Size(132, 22);
             this.textBoxPos.TabIndex = 15;
             // 
             // buttonSaveAs
             // 
-            this.buttonSaveAs.Location = new System.Drawing.Point(1116, 148);
+            this.buttonSaveAs.Location = new System.Drawing.Point(1488, 182);
+            this.buttonSaveAs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSaveAs.Name = "buttonSaveAs";
-            this.buttonSaveAs.Size = new System.Drawing.Size(138, 23);
+            this.buttonSaveAs.Size = new System.Drawing.Size(184, 28);
             this.buttonSaveAs.TabIndex = 16;
             this.buttonSaveAs.Text = "Save to application dir";
             this.buttonSaveAs.UseVisualStyleBackColor = true;
@@ -224,26 +243,29 @@
             // 
             this.textBoxData.AcceptsReturn = true;
             this.textBoxData.AcceptsTab = true;
-            this.textBoxData.Location = new System.Drawing.Point(773, 405);
+            this.textBoxData.Location = new System.Drawing.Point(1031, 498);
+            this.textBoxData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxData.Multiline = true;
             this.textBoxData.Name = "textBoxData";
             this.textBoxData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxData.Size = new System.Drawing.Size(326, 180);
+            this.textBoxData.Size = new System.Drawing.Size(433, 221);
             this.textBoxData.TabIndex = 17;
             this.textBoxData.TabStop = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(811, 13);
+            this.textBox1.Location = new System.Drawing.Point(1081, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 19;
             // 
             // buttonPlotCoords
             // 
-            this.buttonPlotCoords.Location = new System.Drawing.Point(1105, 403);
+            this.buttonPlotCoords.Location = new System.Drawing.Point(1473, 496);
+            this.buttonPlotCoords.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPlotCoords.Name = "buttonPlotCoords";
-            this.buttonPlotCoords.Size = new System.Drawing.Size(75, 23);
+            this.buttonPlotCoords.Size = new System.Drawing.Size(100, 28);
             this.buttonPlotCoords.TabIndex = 20;
             this.buttonPlotCoords.Text = "Plot Coords";
             this.buttonPlotCoords.UseVisualStyleBackColor = true;
@@ -255,22 +277,23 @@
             this.chartarea.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartarea.Legends.Add(legend1);
-            this.chartarea.Location = new System.Drawing.Point(13, 13);
+            this.chartarea.Location = new System.Drawing.Point(17, 16);
+            this.chartarea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartarea.Name = "chartarea";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartarea.Series.Add(series1);
-            this.chartarea.Size = new System.Drawing.Size(36, 32);
+            this.chartarea.Size = new System.Drawing.Size(48, 39);
             this.chartarea.TabIndex = 21;
             this.chartarea.Text = "Chart Area";
             this.chartarea.Visible = false;
             // 
             // FormImageEdge
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1256, 597);
+            this.ClientSize = new System.Drawing.Size(1675, 735);
             this.Controls.Add(this.chartarea);
             this.Controls.Add(this.buttonPlotCoords);
             this.Controls.Add(this.textBox1);
@@ -291,6 +314,7 @@
             this.Controls.Add(this.pictureBoxResult);
             this.Controls.Add(this.pictureBoxPreview);
             this.Controls.Add(this.buttonTest);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormImageEdge";
             this.Text = "Single Color Edge Finder";
             this.Load += new System.EventHandler(this.Form1_Load);

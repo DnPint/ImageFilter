@@ -425,9 +425,10 @@ namespace Image
             chartarea.Visible = false;
         }
 
+        private void listBoxXFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }
 

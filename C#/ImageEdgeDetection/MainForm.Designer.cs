@@ -38,7 +38,6 @@
             this.listBoxXFilter = new System.Windows.Forms.ListBox();
             this.listBoxYFilter = new System.Windows.Forms.ListBox();
             this.backButton = new System.Windows.Forms.Button();
-            this.cmbEdgeDetection = new System.Windows.Forms.ComboBox();
             this.textBoxNameFile = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             this.SuspendLayout();
@@ -121,7 +120,6 @@
             this.listBoxXFilter.FormattingEnabled = true;
             this.listBoxXFilter.ItemHeight = 16;
             this.listBoxXFilter.Items.AddRange(new object[] {
-            "",
             "Laplacian3x3",
             "Laplacian5x5",
             "Sobel3x3Horizontal",
@@ -134,14 +132,13 @@
             this.listBoxXFilter.Name = "listBoxXFilter";
             this.listBoxXFilter.Size = new System.Drawing.Size(120, 84);
             this.listBoxXFilter.TabIndex = 62;
-            this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxXFilter_SelectedIndexChanged);
+            this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // listBoxYFilter
             // 
             this.listBoxYFilter.FormattingEnabled = true;
             this.listBoxYFilter.ItemHeight = 16;
             this.listBoxYFilter.Items.AddRange(new object[] {
-            "",
             "Laplacian3x3",
             "Laplacian5x5",
             "Sobel3x3Horizontal",
@@ -154,7 +151,7 @@
             this.listBoxYFilter.Name = "listBoxYFilter";
             this.listBoxYFilter.Size = new System.Drawing.Size(120, 84);
             this.listBoxYFilter.TabIndex = 61;
-            this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxYFilter_SelectedIndexChanged);
+            this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // backButton
             // 
@@ -165,36 +162,6 @@
             this.backButton.Text = "back";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
-            // cmbEdgeDetection
-            // 
-            this.cmbEdgeDetection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEdgeDetection.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEdgeDetection.FormattingEnabled = true;
-            this.cmbEdgeDetection.Items.AddRange(new object[] {
-            "None",
-            "Laplacian 3x3",
-            "Laplacian 3x3 Grayscale",
-            "Laplacian 5x5",
-            "Laplacian 5x5 Grayscale",
-            "Laplacian of Gaussian",
-            "Laplacian 3x3 of Gaussian 3x3",
-            "Laplacian 3x3 of Gaussian 5x5 - 1",
-            "Laplacian 3x3 of Gaussian 5x5 - 2",
-            "Laplacian 5x5 of Gaussian 3x3",
-            "Laplacian 5x5 of Gaussian 5x5 - 1",
-            "Laplacian 5x5 of Gaussian 5x5 - 2",
-            "Sobel 3x3",
-            "Sobel 3x3 Grayscale",
-            "Prewitt",
-            "Prewitt Grayscale",
-            "Kirsch",
-            "Kirsch Grayscale"});
-            this.cmbEdgeDetection.Location = new System.Drawing.Point(137, 402);
-            this.cmbEdgeDetection.Name = "cmbEdgeDetection";
-            this.cmbEdgeDetection.Size = new System.Drawing.Size(198, 37);
-            this.cmbEdgeDetection.TabIndex = 20;
-            this.cmbEdgeDetection.SelectedIndexChanged += new System.EventHandler(this.NeighbourCountValueChangedEventHandler);
             // 
             // textBoxNameFile
             // 
@@ -215,7 +182,6 @@
             this.Controls.Add(this.listBoxYFilter);
             this.Controls.Add(this.buttonMiamiFilter);
             this.Controls.Add(this.buttonNightFilter);
-            this.Controls.Add(this.cmbEdgeDetection);
             this.Controls.Add(this.btnSaveNewImage);
             this.Controls.Add(this.btnOpenOriginal);
             this.Controls.Add(this.picPreview);
@@ -243,7 +209,6 @@
         private System.Windows.Forms.ListBox listBoxXFilter;
         private System.Windows.Forms.ListBox listBoxYFilter;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.ComboBox cmbEdgeDetection;
         private System.Windows.Forms.TextBox textBoxNameFile;
     }
 }
