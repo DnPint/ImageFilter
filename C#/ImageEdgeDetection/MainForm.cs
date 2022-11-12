@@ -76,8 +76,6 @@ namespace ImageEdgeDetection
         {
             try
             {
-                Console.WriteLine(((Button)sender).Name);
-
                 picPreview.Image = Origin;
                 switch(((Button)sender).Name)
                 {
