@@ -78,7 +78,7 @@
             // 
             // buttonMiamiFilter
             // 
-            this.buttonMiamiFilter.Location = new System.Drawing.Point(248, 402);
+            this.buttonMiamiFilter.Location = new System.Drawing.Point(237, 455);
             this.buttonMiamiFilter.Name = "buttonMiamiFilter";
             this.buttonMiamiFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonMiamiFilter.TabIndex = 51;
@@ -88,7 +88,7 @@
             // 
             // buttonNightFilter
             // 
-            this.buttonNightFilter.Location = new System.Drawing.Point(127, 402);
+            this.buttonNightFilter.Location = new System.Drawing.Point(124, 455);
             this.buttonNightFilter.Name = "buttonNightFilter";
             this.buttonNightFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonNightFilter.TabIndex = 50;
@@ -99,25 +99,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 502);
+            this.label2.Location = new System.Drawing.Point(275, 502);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 63;
             this.label2.Text = "Y Filter";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 502);
+            this.label1.Location = new System.Drawing.Point(148, 502);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 64;
             this.label1.Text = "X Filter";
             // 
             // listBoxXFilter
             // 
             this.listBoxXFilter.FormattingEnabled = true;
-            this.listBoxXFilter.ItemHeight = 16;
             this.listBoxXFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -127,16 +126,15 @@
             "Prewitt3x3Vertical",
             "Kirsch3x3Horizontal",
             "Kirsch3x3Vertical"});
-            this.listBoxXFilter.Location = new System.Drawing.Point(111, 536);
+            this.listBoxXFilter.Location = new System.Drawing.Point(111, 527);
             this.listBoxXFilter.Name = "listBoxXFilter";
-            this.listBoxXFilter.Size = new System.Drawing.Size(120, 84);
+            this.listBoxXFilter.Size = new System.Drawing.Size(120, 82);
             this.listBoxXFilter.TabIndex = 62;
             this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // listBoxYFilter
             // 
             this.listBoxYFilter.FormattingEnabled = true;
-            this.listBoxYFilter.ItemHeight = 16;
             this.listBoxYFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -146,15 +144,15 @@
             "Prewitt3x3Vertical",
             "Kirsch3x3Horizontal",
             "Kirsch3x3Vertical"});
-            this.listBoxYFilter.Location = new System.Drawing.Point(237, 536);
+            this.listBoxYFilter.Location = new System.Drawing.Point(237, 527);
             this.listBoxYFilter.Name = "listBoxYFilter";
-            this.listBoxYFilter.Size = new System.Drawing.Size(120, 84);
+            this.listBoxYFilter.Size = new System.Drawing.Size(120, 82);
             this.listBoxYFilter.TabIndex = 61;
             this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(196, 459);
+            this.backButton.Location = new System.Drawing.Point(196, 402);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(75, 23);
             this.backButton.TabIndex = 65;

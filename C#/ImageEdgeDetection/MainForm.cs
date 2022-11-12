@@ -16,6 +16,7 @@ namespace ImageEdgeDetection
         //the original image
         private Bitmap originalBitmap = null;
         private System.Drawing.Image Origin;
+        private Image imageFiltered;
 
         public MainForm()
         {
@@ -26,7 +27,7 @@ namespace ImageEdgeDetection
         {
             OpenFileDialog op = FilterImageFile();
             DialogResult dr = op.ShowDialog();
-           
+
             if (dr == DialogResult.OK)
             {
                 string path = op.FileName;
@@ -81,20 +82,22 @@ namespace ImageEdgeDetection
 
         private void buttonFilter_Click(object sender, EventArgs e)
         {
-            try
+            if (picPreview.Image != null)
             {
                 picPreview.Image = Origin;
-                switch(((Button)sender).Name)
+                switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
                         picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
+                        imageFiltered = picPreview.Image;
                         break;
                     case "buttonMiamiFilter":
                         picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
+                        imageFiltered = picPreview.Image;
                         break;
                 }
             }
-            catch(Exception ex)
+            else
             {
                 MessageBox.Show("There is no image to filter");
             }
@@ -109,13 +112,11 @@ namespace ImageEdgeDetection
         {
             SaveImage();
         }
-        
+
         private void listBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxXFilter.SelectedItem != null && listBoxYFilter.SelectedItem !=null)
-            {
+            if (listBoxXFilter.SelectedItem != null && listBoxYFilter.SelectedItem != null)
                 filter(listBoxXFilter.SelectedItem.ToString(), listBoxYFilter.SelectedItem.ToString());
-            }
         }
 
         public void filter(string xfilter, string yfilter)
@@ -127,11 +128,12 @@ namespace ImageEdgeDetection
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
 
-            try
+            if (picPreview.Image != null)
             {
-                if (picPreview != null && picPreview.Image.Size.Height > 0)
+                if (picPreview.Image.Size.Height > 0)
                 {
-                    Bitmap newbitmap = originalBitmap;
+                    // Bitmap newbitmap = originalBitmap;
+                    Bitmap newbitmap = new Bitmap(imageFiltered);
                     BitmapData newbitmapData = new BitmapData();
                     newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
 
@@ -213,10 +215,13 @@ namespace ImageEdgeDetection
                     resultbitmap.UnlockBits(resultData);
                     picPreview.Image = resultbitmap;
                 }
-            }catch(Exception e)
+            }
+            else
             {
                 MessageBox.Show("There is no image to filter");
             }
         }
+
     }
 }
+
