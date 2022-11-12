@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageEdgeDetection", "ImageEdgeDetection\ImageEdgeDetection.csproj", "{7DBEE0D3-2DBD-4E8A-BA07-BDB1C95EB366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image", "..\EdgeDetection-master-21\EdgeDetection-master-21\Image.csproj", "{69B55000-63E7-4087-B7EE-7A1014D4C103}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureBox.Image.Testes", "..\Pixel_Manipulation\C#\PictureBox.Image.Testes\PictureBox.Image.Testes.csproj", "{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,20 +19,6 @@ Global
 		{7DBEE0D3-2DBD-4E8A-BA07-BDB1C95EB366}.Release|Any CPU.ActiveCfg = Release|x86
 		{7DBEE0D3-2DBD-4E8A-BA07-BDB1C95EB366}.Release|x86.ActiveCfg = Release|x86
 		{7DBEE0D3-2DBD-4E8A-BA07-BDB1C95EB366}.Release|x86.Build.0 = Release|x86
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Debug|x86.Build.0 = Debug|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Release|x86.ActiveCfg = Release|Any CPU
-		{69B55000-63E7-4087-B7EE-7A1014D4C103}.Release|x86.Build.0 = Release|Any CPU
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Debug|x86.ActiveCfg = Debug|x86
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Debug|x86.Build.0 = Debug|x86
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Release|Any CPU.ActiveCfg = Release|x86
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Release|x86.ActiveCfg = Release|x86
-		{58BCF607-4F49-4277-8B26-F30D6BEBAA1D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
