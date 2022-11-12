@@ -25,12 +25,6 @@ namespace ImageEdgeDetection
     {
         //the original image
         private Bitmap originalBitmap = null;
-
-        //The modified image
-        private Bitmap previewBitmap = null;
-
-        //Created just before saving
-        private Bitmap resultBitmap = null;
         
         System.Drawing.Image Origin;
         Bitmap map;
@@ -40,33 +34,7 @@ namespace ImageEdgeDetection
             InitializeComponent();
         }
 
-        //On "Load Image" button press
-        private void btnOpenOriginal_Click(object sender, EventArgs e)
-        {
-            ////filters for image files
-            //OpenFileDialog ofd = new OpenFileDialog();
-            //ofd.Title = "Select an image file.";
-            //ofd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            //ofd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
-
-            ////Once we select an image on the windows navigator
-            //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    StreamReader streamReader = new StreamReader(ofd.FileName);
-            //    originalBitmap = (Bitmap)Bitmap.FromStream(streamReader.BaseStream);
-            //    streamReader.Close();
-
-            //    //First method of ExtBitmaps.cs
-            //    previewBitmap = originalBitmap.CopyToSquareCanvas(picPreview.Width);
-            //    //picPreview is the name of the canvas
-            //    picPreview.Image = previewBitmap;
-
-            //    ApplyFilter(true);
-            //}
-            LoadImage();
-        }
-
-        public void LoadImage()
+        public void LoadImage(object sender, EventArgs e)
         {
             OpenFileDialog op = FilterImageFile();
             DialogResult dr = op.ShowDialog();
@@ -104,13 +72,24 @@ namespace ImageEdgeDetection
             picPreview.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void buttonNightFilter_Click(object sender, EventArgs e)
+        private void buttonFilter_Click(object sender, EventArgs e)
         {
             try
             {
+                Console.WriteLine(((Button)sender).Name);
+
                 picPreview.Image = Origin;
-                picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
-            }catch(Exception ex)
+                switch(((Button)sender).Name)
+                {
+                    case "buttonNightFilter":
+                        picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
+                        break;
+                    case "buttonMiamiFilter":
+                        picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
+                        break;
+                }
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show("There is no image to filter");
             }
@@ -124,19 +103,6 @@ namespace ImageEdgeDetection
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
             SaveImage();
-        }
-
-        private void buttonMiamiFilter_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                picPreview.Image = Origin;
-                picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
-            }catch(Exception ex)
-            {
-                MessageBox.Show("There is no image to filter");
-            }
-
         }
         
         private void listBoxFilter_SelectedIndexChanged(object sender, EventArgs e)

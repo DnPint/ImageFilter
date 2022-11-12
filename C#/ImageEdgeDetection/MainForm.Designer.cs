@@ -64,7 +64,7 @@
             this.btnOpenOriginal.TabIndex = 15;
             this.btnOpenOriginal.Text = "Load Image";
             this.btnOpenOriginal.UseVisualStyleBackColor = true;
-            this.btnOpenOriginal.Click += new System.EventHandler(this.btnOpenOriginal_Click);
+            this.btnOpenOriginal.Click += new System.EventHandler(this.LoadImage);
             // 
             // btnSaveNewImage
             // 
@@ -85,7 +85,7 @@
             this.buttonMiamiFilter.TabIndex = 51;
             this.buttonMiamiFilter.Text = "Miami Filter";
             this.buttonMiamiFilter.UseVisualStyleBackColor = true;
-            this.buttonMiamiFilter.Click += new System.EventHandler(this.buttonMiamiFilter_Click);
+            this.buttonMiamiFilter.Click += new System.EventHandler(this.buttonFilter_Click);
             // 
             // buttonNightFilter
             // 
@@ -95,7 +95,7 @@
             this.buttonNightFilter.TabIndex = 50;
             this.buttonNightFilter.Text = "Night Filter";
             this.buttonNightFilter.UseVisualStyleBackColor = true;
-            this.buttonNightFilter.Click += new System.EventHandler(this.buttonNightFilter_Click);
+            this.buttonNightFilter.Click += new System.EventHandler(this.buttonFilter_Click);
             // 
             // label2
             // 
