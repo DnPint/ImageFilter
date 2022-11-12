@@ -4,20 +4,10 @@
  * Licensed under Ms-PL 
 */
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.IO;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
-using Emgu.CV;
-using Emgu.CV.Structure;
-using Emgu.Util;
-using DocumentFormat.OpenXml.Presentation;
 
 namespace ImageEdgeDetection
 {
@@ -25,9 +15,7 @@ namespace ImageEdgeDetection
     {
         //the original image
         private Bitmap originalBitmap = null;
-        
-        System.Drawing.Image Origin;
-        Bitmap map;
+        private System.Drawing.Image Origin;
 
         public MainForm()
         {
@@ -46,7 +34,7 @@ namespace ImageEdgeDetection
                 Bitmap temp = new Bitmap(picPreview.Image,
                    new Size(picPreview.Width, picPreview.Height));
                 picPreview.Image = temp;
-                map = new Bitmap(picPreview.Image);
+                Bitmap map = new Bitmap(picPreview.Image);
                 Origin = picPreview.Image;
                 originalBitmap = (Bitmap)Bitmap.FromFile(path);
             }
@@ -60,35 +48,35 @@ namespace ImageEdgeDetection
             op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
             return op;
         }
-
         public void SaveImage()
         {
-            // Displays a SaveFileDialog so the user can save the Image
-            // assigned to Button2.
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Png Image|*.png";
-            saveFileDialog1.Title = "Save an Image File";
-            saveFileDialog1.ShowDialog();
+            SaveFileDialog saveFileDialog = ConfigureSaveFileDialog();
+            if (saveFileDialog.FileName != "")
+                SaveImageAppropriateFormat(saveFileDialog);
+        }
 
-            // If the file name is not an empty string open it for saving.
-            if (saveFileDialog1.FileName != "")
+        private SaveFileDialog ConfigureSaveFileDialog()
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
+            saveFileDialog.Title = "Save an Image File";
+            saveFileDialog.ShowDialog();
+            return saveFileDialog;
+        }
+
+        private void SaveImageAppropriateFormat(SaveFileDialog saveFileDialog)
+        {
+            System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
+            switch (saveFileDialog.FilterIndex)
             {
-                // Saves the Image via a FileStream created by the OpenFile method.
-                System.IO.FileStream fs =
-                    (System.IO.FileStream)saveFileDialog1.OpenFile();
-                // Saves the Image in the appropriate ImageFormat based upon the
-                // File type selected in the dialog box.
-                // NOTE that the FilterIndex property is one-based.
-                switch (saveFileDialog1.FilterIndex)
-                {
-                    case 1:
-                        picPreview.Image.Save(fs,
-                          System.Drawing.Imaging.ImageFormat.Png);
-                        break;
-                }
-
-                fs.Close();
+                case 1:
+                    picPreview.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
+                    break;
+                case 2:
+                    picPreview.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    break;
             }
+            fs.Close();
         }
 
         private void buttonFilter_Click(object sender, EventArgs e)
@@ -207,7 +195,6 @@ namespace ImageEdgeDetection
                             else if (greenTotal < 0)
                             { greenTotal = 0; }
 
-
                             resultbuff[byteOffset] = (byte)(blueTotal);
                             resultbuff[byteOffset + 1] = (byte)(greenTotal);
                             resultbuff[byteOffset + 2] = (byte)(redTotal);
@@ -231,6 +218,5 @@ namespace ImageEdgeDetection
                 MessageBox.Show("There is no image to filter");
             }
         }
-
     }
 }
