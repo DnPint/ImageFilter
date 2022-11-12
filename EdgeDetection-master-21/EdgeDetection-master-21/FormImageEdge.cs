@@ -51,6 +51,7 @@ namespace Image
             }
         }
 
+        //need
         private void buttonApplyFilters_Click(object sender, EventArgs e)
         {
             //try
@@ -72,6 +73,7 @@ namespace Image
             
         }
 
+        //need
         public void filter(string xfilter, string yfilter)
         {
             double[,] xFilterMatrix;

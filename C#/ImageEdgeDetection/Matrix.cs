@@ -12,7 +12,7 @@ using System.Text;
 //This class contains all the matrices used for the filters
 namespace ImageEdgeDetection
 {
-    public static class Matrix
+    public class Matrix
     {
         public static double[,] Laplacian3x3
         {
