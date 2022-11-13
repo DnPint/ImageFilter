@@ -16,7 +16,8 @@ namespace ImageEdgeDetection
         //the original image
         private Bitmap originalBitmap = null;
         private System.Drawing.Image Origin;
-        private Image imageFiltered;
+        private string xFilter;
+        private string yFilter;
 
         public MainForm()
         {
@@ -89,11 +90,9 @@ namespace ImageEdgeDetection
                 {
                     case "buttonNightFilter":
                         picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
-                        imageFiltered = picPreview.Image;
                         break;
                     case "buttonMiamiFilter":
                         picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
-                        imageFiltered = picPreview.Image;
                         break;
                 }
             }
@@ -116,7 +115,13 @@ namespace ImageEdgeDetection
         private void listBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBoxXFilter.SelectedItem != null && listBoxYFilter.SelectedItem != null)
-                filter(listBoxXFilter.SelectedItem.ToString(), listBoxYFilter.SelectedItem.ToString());
+            {
+                xFilter = listBoxXFilter.SelectedItem.ToString();
+                yFilter = listBoxYFilter.SelectedItem.ToString();
+                filter(xFilter, yFilter);
+               
+            }
+                
         }
 
         public void filter(string xfilter, string yfilter)
@@ -128,12 +133,11 @@ namespace ImageEdgeDetection
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
 
-            if (picPreview.Image != null)
+           try
             {
                 if (picPreview.Image.Size.Height > 0)
                 {
-                    // Bitmap newbitmap = originalBitmap;
-                    Bitmap newbitmap = new Bitmap(imageFiltered);
+                    Bitmap newbitmap = originalBitmap;
                     BitmapData newbitmapData = new BitmapData();
                     newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
 
@@ -197,6 +201,14 @@ namespace ImageEdgeDetection
                             else if (greenTotal < 0)
                             { greenTotal = 0; }
 
+                      
+                            if (greenTotal < Convert.ToInt32(trackBarThreshold.Value))
+                                 greenTotal = 0;
+                            else
+                                 greenTotal = 255;
+                            
+
+
                             resultbuff[byteOffset] = (byte)(blueTotal);
                             resultbuff[byteOffset + 1] = (byte)(greenTotal);
                             resultbuff[byteOffset + 2] = (byte)(redTotal);
@@ -216,12 +228,17 @@ namespace ImageEdgeDetection
                     picPreview.Image = resultbitmap;
                 }
             }
-            else
+            catch
             {
                 MessageBox.Show("There is no image to filter");
             }
         }
 
+        private void trackBarThreshold_Scroll(object sender, EventArgs e)
+        {
+            if(xFilter != null && yFilter != null)
+                filter(xFilter, yFilter);
+        }
     }
 }
 

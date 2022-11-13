@@ -38,7 +38,10 @@
             this.listBoxXFilter = new System.Windows.Forms.ListBox();
             this.listBoxYFilter = new System.Windows.Forms.ListBox();
             this.backButton = new System.Windows.Forms.Button();
+            this.trackBarThreshold = new System.Windows.Forms.TrackBar();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarThreshold)).BeginInit();
             this.SuspendLayout();
             // 
             // picPreview
@@ -128,7 +131,7 @@
             "Kirsch3x3Vertical"});
             this.listBoxXFilter.Location = new System.Drawing.Point(111, 527);
             this.listBoxXFilter.Name = "listBoxXFilter";
-            this.listBoxXFilter.Size = new System.Drawing.Size(120, 82);
+            this.listBoxXFilter.Size = new System.Drawing.Size(120, 56);
             this.listBoxXFilter.TabIndex = 62;
             this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
@@ -146,24 +149,47 @@
             "Kirsch3x3Vertical"});
             this.listBoxYFilter.Location = new System.Drawing.Point(237, 527);
             this.listBoxYFilter.Name = "listBoxYFilter";
-            this.listBoxYFilter.Size = new System.Drawing.Size(120, 82);
+            this.listBoxYFilter.Size = new System.Drawing.Size(120, 56);
             this.listBoxYFilter.TabIndex = 61;
             this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(196, 402);
+            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.75F, System.Drawing.FontStyle.Bold);
+            this.backButton.Location = new System.Drawing.Point(178, 403);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.Size = new System.Drawing.Size(104, 32);
             this.backButton.TabIndex = 65;
-            this.backButton.Text = "back";
+            this.backButton.Text = "RESET";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // trackBarThreshold
+            // 
+            this.trackBarThreshold.LargeChange = 10;
+            this.trackBarThreshold.Location = new System.Drawing.Point(36, 604);
+            this.trackBarThreshold.Maximum = 255;
+            this.trackBarThreshold.Name = "trackBarThreshold";
+            this.trackBarThreshold.Size = new System.Drawing.Size(410, 45);
+            this.trackBarThreshold.TabIndex = 66;
+            this.trackBarThreshold.Value = 100;
+            this.trackBarThreshold.Scroll += new System.EventHandler(this.trackBarThreshold_Scroll);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(33, 588);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 67;
+            this.label6.Text = "Threshold";
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(479, 621);
+            this.ClientSize = new System.Drawing.Size(479, 647);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.trackBarThreshold);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,6 +207,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarThreshold)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,6 +225,8 @@
         private System.Windows.Forms.ListBox listBoxXFilter;
         private System.Windows.Forms.ListBox listBoxYFilter;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.TrackBar trackBarThreshold;
+        private System.Windows.Forms.Label label6;
     }
 }
 
