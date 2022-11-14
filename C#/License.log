@@ -200,3 +200,48 @@
     TableControl: Updating entries 14.11.2022 14:25:18:455
     TableControl: Updating entries (UI thread) 14.11.2022 14:25:18:456
     TableControl: Refreshing UI 14.11.2022 14:25:18:457
+    TableControl: QueueUpdate 14.11.2022 14:25:30:784
+    TableControl: About to update entries 14.11.2022 14:25:30:887
+    TableControl: Updating entries 14.11.2022 14:25:30:887
+    TableControl: Updating entries (UI thread) 14.11.2022 14:25:30:888
+    TableControl: Refreshing UI 14.11.2022 14:25:30:888
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception : Structure FORMATETC non valide (Exception de HRESULT : 0x80040064 (DV_E_FORMATETC))
+    Exception : Structure FORMATETC non valide (Exception de HRESULT : 0x80040064 (DV_E_FORMATETC))
+    Informational: Démarrage de la découverte de tests
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,9 s ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 2 s ==========
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    Informational: Démarrage de la découverte de tests
+    TableControl: QueueUpdate 14.11.2022 14:50:18:899
+    TableControl: About to update entries 14.11.2022 14:50:18:999
+    TableControl: Updating entries 14.11.2022 14:50:18:999
+    TableControl: Updating entries (UI thread) 14.11.2022 14:50:18:999
+    TableControl: Refreshing UI 14.11.2022 14:50:18:999
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 1 tests trouvés en 2,7 s ==========
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current

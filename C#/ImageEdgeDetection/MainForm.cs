@@ -86,7 +86,7 @@ namespace ImageEdgeDetection
             fs.Close();
         }
 
-        private void buttonFilter_Click(object sender, EventArgs e)
+        public void buttonFilter_Click(object sender, EventArgs e)
         {
             if (picPreview.Image != null)
             {

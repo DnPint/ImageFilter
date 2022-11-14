@@ -67,3 +67,4 @@ C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\Image
 C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.csproj.CopyComplete
 C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.exe
 C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\obj\x86\Debug\ImageEdgeDetection.pdb
+C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\BitmapNet.dll

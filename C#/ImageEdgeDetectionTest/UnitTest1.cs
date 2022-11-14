@@ -1,5 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System;
+using System.Resources;
 
 namespace ImageEdgeDetectionTest
 {
@@ -9,6 +13,8 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void TestNightFilter()
         {
+            //var original = ResourceSet.GetObject("mark");
+            //var bmp = ImageEdgeDetectionTest.Properties.Resources.mark;
             
         }
 
