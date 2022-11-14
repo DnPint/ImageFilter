@@ -24,9 +24,11 @@ namespace ImageEdgeDetection
             InitializeComponent();
         }
 
+        
         public void LoadImage(object sender, EventArgs e)
         {
-            OpenFileDialog op = FilterImageFile();
+            //Open the dialog box to get an image on the screen
+            OpenFileDialog op = InitializeOpenFileDialog();
             DialogResult dr = op.ShowDialog();
 
             if (dr == DialogResult.OK)
@@ -36,13 +38,13 @@ namespace ImageEdgeDetection
                 Bitmap temp = new Bitmap(picPreview.Image,
                    new Size(picPreview.Width, picPreview.Height));
                 picPreview.Image = temp;
-                Bitmap map = new Bitmap(picPreview.Image);
                 Origin = picPreview.Image;
                 originalBitmap = (Bitmap)Bitmap.FromFile(path);
             }
         }
 
-        private OpenFileDialog FilterImageFile()
+        
+        private OpenFileDialog InitializeOpenFileDialog()
         {
             OpenFileDialog op = new OpenFileDialog();
             op.Title = "Select an image file.";
@@ -50,14 +52,17 @@ namespace ImageEdgeDetection
             op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
             return op;
         }
+
+        //Change the SaveImage function as the one given in the project
+        //because we can name the file directly in the SaveDialog box
         public void SaveImage()
         {
-            SaveFileDialog saveFileDialog = ConfigureSaveFileDialog();
+            SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
             if (saveFileDialog.FileName != "")
                 SaveImageAppropriateFormat(saveFileDialog);
         }
 
-        private SaveFileDialog ConfigureSaveFileDialog()
+        private SaveFileDialog InitializeSaveFileDialog()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
@@ -130,6 +135,7 @@ namespace ImageEdgeDetection
             double[,] yFilterMatrix;
             Matrix matrix = new Matrix();
 
+            //We replace the switch case to choose the right matrix for the x,y filter
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
 
@@ -234,8 +240,10 @@ namespace ImageEdgeDetection
             }
         }
 
+
         private void trackBarThreshold_Scroll(object sender, EventArgs e)
         {
+            //Verify first if the x,y filter are choosen then refilter with the treshold cursor
             if(xFilter != null && yFilter != null)
                 filter(xFilter, yFilter);
         }
