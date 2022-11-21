@@ -18,11 +18,27 @@ namespace ImageEdgeDetectionTest
             Image original = Image.FromFile("./Images/chad.png");
             
             Image filtered = Image.FromFile("./Images/nightchad.png");
-            
+
+            compareImage(original, filtered, 1, 1, 1, 25);
+                  
+        }
+
+        [TestMethod]
+        public void TestMiamiFilter()
+        {
+            Image original = Image.FromFile("./Images/chad.png");
+
+            Image filtered = Image.FromFile("./Images/miamichad.png");
+
+            compareImage(original, filtered, 1, 1, 10, 1);
+        }
+
+        private void compareImage(Image original, Image filtered, int alpha,int red, int blue, int green)
+        {
             Bitmap bmpFiltered = new Bitmap(filtered);
 
             //filter the original with the night filter
-            original = ImageFilters.ApplyFilter(new Bitmap(original), 1, 1, 1, 25);
+            original = ImageFilters.ApplyFilter(new Bitmap(original), alpha,red, blue, green);
             Bitmap bmpOriginal = new Bitmap(original);
 
             Assert.AreEqual(bmpOriginal.Width, bmpFiltered.Width);
@@ -38,13 +54,7 @@ namespace ImageEdgeDetectionTest
                     Assert.AreEqual(originalColor.G, filteredColor.G);
                     Assert.AreEqual(originalColor.B, filteredColor.B);
                 }
-            }          
-        }
-
-        [TestMethod]
-        public void TestMiamiFilter()
-        {
-
+            }
         }
 
         [TestMethod]
