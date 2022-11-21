@@ -74,49 +74,89 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Vertical_YKirsch3x3Horizontal()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Vertical_YKirsch3x3Horizontal_Chad.png");
 
+            original = ImageFilters.XyFilter("Kirsch3x3Vertical", "Kirsch3x3Horizontal", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XKirsch3x3Vertical_YPrewitt3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Vertical_YPrewitt3x3Vertical_Chad.png");
 
+            original = ImageFilters.XyFilter("Kirsch3x3Vertical", "Prewitt3x3Vertical", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XKirsch3x3Horizontal_YKirsch3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Vertical_Chad.png");
 
+            original = ImageFilters.XyFilter("Kirsch3x3Horizontal", "Kirsch3x3Vertical", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XKirsch3x3Horizontal_Ykirsch3x3Horizontal()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
 
+            original = ImageFilters.XyFilter("Kirsch3x3Horizontal", "Kirsch3x3Horizontal", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XKirsch3x3Horizontal_YPrewitt3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YPrewitt3x3Vertical_Chad.png");
 
+            original = ImageFilters.XyFilter("Kirsch3x3Horizontal", "Prewitt3x3Vertical", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XPrewitt3x3Vertical_YKirsch3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Vertical_Chad.png");
 
+            original = ImageFilters.XyFilter("Prewitt3x3Vertical", "Kirsch3x3Vertical", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XPrewitt3x3Vertical_YKirsch3x3Horizontal()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Horizontal_Chad.png");
 
+            original = ImageFilters.XyFilter("Prewitt3x3Vertical", "Kirsch3x3Horizontal", original, 100);
+
+            compareImage(original, filtered);
         }
 
         [TestMethod]
         public void XPrewitt3x3Vertical_YPrewitt3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YPrewitt3x3Vertical_Chad.png");
 
+            original = ImageFilters.XyFilter("Prewitt3x3Vertical", "Prewitt3x3Vertical", original, 100);
+
+            compareImage(original, filtered);
         }
     }
 }
