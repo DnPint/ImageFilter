@@ -4,6 +4,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System;
 using System.Resources;
+using ImageEdgeDetection;
 
 namespace ImageEdgeDetectionTest
 {
@@ -13,10 +14,31 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void TestNightFilter()
         {
-            //var original = ResourceSet.GetObject("mark");
-            //var bmp = ImageEdgeDetectionTest.Properties.Resources.mark;
-            Image original = Image.FromFile("./Images/mark.jpg");
+
+            Image original = Image.FromFile("./Images/chad.png");
             
+            Image filtered = Image.FromFile("./Images/nightchad.png");
+            
+            Bitmap bmpFiltered = new Bitmap(filtered);
+
+            //filter the original with the night filter
+            original = ImageFilters.ApplyFilter(new Bitmap(original), 1, 1, 1, 25);
+            Bitmap bmpOriginal = new Bitmap(original);
+
+            Assert.AreEqual(bmpOriginal.Width, bmpFiltered.Width);
+
+            //Compare bitmaps to see if they are the same
+            for (int i = 0; i < bmpOriginal.Width; i++)
+            {
+                for (int j = 0; j < bmpOriginal.Height; j++)
+                {
+                    Color originalColor = bmpOriginal.GetPixel(i, j);
+                    Color filteredColor = bmpFiltered.GetPixel(i, j);
+                    Assert.AreEqual(originalColor.R, filteredColor.R);
+                    Assert.AreEqual(originalColor.G, filteredColor.G);
+                    Assert.AreEqual(originalColor.B, filteredColor.B);
+                }
+            }          
         }
 
         [TestMethod]

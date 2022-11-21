@@ -16,6 +16,7 @@ namespace ImageEdgeDetection
         //the original image
         private Bitmap originalBitmap = null;
         private System.Drawing.Image Origin;
+        private Image filtered;
         private string xFilter;
         private string yFilter;
 
@@ -38,7 +39,7 @@ namespace ImageEdgeDetection
                 Bitmap temp = new Bitmap(picPreview.Image,
                    new Size(picPreview.Width, picPreview.Height));
                 picPreview.Image = temp;
-                Origin = picPreview.Image;
+                Origin = Image.FromFile(path);
                 originalBitmap = (Bitmap)Bitmap.FromFile(path);
             }
         }
@@ -77,10 +78,10 @@ namespace ImageEdgeDetection
             switch (saveFileDialog.FilterIndex)
             {
                 case 1:
-                    picPreview.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
+                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
                     break;
                 case 2:
-                    picPreview.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
                     break;
             }
             fs.Close();
@@ -90,16 +91,17 @@ namespace ImageEdgeDetection
         {
             if (picPreview.Image != null)
             {
-                picPreview.Image = Origin;
+                
                 switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
-                        picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 1, 25);
+                        filtered = ImageFilters.ApplyFilter(new Bitmap(Origin), 1, 1, 1, 25);
                         break;
                     case "buttonMiamiFilter":
-                        picPreview.Image = ImageFilters.ApplyFilter(new Bitmap(picPreview.Image), 1, 1, 10, 1);
+                        filtered = ImageFilters.ApplyFilter(new Bitmap(Origin), 1, 1, 10, 1);
                         break;
                 }
+                picPreview.Image = filtered;
             }
             else
             {
