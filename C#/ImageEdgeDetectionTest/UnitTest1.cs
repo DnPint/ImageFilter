@@ -19,7 +19,10 @@ namespace ImageEdgeDetectionTest
             
             Image filtered = Image.FromFile("./Images/nightchad.png");
 
-            compareImage(original, filtered, 1, 1, 1, 25);
+            //filter the original with the night filter
+            original = ImageFilters.ApplyFilter(new Bitmap(original), 1, 1, 1, 25);
+
+            compareImage(original, filtered);
                   
         }
 
@@ -30,18 +33,16 @@ namespace ImageEdgeDetectionTest
 
             Image filtered = Image.FromFile("./Images/miamichad.png");
 
-            compareImage(original, filtered, 1, 1, 10, 1);
+            //filter the original with the night filter
+            original = ImageFilters.ApplyFilter(new Bitmap(original), 1, 1, 10, 1);           
+
+            compareImage(original, filtered);
         }
 
-        private void compareImage(Image original, Image filtered, int alpha,int red, int blue, int green)
+        private void compareImage(Image original, Image filtered)
         {
             Bitmap bmpFiltered = new Bitmap(filtered);
-
-            //filter the original with the night filter
-            original = ImageFilters.ApplyFilter(new Bitmap(original), alpha,red, blue, green);
             Bitmap bmpOriginal = new Bitmap(original);
-
-            Assert.AreEqual(bmpOriginal.Width, bmpFiltered.Width);
 
             //Compare bitmaps to see if they are the same
             for (int i = 0; i < bmpOriginal.Width; i++)
@@ -56,10 +57,17 @@ namespace ImageEdgeDetectionTest
                 }
             }
         }
+        
 
         [TestMethod]
         public void XKirsch3x3Vertical_YKirsch3x3Vertical()
         {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/xKirsh3x3Vert_yKirsh3x3Vert_Chad.png");
+            
+            original = ImageFilters.XyFilter("Kirsch3x3Vertical", "Kirsch3x3Vertical", original, 100);
+            
+            compareImage(original, filtered);
 
         }
 
