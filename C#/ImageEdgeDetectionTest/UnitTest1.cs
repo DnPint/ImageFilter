@@ -15,6 +15,7 @@ namespace ImageEdgeDetectionTest
         {
             //var original = ResourceSet.GetObject("mark");
             //var bmp = ImageEdgeDetectionTest.Properties.Resources.mark;
+            Image original = Image.FromFile("./Images/mark.jpg");
             
         }
 
