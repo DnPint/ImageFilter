@@ -15,18 +15,27 @@ namespace ImageEdgeDetection
         //apply color filter at your own taste
         public static Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
-            Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
-
-            for (int i = 0; i < bmp.Width; i++)
+            if (alpha < 0 || alpha > 255 || red < 0 || red > 255 || blue < 0 || blue > 255 ||  green < 0 || green > 255)
             {
-                for (int x = 0; x < bmp.Height; x++)
-                {
-                    Color c = bmp.GetPixel(i, x);
-                    Color cLayer = Color.FromArgb(c.A / alpha, c.R / red, c.G / green, c.B / blue);
-                    temp.SetPixel(i, x, cLayer);
-                }
+                return null;
             }
-            return temp;
+
+            if (bmp != null)
+            {
+                Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
+
+                for (int i = 0; i < bmp.Width; i++)
+                {
+                    for (int x = 0; x < bmp.Height; x++)
+                    {
+                        Color c = bmp.GetPixel(i, x);
+                        Color cLayer = Color.FromArgb(c.A / alpha, c.R / red, c.G / green, c.B / blue);
+                        temp.SetPixel(i, x, cLayer);
+                    }
+                }
+                return temp;
+            }
+            return null;
         }
 
         public static Image XyFilter(string xfilter, string yfilter, Image Original, int value)
@@ -38,6 +47,11 @@ namespace ImageEdgeDetection
             //We replace the switch case to choose the right matrix for the x,y filter
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
+
+            if (xFilterMatrix == null || yFilterMatrix == null)
+            {
+                return null;
+            }
 
             Bitmap originalBitmap = new Bitmap(Original);
 

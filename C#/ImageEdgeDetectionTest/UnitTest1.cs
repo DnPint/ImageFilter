@@ -158,5 +158,47 @@ namespace ImageEdgeDetectionTest
 
             compareImage(original, filtered);
         }
+
+        [TestMethod]
+        public void ApplyFilterNullBitmap()
+        {
+            //filter the original with the night filter
+            Image original = ImageFilters.ApplyFilter(null, 1, 1, 1, 25);
+
+            Assert.IsNull(original);
+        }
+
+
+        [TestMethod]
+        public void ApplyFilterBelowZeroRGB()
+        {
+            Image original = Image.FromFile("./Images/chad.png");
+
+            //filter the original with the night filter
+            original = ImageFilters.ApplyFilter(new Bitmap(original), -2, 1, 1, 25);
+
+            Assert.IsNull(original);
+        }
+
+        [TestMethod]
+        public void ApplyFilterAboveMaxRGB()
+        {
+            Image original = Image.FromFile("./Images/chad.png");
+
+            //filter the original with the night filter
+            original = ImageFilters.ApplyFilter(new Bitmap(original), 1, 1, 259, 25);
+
+            Assert.IsNull(original);
+        }
+
+        public void XyfilterMatrixNotFound()
+        {
+            Image original = Image.FromFile("./Images/chad.png");
+            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
+
+            original = ImageFilters.XyFilter("Kirsh3x3Horizontal", "Kirsh3x3Horizontal", original, 100);
+
+            Assert.IsNull(original);
+        }
     }
 }
