@@ -15,11 +15,10 @@ namespace ImageEdgeDetection
     {
         //the original image
         private Bitmap originalBitmap = null;
-        private System.Drawing.Image Origin;
         private Image filtered;
         private string xFilter;
         private string yFilter;
-        private ToolBox toolBox = new ToolBox();
+        private IToolBox toolBox = new ToolBox();
 
         public MainForm()
         {
@@ -28,6 +27,7 @@ namespace ImageEdgeDetection
             //make the list for XY edges disable before selecting a filter
             disableXY();
         }
+
 
         public void disableXY()
         {
@@ -45,35 +45,9 @@ namespace ImageEdgeDetection
 
         public void LoadImage(object sender, EventArgs e)
         {
-            //Open the dialog box to get an image on the screen
-            OpenFileDialog op = InitializeOpenFileDialog();
-            DialogResult dr = op.ShowDialog();
-
-            if (dr == DialogResult.OK)
-            {
-                string path = op.FileName;
-                Origin = Image.FromFile(path);
-                originalBitmap = (Bitmap)Bitmap.FromFile(path);
-                picPreview.Image = originalBitmap;
-            }
+            originalBitmap = toolBox.LoadImage(sender, e);
+            picPreview.Image = originalBitmap;
         }
-       
-        private OpenFileDialog InitializeOpenFileDialog()
-        {
-            OpenFileDialog op = new OpenFileDialog();
-            op.Title = "Select an image file.";
-            op.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
-            return op;
-        }
-
-        //The file can be named directly in the SaveDialog box
-        /*public void SaveImage()
-        {
-            SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
-            if (saveFileDialog.FileName != "")
-                SaveImageAppropriateFormat(saveFileDialog);
-        }*/
 
         private SaveFileDialog InitializeSaveFileDialog()
         {
@@ -86,17 +60,7 @@ namespace ImageEdgeDetection
 
         private void SaveImageAppropriateFormat(SaveFileDialog saveFileDialog)
         {
-            System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
-            switch (saveFileDialog.FilterIndex)
-            {
-                case 1:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
-                    break;
-                case 2:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    break;
-            }
-            fs.Close();
+            toolBox.SaveImageAppropriateFormat(filtered, saveFileDialog);
         }
 
         public void buttonFilter_Click(object sender, EventArgs e)
@@ -107,13 +71,13 @@ namespace ImageEdgeDetection
                 switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
-                        filtered = toolBox.ApplyFilter(new Bitmap(Origin), 1, 1, 1, 25);
+                        filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 1, 25);
                         break;
                     case "buttonMiamiFilter":
-                        filtered = toolBox.ApplyFilter(new Bitmap(Origin), 1, 1, 10, 1);
+                        filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 10, 1);
                         break;
                     case "buttonMagicMosaic":
-                        filtered = toolBox.MagicMosaic(new Bitmap(Origin));
+                        filtered = toolBox.MagicMosaic(new Bitmap(originalBitmap));
                         break;
                 }
                 picPreview.Image = filtered;
@@ -129,7 +93,7 @@ namespace ImageEdgeDetection
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            picPreview.Image = Origin;
+            picPreview.Image = originalBitmap;
 
             //make the list for XY edges disable before selecting a filter
             disableXY();
@@ -156,10 +120,8 @@ namespace ImageEdgeDetection
             {
                 xFilter = listBoxXFilter.SelectedItem.ToString();
                 yFilter = listBoxYFilter.SelectedItem.ToString();
-                filter(xFilter, yFilter);
-               
-            }
-                
+                filter(xFilter, yFilter);         
+            }              
         }
 
         public void filter(string xfilter, string yfilter)
