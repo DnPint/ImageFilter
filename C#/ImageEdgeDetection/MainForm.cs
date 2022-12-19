@@ -6,8 +6,6 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
 
 namespace ImageEdgeDetection
 {
@@ -23,9 +21,25 @@ namespace ImageEdgeDetection
         public MainForm()
         {
             InitializeComponent();
+
+            //make the list for XY edges disable before selecting a filter
+            disableXY();
         }
 
-        
+        public void disableXY()
+        {
+            listBoxXFilter.Enabled = false;
+            listBoxYFilter.Enabled = false;
+            trackBarThreshold.Enabled = false;
+        }
+
+        public void enableXY()
+        {
+            listBoxXFilter.Enabled = true;
+            listBoxYFilter.Enabled = true;
+            trackBarThreshold.Enabled = true;
+        }
+
         public void LoadImage(object sender, EventArgs e)
         {
             //Open the dialog box to get an image on the screen
@@ -36,15 +50,14 @@ namespace ImageEdgeDetection
             {
                 string path = op.FileName;
                 picPreview.Load(path);
-                Bitmap temp = new Bitmap(picPreview.Image,
-                   new Size(picPreview.Width, picPreview.Height));
-                picPreview.Image = temp;
+                //Bitmap temp = new Bitmap(picPreview.Image,
+                //   new Size(picPreview.Width, picPreview.Height));
+                //picPreview.Image = temp;
                 Origin = Image.FromFile(path);
                 originalBitmap = (Bitmap)Bitmap.FromFile(path);
             }
         }
-
-        
+       
         private OpenFileDialog InitializeOpenFileDialog()
         {
             OpenFileDialog op = new OpenFileDialog();
@@ -54,8 +67,7 @@ namespace ImageEdgeDetection
             return op;
         }
 
-        //Change the SaveImage function as the one given in the project
-        //because we can name the file directly in the SaveDialog box
+        //The file can be named directly in the SaveDialog box
         public void SaveImage()
         {
             SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
@@ -102,6 +114,9 @@ namespace ImageEdgeDetection
                         break;
                 }
                 picPreview.Image = filtered;
+
+                //Since a filter is chosen, make XY lists available
+                enableXY();
             }
             else
             {
@@ -112,6 +127,10 @@ namespace ImageEdgeDetection
         private void backButton_Click(object sender, EventArgs e)
         {
             picPreview.Image = Origin;
+
+            //make the list for XY edges disable before selecting a filter
+            disableXY();
+
         }
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)

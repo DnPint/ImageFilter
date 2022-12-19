@@ -200,5 +200,6 @@ namespace ImageEdgeDetectionTest
 
             Assert.IsNull(original);
         }
+
     }
 }

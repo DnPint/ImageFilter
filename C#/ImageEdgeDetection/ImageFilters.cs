@@ -44,14 +44,14 @@ namespace ImageEdgeDetection
             double[,] yFilterMatrix;
             Matrix matrix = new Matrix();
 
-            //We replace the switch case to choose the right matrix for the x,y filter
+            // Assign user choices for x and y filters
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
 
-            if (xFilterMatrix == null || yFilterMatrix == null)
-            {
-                return null;
-            }
+            //if (xFilterMatrix == null || yFilterMatrix == null)
+            //{
+            //    return null;
+            //}
 
             Bitmap originalBitmap = new Bitmap(Original);
 

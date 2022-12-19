@@ -1,26 +1,26 @@
     ======  ======
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: Initiate log
     Message: 
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: Initiate InternalManager
     Message: Trying to Validate License
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: Requesting EVT
     Message: EVTP
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: Requesting Validation
     Message: ILMValidate
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: LICENSER
     Message: TRL MODE
-    Time:14.11.2022 14:15:50
+    Time:19.12.2022 12:52:38
     Title: LICENSER
-    Message: DS LEFT46
-    Time:14.11.2022 14:15:50
+    Message: DS LEFT11
+    Time:19.12.2022 12:52:38
     Title: LICENSER
-    Message: DT MARK PASSED46.00:00:00
-    Time:14.11.2022 14:15:51
+    Message: DT MARK PASSED11.00:00:00
+    Time:19.12.2022 12:52:39
     Title: L'accès au chemin d'accès 'C:\ProgramData\Telerik\Hash.lic' est refusé.
     Message:    à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
@@ -28,194 +28,176 @@
    à Telerik.Licensing.Licenser.ReadHashPass()
     Entering constructor for: Telerik.CommonPackage.VSPackage
     Entering Initialize() of: Telerik.CommonPackage.VSPackage
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
     TestWindow package loaded
     Informational: Le niveau du journal est défini sur Information (par défaut).
     Informational: Le niveau du journal est défini sur Information (par défaut).
     Informational: Connecté à l’environnement de test « < Environnement Windows local > »
-    Informational: Magasin de données de test ouvert en 0,018 s.
-    TableControl: QueueUpdate 14.11.2022 14:19:23:226
-    TableControl: About to update entries 14.11.2022 14:19:23:227
-    TableControl: QueueUpdate 14.11.2022 14:19:23:231
-    TableControl: Updating entries 14.11.2022 14:19:23:234
-    TableControl: QueueUpdate 14.11.2022 14:19:23:239
-    TableControl: QueueUpdate 14.11.2022 14:19:23:254
-    TableControl: QueueUpdate 14.11.2022 14:19:23:263
-    TableControl: QueueUpdate 14.11.2022 14:19:23:275
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:23:419
-    TableControl: Refreshing UI 14.11.2022 14:19:23:419
-    TableControl: QueueUpdate 14.11.2022 14:19:23:421
-    TableControl: About to update entries 14.11.2022 14:19:23:421
-    TableControl: Updating entries 14.11.2022 14:19:23:439
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:23:439
-    TableControl: QueueUpdate 14.11.2022 14:19:23:439
-    TableControl: QueueUpdate 14.11.2022 14:19:23:439
-    TableControl: Refreshing UI 14.11.2022 14:19:23:442
-    TableControl: QueueUpdate 14.11.2022 14:19:23:443
-    TableControl: About to update entries 14.11.2022 14:19:23:443
-    TableControl: Updating entries 14.11.2022 14:19:23:443
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:23:444
-    Informational: Génération de projets de test
-    TableControl: QueueUpdate 14.11.2022 14:19:24:186
-    TableControl: About to update entries 14.11.2022 14:19:24:187
-    TableControl: Updating entries 14.11.2022 14:19:24:196
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:24:197
-    TableControl: Refreshing UI 14.11.2022 14:19:24:197
-    Informational: 0 enregistrements de test chargés à partir du cache de la solution en 0,233 s.
+ez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 11 tests trouvés en 1,1 s ==========
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 26.11.2022 13:07:14:597
+    TableControl: About to update entries 26.11.2022 13:07:14:597
+    TableControl: Updating entries 26.11.2022 13:07:14:598
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:14:598
+    TableControl: Refreshing UI 26.11.2022 13:07:14:598
+    TableControl: QueueUpdate 26.11.2022 13:07:16:591
+    TableControl: About to update entries 26.11.2022 13:07:16:699
+    TableControl: Updating entries 26.11.2022 13:07:16:699
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:16:699
+    TableControl: Refreshing UI 26.11.2022 13:07:16:699
+    TableControl: QueueUpdate 26.11.2022 13:07:18:59
+    TableControl: About to update entries 26.11.2022 13:07:18:161
+    TableControl: Updating entries 26.11.2022 13:07:18:161
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:18:173
+    TableControl: Refreshing UI 26.11.2022 13:07:18:173
+    TableControl: QueueUpdate 26.11.2022 13:07:19:573
+    TableControl: About to update entries 26.11.2022 13:07:19:682
+    TableControl: Updating entries 26.11.2022 13:07:19:682
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:19:682
+    TableControl: Refreshing UI 26.11.2022 13:07:19:682
+    TableControl: QueueUpdate 26.11.2022 13:07:21:75
+    TableControl: About to update entries 26.11.2022 13:07:21:184
+    TableControl: Updating entries 26.11.2022 13:07:21:184
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:21:184
+    TableControl: Refreshing UI 26.11.2022 13:07:21:184
+    TableControl: QueueUpdate 26.11.2022 13:07:22:579
+    TableControl: About to update entries 26.11.2022 13:07:22:686
+    TableControl: Updating entries 26.11.2022 13:07:22:686
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:22:686
+    TableControl: Refreshing UI 26.11.2022 13:07:22:686
+    Informational: ========== Série de tests achevée : 11 tests (11 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 8,4 s ==========
+    Informational: Démarrage de la découverte de tests
+    TableControl: QueueUpdate 26.11.2022 13:07:23:498
+    TableControl: About to update entries 26.11.2022 13:07:23:604
+    TableControl: Updating entries 26.11.2022 13:07:23:604
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:23:604
+    TableControl: Refreshing UI 26.11.2022 13:07:23:604
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,1 s ==========
+    TableControl: QueueUpdate 26.11.2022 13:07:24:532
+    TableControl: About to update entries 26.11.2022 13:07:24:532
+    TableControl: Updating entries 26.11.2022 13:07:24:533
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:24:533
+    TableControl: Refreshing UI 26.11.2022 13:07:24:541
+    TableControl: QueueUpdate 26.11.2022 13:07:25:329
+    TableControl: About to update entries 26.11.2022 13:07:25:329
+    TableControl: Updating entries 26.11.2022 13:07:25:329
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:25:330
+    TableControl: Refreshing UI 26.11.2022 13:07:25:336
+    TableControl: QueueUpdate 26.11.2022 13:07:26:255
+    TableControl: About to update entries 26.11.2022 13:07:26:255
+    TableControl: Updating entries 26.11.2022 13:07:26:255
+    TableControl: Updating entries (UI thread) 26.11.2022 13:07:26:256
+    TableControl: Refreshing UI 26.11.2022 13:07:26:256
+    TableControl: QueueUpdate 26.11.2022 13:16:31:138
+    TableControl: About to update entries 26.11.2022 13:16:31:138
+    TableControl: Updating entries 26.11.2022 13:16:31:138
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:31:138
+    TableControl: Refreshing UI 26.11.2022 13:16:31:138
     Informational: Démarrage de la découverte de tests pour la série de tests demandée
     Informational: Démarrage de la découverte de tests
-    Informational: ========== Fin de la découverte de tests : 1 tests trouvés en 2,6 s ==========
-    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.TestMethod1
-    TableControl: QueueUpdate 14.11.2022 14:19:28:353
+    Informational: ========== Fin de la découverte de tests : 14 tests trouvés en 472,1 ms ==========
     Informational: Démarrage de la série de tests
-    TableControl: About to update entries 14.11.2022 14:19:28:467
-    TableControl: Updating entries 14.11.2022 14:19:28:468
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:28:468
-    TableControl: Refreshing UI 14.11.2022 14:19:28:468
-    TableControl: QueueUpdate 14.11.2022 14:19:28:788
-    TableControl: About to update entries 14.11.2022 14:19:28:891
-    TableControl: Updating entries 14.11.2022 14:19:28:891
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:28:892
-    TableControl: Refreshing UI 14.11.2022 14:19:28:892
-    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 140 ms ==========
+    TableControl: QueueUpdate 26.11.2022 13:16:47:584
+    TableControl: About to update entries 26.11.2022 13:16:47:685
+    TableControl: Updating entries 26.11.2022 13:16:47:685
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:47:685
+    TableControl: Refreshing UI 26.11.2022 13:16:47:685
+    TableControl: QueueUpdate 26.11.2022 13:16:49:499
+    TableControl: About to update entries 26.11.2022 13:16:49:606
+    TableControl: Updating entries 26.11.2022 13:16:49:606
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:49:606
+    TableControl: Refreshing UI 26.11.2022 13:16:49:606
+    TableControl: QueueUpdate 26.11.2022 13:16:51:9
+    TableControl: About to update entries 26.11.2022 13:16:51:111
+    TableControl: Updating entries 26.11.2022 13:16:51:111
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:51:111
+    TableControl: Refreshing UI 26.11.2022 13:16:51:111
+    TableControl: QueueUpdate 26.11.2022 13:16:52:517
+    TableControl: About to update entries 26.11.2022 13:16:52:630
+    TableControl: Updating entries 26.11.2022 13:16:52:630
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:52:630
+    TableControl: Refreshing UI 26.11.2022 13:16:52:630
+    TableControl: QueueUpdate 26.11.2022 13:16:54:31
+    TableControl: About to update entries 26.11.2022 13:16:54:139
+    TableControl: Updating entries 26.11.2022 13:16:54:139
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:54:139
+    TableControl: Refreshing UI 26.11.2022 13:16:54:139
+    TableControl: QueueUpdate 26.11.2022 13:16:55:541
+    TableControl: About to update entries 26.11.2022 13:16:55:655
+    TableControl: Updating entries 26.11.2022 13:16:55:655
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:55:657
+    TableControl: Refreshing UI 26.11.2022 13:16:55:657
+    Informational: ========== Série de tests achevée : 14 tests (11 réussi(s), 3 non réussi(s), 0 ignoré(s)) exécutés en 9,1 s ==========
     Informational: Démarrage de la découverte de tests
-    TableControl: QueueUpdate 14.11.2022 14:19:30:35
-    TableControl: About to update entries 14.11.2022 14:19:30:136
-    TableControl: Updating entries 14.11.2022 14:19:30:136
-    TableControl: Updating entries (UI thread) 14.11.2022 14:19:30:136
-    TableControl: Refreshing UI 14.11.2022 14:19:30:136
+    TableControl: QueueUpdate 26.11.2022 13:16:57:59
+    TableControl: About to update entries 26.11.2022 13:16:57:167
+    TableControl: Updating entries 26.11.2022 13:16:57:167
+    TableControl: Updating entries (UI thread) 26.11.2022 13:16:57:167
+    TableControl: Refreshing UI 26.11.2022 13:16:57:167
     Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
     Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 6,6 s ==========
-    TableControl: QueueUpdate 14.11.2022 14:20:26:236
-    TableControl: About to update entries 14.11.2022 14:20:26:340
-    TableControl: Updating entries 14.11.2022 14:20:26:340
-    TableControl: Updating entries (UI thread) 14.11.2022 14:20:26:355
-    TableControl: Refreshing UI 14.11.2022 14:20:26:355
-    TableControl: QueueUpdate 14.11.2022 14:20:38:868
-    TableControl: About to update entries 14.11.2022 14:20:38:982
-    TableControl: Updating entries 14.11.2022 14:20:38:982
-    TableControl: Updating entries (UI thread) 14.11.2022 14:20:38:983
-    TableControl: Refreshing UI 14.11.2022 14:20:38:983
-    TableControl: QueueUpdate 14.11.2022 14:20:55:736
-    TableControl: About to update entries 14.11.2022 14:20:55:837
-    TableControl: Updating entries 14.11.2022 14:20:55:837
-    TableControl: Updating entries (UI thread) 14.11.2022 14:20:56:9
-    TableControl: Refreshing UI 14.11.2022 14:20:56:9
-    TableControl: QueueUpdate 14.11.2022 14:20:58:280
-    TableControl: About to update entries 14.11.2022 14:20:58:388
-    TableControl: Updating entries 14.11.2022 14:20:58:388
-    TableControl: Updating entries (UI thread) 14.11.2022 14:20:58:388
-    TableControl: Refreshing UI 14.11.2022 14:20:58:389
-    TableControl: QueueUpdate 14.11.2022 14:21:39:982
-    TableControl: About to update entries 14.11.2022 14:21:40:84
-    TableControl: Updating entries 14.11.2022 14:21:40:85
-    TableControl: Updating entries (UI thread) 14.11.2022 14:21:40:85
-    TableControl: Refreshing UI 14.11.2022 14:21:40:85
-    TableControl: QueueUpdate 14.11.2022 14:21:45:105
-    TableControl: About to update entries 14.11.2022 14:21:45:207
-    TableControl: Updating entries 14.11.2022 14:21:45:207
-    TableControl: Updating entries (UI thread) 14.11.2022 14:21:45:210
-    TableControl: Refreshing UI 14.11.2022 14:21:45:210
-    TableControl: QueueUpdate 14.11.2022 14:21:53:671
-    TableControl: About to update entries 14.11.2022 14:21:53:773
-    TableControl: Updating entries 14.11.2022 14:21:53:773
-    TableControl: Updating entries (UI thread) 14.11.2022 14:21:53:774
-    TableControl: Refreshing UI 14.11.2022 14:21:53:774
-    TableControl: QueueUpdate 14.11.2022 14:22:02:274
-    TableControl: About to update entries 14.11.2022 14:22:02:376
-    TableControl: Updating entries 14.11.2022 14:22:02:377
-    TableControl: Updating entries (UI thread) 14.11.2022 14:22:02:377
-    TableControl: Refreshing UI 14.11.2022 14:22:02:377
-    TableControl: QueueUpdate 14.11.2022 14:22:07:991
-    TableControl: About to update entries 14.11.2022 14:22:08:93
-    TableControl: Updating entries 14.11.2022 14:22:08:94
-    TableControl: Updating entries (UI thread) 14.11.2022 14:22:08:94
-    TableControl: Refreshing UI 14.11.2022 14:22:08:94
-    TableControl: QueueUpdate 14.11.2022 14:22:38:511
-    TableControl: About to update entries 14.11.2022 14:22:38:626
-    TableControl: Updating entries 14.11.2022 14:22:38:626
-    TableControl: Updating entries (UI thread) 14.11.2022 14:22:38:628
-    TableControl: Refreshing UI 14.11.2022 14:22:38:628
-    TableControl: QueueUpdate 14.11.2022 14:22:53:766
-    TableControl: About to update entries 14.11.2022 14:22:53:866
-    TableControl: Updating entries 14.11.2022 14:22:53:866
-    TableControl: Updating entries (UI thread) 14.11.2022 14:22:54:160
-    TableControl: Refreshing UI 14.11.2022 14:22:54:160
-    TableControl: QueueUpdate 14.11.2022 14:23:11:724
-    TableControl: About to update entries 14.11.2022 14:23:11:833
-    TableControl: Updating entries 14.11.2022 14:23:11:833
-    TableControl: Updating entries (UI thread) 14.11.2022 14:23:12:473
-    TableControl: Refreshing UI 14.11.2022 14:23:12:473
-    TableControl: QueueUpdate 14.11.2022 14:23:16:338
-    TableControl: About to update entries 14.11.2022 14:23:16:441
-    TableControl: Updating entries 14.11.2022 14:23:16:441
-    TableControl: Updating entries (UI thread) 14.11.2022 14:23:16:445
-    TableControl: Refreshing UI 14.11.2022 14:23:16:445
-    TableControl: QueueUpdate 14.11.2022 14:23:33:984
-    TableControl: About to update entries 14.11.2022 14:23:34:102
-    TableControl: Updating entries 14.11.2022 14:23:34:102
-    TableControl: Updating entries (UI thread) 14.11.2022 14:23:34:103
-    TableControl: Refreshing UI 14.11.2022 14:23:34:103
-    TableControl: QueueUpdate 14.11.2022 14:23:43:326
-    TableControl: About to update entries 14.11.2022 14:23:43:429
-    TableControl: Updating entries 14.11.2022 14:23:43:430
-    TableControl: Updating entries (UI thread) 14.11.2022 14:23:43:430
-    TableControl: Refreshing UI 14.11.2022 14:23:43:430
-    TableControl: QueueUpdate 14.11.2022 14:23:53:76
-    TableControl: About to update entries 14.11.2022 14:23:53:178
-    TableControl: Updating entries 14.11.2022 14:23:53:178
-    TableControl: Updating entries (UI thread) 14.11.2022 14:23:53:179
-    TableControl: Refreshing UI 14.11.2022 14:23:53:179
-    TableControl: QueueUpdate 14.11.2022 14:24:04:174
-    TableControl: About to update entries 14.11.2022 14:24:04:277
-    TableControl: Updating entries 14.11.2022 14:24:04:278
-    TableControl: Updating entries (UI thread) 14.11.2022 14:24:04:280
-    TableControl: Refreshing UI 14.11.2022 14:24:04:280
-    TableControl: QueueUpdate 14.11.2022 14:24:17:807
-    TableControl: About to update entries 14.11.2022 14:24:17:911
-    TableControl: Updating entries 14.11.2022 14:24:17:912
-    TableControl: Updating entries (UI thread) 14.11.2022 14:24:18:71
-    TableControl: Refreshing UI 14.11.2022 14:24:18:71
-    TableControl: QueueUpdate 14.11.2022 14:24:39:426
-    TableControl: About to update entries 14.11.2022 14:24:39:540
-    TableControl: Updating entries 14.11.2022 14:24:39:541
-    TableControl: Updating entries (UI thread) 14.11.2022 14:24:39:759
-    TableControl: Refreshing UI 14.11.2022 14:24:39:759
-    TableControl: QueueUpdate 14.11.2022 14:24:56:24
-    TableControl: About to update entries 14.11.2022 14:24:56:131
-    TableControl: Updating entries 14.11.2022 14:24:56:131
-    TableControl: Updating entries (UI thread) 14.11.2022 14:24:56:132
-    TableControl: Refreshing UI 14.11.2022 14:24:56:132
-    TableControl: QueueUpdate 14.11.2022 14:25:06:637
-    TableControl: About to update entries 14.11.2022 14:25:06:739
-    TableControl: Updating entries 14.11.2022 14:25:06:739
-    TableControl: Updating entries (UI thread) 14.11.2022 14:25:06:740
-    TableControl: Refreshing UI 14.11.2022 14:25:06:740
-    TableControl: QueueUpdate 14.11.2022 14:25:18:340
-    TableControl: About to update entries 14.11.2022 14:25:18:455
-    TableControl: Updating entries 14.11.2022 14:25:18:455
-    TableControl: Updating entries (UI thread) 14.11.2022 14:25:18:456
-    TableControl: Refreshing UI 14.11.2022 14:25:18:457
-    TableControl: QueueUpdate 14.11.2022 14:25:30:784
-    TableControl: About to update entries 14.11.2022 14:25:30:887
-    TableControl: Updating entries 14.11.2022 14:25:30:887
-    TableControl: Updating entries (UI thread) 14.11.2022 14:25:30:888
-    TableControl: Refreshing UI 14.11.2022 14:25:30:888
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Structure FORMATETC non valide (Exception de HRESULT : 0x80040064 (DV_E_FORMATETC))
-    Exception : Structure FORMATETC non valide (Exception de HRESULT : 0x80040064 (DV_E_FORMATETC))
-    Informational: Démarrage de la découverte de tests
     Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,9 s ==========
-    Informational: Démarrage de la découverte de tests
     Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1 s ==========
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 14 tests trouvés en 1,2 s ==========
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 26.11.2022 13:22:00:694
+    TableControl: About to update entries 26.11.2022 13:22:00:800
+    TableControl: Updating entries 26.11.2022 13:22:00:800
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:00:800
+    TableControl: Refreshing UI 26.11.2022 13:22:00:800
+    TableControl: QueueUpdate 26.11.2022 13:22:02:639
+    TableControl: About to update entries 26.11.2022 13:22:02:745
+    TableControl: Updating entries 26.11.2022 13:22:02:745
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:02:745
+    TableControl: Refreshing UI 26.11.2022 13:22:02:745
+    TableControl: QueueUpdate 26.11.2022 13:22:04:148
+    TableControl: About to update entries 26.11.2022 13:22:04:261
+    TableControl: Updating entries 26.11.2022 13:22:04:261
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:04:261
+    TableControl: Refreshing UI 26.11.2022 13:22:04:261
+    TableControl: QueueUpdate 26.11.2022 13:22:05:651
+    TableControl: About to update entries 26.11.2022 13:22:05:766
+    TableControl: Updating entries 26.11.2022 13:22:05:766
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:05:766
+    TableControl: Refreshing UI 26.11.2022 13:22:05:766
+    TableControl: QueueUpdate 26.11.2022 13:22:07:147
+    TableControl: About to update entries 26.11.2022 13:22:07:248
+    TableControl: Updating entries 26.11.2022 13:22:07:248
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:07:248
+    TableControl: Refreshing UI 26.11.2022 13:22:07:248
+    TableControl: QueueUpdate 26.11.2022 13:22:08:662
+    TableControl: About to update entries 26.11.2022 13:22:08:763
+    TableControl: Updating entries 26.11.2022 13:22:08:763
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:08:763
+    TableControl: Refreshing UI 26.11.2022 13:22:08:763
+    Informational: ========== Série de tests achevée : 14 tests (14 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 8,7 s ==========
+    Informational: Démarrage de la découverte de tests
+    TableControl: QueueUpdate 26.11.2022 13:22:09:880
+    TableControl: About to update entries 26.11.2022 13:22:09:981
+    TableControl: Updating entries 26.11.2022 13:22:09:981
+    TableControl: Updating entries (UI thread) 26.11.2022 13:22:09:981
+    TableControl: Refreshing UI 26.11.2022 13:22:09:981
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,1 s ==========
+    TableControl: QueueUpdate 26.11.2022 13:23:39:978
+    TableControl: About to update entries 26.11.2022 13:23:39:978
+    TableControl: QueueUpdate 26.11.2022 13:23:39:979
+    TableControl: QueueUpdate 26.11.2022 13:23:39:979
+    TableControl: Updating entries 26.11.2022 13:23:39:979
+    TableControl: QueueUpdate 26.11.2022 13:23:39:979
+    TableControl: QueueUpdate 26.11.2022 13:23:39:979
+sproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
     Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 2 s ==========
     Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
     Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
