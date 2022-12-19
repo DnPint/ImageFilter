@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -10,10 +11,10 @@ using System.Threading.Tasks;
 
 namespace ImageEdgeDetection
 {
-    public static class ImageFilters
+    public class ToolBox
     {
         //apply color filter at your own taste
-        public static Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
+        public Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
             if (alpha < 0 || alpha > 255 || red < 0 || red > 255 || blue < 0 || blue > 255 ||  green < 0 || green > 255)
             {
@@ -38,7 +39,7 @@ namespace ImageEdgeDetection
             return null;
         }
 
-        public static Image XyFilter(string xfilter, string yfilter, Image Original, int value)
+        public Image XyFilter(string xfilter, string yfilter, Image Original, int value)
         {
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
@@ -157,5 +158,96 @@ namespace ImageEdgeDetection
             return null;
 
         }
+
+        public Bitmap MagicMosaic(Bitmap bmp)
+        {
+            if (bmp.Height > bmp.Width)
+            {
+                int razX = Convert.ToInt32(bmp.Width / 3);
+                int razY = Convert.ToInt32(bmp.Height / 3);
+
+                Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
+
+                for (int i = 0; i < bmp.Width - 1; i++)
+                {
+                    for (int x = 0; x < bmp.Height - 1; x++)
+                    {
+                        if (i < razX)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(x, i));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                        }
+                        else if (i < razX * 2)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(x, i));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(x / 3, i / 3));
+                        }
+                        else if (i < razX * 3)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(x, i));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                        }
+                    }
+                }
+                return temp;
+            }
+            else
+            {
+                int razX = Convert.ToInt32(bmp.Width / 3);
+                int razY = Convert.ToInt32(bmp.Height / 3);
+
+                Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
+
+                for (int i = 0; i < bmp.Width - 1; i++)
+                {
+                    for (int x = 0; x < bmp.Height - 1; x++)
+                    {
+                        if (i < razX)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(x, i));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                        }
+                        else if (i < razX * 2)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(x / 3, i / 3));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(x / 3, i / 3));
+                        }
+                        else if (i < razX * 3)
+                        {
+                            if (x < razY)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                            else if (x < razY * 2)
+                                temp.SetPixel(i, x, bmp.GetPixel(x / 3, i / 3));
+                            else if (x < razY * 3)
+                                temp.SetPixel(i, x, bmp.GetPixel(i, x));
+                        }
+                    }
+                }
+                return temp;
+            }
+        }
+
+
+
     }
 }

@@ -40,6 +40,7 @@
             this.backButton = new System.Windows.Forms.Button();
             this.trackBarThreshold = new System.Windows.Forms.TrackBar();
             this.label6 = new System.Windows.Forms.Label();
+            this.buttonMagicMosaic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarThreshold)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.picPreview.Location = new System.Drawing.Point(36, 24);
             this.picPreview.Name = "picPreview";
             this.picPreview.Size = new System.Drawing.Size(402, 363);
-            this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
             // 
@@ -62,7 +63,7 @@
             this.btnOpenOriginal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenOriginal.Location = new System.Drawing.Point(36, 402);
             this.btnOpenOriginal.Name = "btnOpenOriginal";
-            this.btnOpenOriginal.Size = new System.Drawing.Size(85, 32);
+            this.btnOpenOriginal.Size = new System.Drawing.Size(98, 32);
             this.btnOpenOriginal.TabIndex = 15;
             this.btnOpenOriginal.Text = "Load Image";
             this.btnOpenOriginal.UseVisualStyleBackColor = true;
@@ -71,9 +72,9 @@
             // btnSaveNewImage
             // 
             this.btnSaveNewImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveNewImage.Location = new System.Drawing.Point(352, 402);
+            this.btnSaveNewImage.Location = new System.Drawing.Point(340, 402);
             this.btnSaveNewImage.Name = "btnSaveNewImage";
-            this.btnSaveNewImage.Size = new System.Drawing.Size(86, 32);
+            this.btnSaveNewImage.Size = new System.Drawing.Size(98, 32);
             this.btnSaveNewImage.TabIndex = 16;
             this.btnSaveNewImage.Text = "Save Image";
             this.btnSaveNewImage.UseVisualStyleBackColor = true;
@@ -81,7 +82,7 @@
             // 
             // buttonMiamiFilter
             // 
-            this.buttonMiamiFilter.Location = new System.Drawing.Point(237, 455);
+            this.buttonMiamiFilter.Location = new System.Drawing.Point(184, 455);
             this.buttonMiamiFilter.Name = "buttonMiamiFilter";
             this.buttonMiamiFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonMiamiFilter.TabIndex = 51;
@@ -91,7 +92,7 @@
             // 
             // buttonNightFilter
             // 
-            this.buttonNightFilter.Location = new System.Drawing.Point(124, 455);
+            this.buttonNightFilter.Location = new System.Drawing.Point(36, 455);
             this.buttonNightFilter.Name = "buttonNightFilter";
             this.buttonNightFilter.Size = new System.Drawing.Size(98, 30);
             this.buttonNightFilter.TabIndex = 50;
@@ -104,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(275, 502);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 63;
             this.label2.Text = "Y Filter";
             // 
@@ -113,13 +114,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(148, 502);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(47, 16);
             this.label1.TabIndex = 64;
             this.label1.Text = "X Filter";
             // 
             // listBoxXFilter
             // 
             this.listBoxXFilter.FormattingEnabled = true;
+            this.listBoxXFilter.ItemHeight = 16;
             this.listBoxXFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -131,13 +133,14 @@
             "Kirsch3x3Vertical"});
             this.listBoxXFilter.Location = new System.Drawing.Point(111, 527);
             this.listBoxXFilter.Name = "listBoxXFilter";
-            this.listBoxXFilter.Size = new System.Drawing.Size(120, 56);
+            this.listBoxXFilter.Size = new System.Drawing.Size(120, 52);
             this.listBoxXFilter.TabIndex = 62;
             this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // listBoxYFilter
             // 
             this.listBoxYFilter.FormattingEnabled = true;
+            this.listBoxYFilter.ItemHeight = 16;
             this.listBoxYFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -149,7 +152,7 @@
             "Kirsch3x3Vertical"});
             this.listBoxYFilter.Location = new System.Drawing.Point(237, 527);
             this.listBoxYFilter.Name = "listBoxYFilter";
-            this.listBoxYFilter.Size = new System.Drawing.Size(120, 56);
+            this.listBoxYFilter.Size = new System.Drawing.Size(120, 52);
             this.listBoxYFilter.TabIndex = 61;
             this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
@@ -158,7 +161,7 @@
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.75F, System.Drawing.FontStyle.Bold);
             this.backButton.Location = new System.Drawing.Point(178, 403);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(104, 32);
+            this.backButton.Size = new System.Drawing.Size(113, 31);
             this.backButton.TabIndex = 65;
             this.backButton.Text = "RESET";
             this.backButton.UseVisualStyleBackColor = true;
@@ -170,7 +173,7 @@
             this.trackBarThreshold.Location = new System.Drawing.Point(36, 604);
             this.trackBarThreshold.Maximum = 255;
             this.trackBarThreshold.Name = "trackBarThreshold";
-            this.trackBarThreshold.Size = new System.Drawing.Size(410, 45);
+            this.trackBarThreshold.Size = new System.Drawing.Size(410, 56);
             this.trackBarThreshold.TabIndex = 66;
             this.trackBarThreshold.Value = 100;
             this.trackBarThreshold.Scroll += new System.EventHandler(this.trackBarThreshold_Scroll);
@@ -180,14 +183,25 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(33, 588);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(68, 16);
             this.label6.TabIndex = 67;
             this.label6.Text = "Threshold";
+            // 
+            // buttonMagicMosaic
+            // 
+            this.buttonMagicMosaic.Location = new System.Drawing.Point(340, 455);
+            this.buttonMagicMosaic.Name = "buttonMagicMosaic";
+            this.buttonMagicMosaic.Size = new System.Drawing.Size(98, 30);
+            this.buttonMagicMosaic.TabIndex = 68;
+            this.buttonMagicMosaic.Text = "Magic Mosaic";
+            this.buttonMagicMosaic.UseVisualStyleBackColor = true;
+            this.buttonMagicMosaic.Click += new System.EventHandler(this.buttonFilter_Click);
             // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(479, 647);
+            this.ClientSize = new System.Drawing.Size(481, 647);
+            this.Controls.Add(this.buttonMagicMosaic);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.trackBarThreshold);
             this.Controls.Add(this.backButton);
@@ -227,6 +241,7 @@
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.TrackBar trackBarThreshold;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonMagicMosaic;
     }
 }
 

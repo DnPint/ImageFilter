@@ -3,8 +3,10 @@
  * View Documentation at: http://softwarebydefault.com
  * Licensed under Ms-PL 
 */
+using DocumentFormat.OpenXml.Drawing.Charts;
 using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ImageEdgeDetection
@@ -17,6 +19,7 @@ namespace ImageEdgeDetection
         private Image filtered;
         private string xFilter;
         private string yFilter;
+        private ToolBox toolBox = new ToolBox();
 
         public MainForm()
         {
@@ -49,12 +52,9 @@ namespace ImageEdgeDetection
             if (dr == DialogResult.OK)
             {
                 string path = op.FileName;
-                picPreview.Load(path);
-                //Bitmap temp = new Bitmap(picPreview.Image,
-                //   new Size(picPreview.Width, picPreview.Height));
-                //picPreview.Image = temp;
                 Origin = Image.FromFile(path);
                 originalBitmap = (Bitmap)Bitmap.FromFile(path);
+                picPreview.Image = originalBitmap;
             }
         }
        
@@ -68,12 +68,12 @@ namespace ImageEdgeDetection
         }
 
         //The file can be named directly in the SaveDialog box
-        public void SaveImage()
+        /*public void SaveImage()
         {
             SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
             if (saveFileDialog.FileName != "")
                 SaveImageAppropriateFormat(saveFileDialog);
-        }
+        }*/
 
         private SaveFileDialog InitializeSaveFileDialog()
         {
@@ -107,10 +107,13 @@ namespace ImageEdgeDetection
                 switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
-                        filtered = ImageFilters.ApplyFilter(new Bitmap(Origin), 1, 1, 1, 25);
+                        filtered = toolBox.ApplyFilter(new Bitmap(Origin), 1, 1, 1, 25);
                         break;
                     case "buttonMiamiFilter":
-                        filtered = ImageFilters.ApplyFilter(new Bitmap(Origin), 1, 1, 10, 1);
+                        filtered = toolBox.ApplyFilter(new Bitmap(Origin), 1, 1, 10, 1);
+                        break;
+                    case "buttonMagicMosaic":
+                        filtered = toolBox.MagicMosaic(new Bitmap(Origin));
                         break;
                 }
                 picPreview.Image = filtered;
@@ -135,7 +138,16 @@ namespace ImageEdgeDetection
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
-            SaveImage();
+            if (originalBitmap != null)
+            {
+                SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
+                if (saveFileDialog.FileName != "")
+                    SaveImageAppropriateFormat(saveFileDialog);
+            }
+            else
+            {
+                MessageBox.Show("There is no image to save");
+            }
         }
 
         private void listBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -154,8 +166,7 @@ namespace ImageEdgeDetection
         {
             try
             {
-                filtered = ImageFilters.XyFilter(xfilter, yfilter, Origin, Convert.ToInt32(trackBarThreshold.Value));
-                picPreview.Image = filtered;
+               picPreview.Image = toolBox.XyFilter(xfilter, yfilter, filtered, Convert.ToInt32(trackBarThreshold.Value));             
             }
             catch (Exception e)
             {
@@ -171,6 +182,7 @@ namespace ImageEdgeDetection
             if(xFilter != null && yFilter != null)
                 filter(xFilter, yFilter);
         }
+
     }
 }
 
