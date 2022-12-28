@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Presentation;
+using ImageEdgeDetection.BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -12,11 +13,30 @@ using System.Windows.Forms;
 
 namespace ImageEdgeDetection
 { 
-    
     public class ToolBox : IToolBox
     {
         private IMatrix matrix = new Matrix();
-        
+
+        public Bitmap ChooseFilter(IFilter filterName, Bitmap originalBitmap)
+        {
+            Bitmap filtered = null;
+            string nameFilter = filterName.getFilterName();
+
+            switch (nameFilter)
+            {
+                case "NightFilter":
+                    filtered = ApplyFilter(new Bitmap(originalBitmap), 1, 1, 1, 25);
+                    break;
+                case "MiamiFilter":
+                    filtered = ApplyFilter(new Bitmap(originalBitmap), 1, 1, 10, 1);
+                    break;
+                case "MagicMosaic":
+                    filtered = MagicMosaic(new Bitmap(originalBitmap));
+                    break;
+            }
+            return filtered;
+        }
+
         //apply color filter at your own taste
         public Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
@@ -43,19 +63,23 @@ namespace ImageEdgeDetection
             return null;
         }
 
-        public Image XyFilter(string xfilter, string yfilter, Image Original, int value)
+       
+
+        public Bitmap XyFilter(IFilter xfilter, IFilter yfilter, Image Original, int value)
         {
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
+            string xFilterName = xfilter.getFilterName();
+            string yFilterName = yfilter.getFilterName();
 
             // Assign user choices for x and y filters
-            xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
-            yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
-
-            Bitmap originalBitmap = new Bitmap(Original);
+            xFilterMatrix = (double[,])matrix.GetType().GetProperty(xFilterName).GetValue(matrix, null);
+            yFilterMatrix = (double[,])matrix.GetType().GetProperty(yFilterName).GetValue(matrix, null);
 
             try
             {
+                Bitmap originalBitmap = new Bitmap(Original);
+
                 if (originalBitmap.Size.Height > 0)
                 {
                     Bitmap newbitmap = originalBitmap;
@@ -148,7 +172,7 @@ namespace ImageEdgeDetection
             }
             catch
             {
-                throw new Exception("Error");
+                throw new Exception("There is no image to filter"); 
             }
             return null;
         }
@@ -254,7 +278,7 @@ namespace ImageEdgeDetection
             if (dr == DialogResult.OK)
             {
                 string path = op.FileName;
-                return (Bitmap)Bitmap.FromFile(path);              
+                return (Bitmap)Bitmap.FromFile(path);
             }
             return null;
         }
@@ -273,6 +297,5 @@ namespace ImageEdgeDetection
             }
             fs.Close();
         }
-
     }
 }

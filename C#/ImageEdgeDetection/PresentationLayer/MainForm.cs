@@ -4,6 +4,7 @@
  * Licensed under Ms-PL 
 */
 using DocumentFormat.OpenXml.Drawing.Charts;
+using ImageEdgeDetection.BusinessLayer;
 using System;
 using System.Drawing;
 using System.IO;
@@ -18,6 +19,8 @@ namespace ImageEdgeDetection
         private Image filtered;
         private string xFilter;
         private string yFilter;
+        private IFilter xIFilter = new Filter();
+        private IFilter yIFilter = new Filter();
         private IToolBox toolBox = new ToolBox();
 
         public MainForm()
@@ -67,7 +70,6 @@ namespace ImageEdgeDetection
         {
             if (picPreview.Image != null)
             {
-                
                 switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
@@ -97,7 +99,6 @@ namespace ImageEdgeDetection
 
             //make the list for XY edges disable before selecting a filter
             disableXY();
-
         }
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)
@@ -126,13 +127,15 @@ namespace ImageEdgeDetection
 
         public void filter(string xfilter, string yfilter)
         {
+            xIFilter.setFilterName(xfilter);
+            yIFilter.setFilterName(yfilter);
             try
             {
-               picPreview.Image = toolBox.XyFilter(xfilter, yfilter, filtered, Convert.ToInt32(trackBarThreshold.Value));             
+               picPreview.Image = toolBox.XyFilter(xIFilter, yIFilter, filtered, Convert.ToInt32(trackBarThreshold.Value));             
             }
             catch (Exception e)
             {
-                MessageBox.Show("There is no image to filter");
+                MessageBox.Show(e.Message);
             }
 
         }
