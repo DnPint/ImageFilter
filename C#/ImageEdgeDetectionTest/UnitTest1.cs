@@ -9,6 +9,7 @@ using NSubstitute;
 using ImageEdgeDetection.BusinessLayer;
 using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace ImageEdgeDetectionTest
 {
@@ -294,5 +295,28 @@ namespace ImageEdgeDetectionTest
                 Assert.AreEqual(e.Message,"There is no image to filter");
             }
         }
+
+        //test exception in XyFilter
+        //Does not work, might work when we put save and load in other file
+        //using System.Windows.Forms; in toolbox is the problem
+        [TestMethod]
+        public void XyFilterException()
+        {
+            Filter X = new();
+            Filter Y = new();
+            X.setFilterName("Kirsch3x3Vertical");
+            Y.setFilterName("Kirsch3x3Vertical");
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+
+            //bug occurs here
+            var tb = Substitute.For<IToolBox>();
+
+            tb.XyFilter(X, Y, original, 100).Returns(x => throw new Exception());
+            tb.When(x => x.XyFilter(X, Y, original, 100)).Do(x => throw new Exception());
+
+            Assert.ThrowsException<Exception>(() => tb.XyFilter(X, Y, original, 100));
+        }
+
+        
     }
 }

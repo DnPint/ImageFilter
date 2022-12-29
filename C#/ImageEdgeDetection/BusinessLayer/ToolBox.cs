@@ -63,8 +63,6 @@ namespace ImageEdgeDetection
             return null;
         }
 
-       
-
         public Bitmap XyFilter(IFilter xfilter, IFilter yfilter, Image Original, int value)
         {
             double[,] xFilterMatrix;
@@ -170,7 +168,7 @@ namespace ImageEdgeDetection
             }
             catch
             {
-                throw new Exception("There is no image to filter"); 
+                throw new Exception("An error occured"); 
             }
             return null;
         }
