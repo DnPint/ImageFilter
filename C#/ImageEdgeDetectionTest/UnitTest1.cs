@@ -296,9 +296,6 @@ namespace ImageEdgeDetectionTest
             }
         }
 
-        //test exception in XyFilter
-        //Does not work, might work when we put save and load in other file
-        //using System.Windows.Forms; in toolbox is the problem
         [TestMethod]
         public void XyFilterException()
         {
@@ -308,7 +305,6 @@ namespace ImageEdgeDetectionTest
             Y.setFilterName("Kirsch3x3Vertical");
             Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
 
-            //bug occurs here
             var tb = Substitute.For<IToolBox>();
 
             tb.XyFilter(X, Y, original, 100).Returns(x => throw new Exception());
