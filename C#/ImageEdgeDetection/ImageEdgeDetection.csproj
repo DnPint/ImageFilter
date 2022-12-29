@@ -114,6 +114,8 @@
     <Compile Include="BusinessLayer\IMatrix.cs" />
     <Compile Include="BusinessLayer\IToolBox.cs" />
     <Compile Include="BusinessLayer\ToolBox.cs" />
+    <Compile Include="LoadSaveLayer\ILoadSave.cs" />
+    <Compile Include="LoadSaveLayer\LoadSave.cs" />
     <Compile Include="PresentationLayer\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

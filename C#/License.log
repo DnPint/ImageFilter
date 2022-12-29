@@ -1,26 +1,26 @@
     ======  ======
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: Initiate log
     Message: 
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: Initiate InternalManager
     Message: Trying to Validate License
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: Requesting EVT
     Message: EVTP
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: Requesting Validation
     Message: ILMValidate
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: LICENSER
     Message: TRL MODE
-    Time:19.12.2022 13:23:35
+    Time:29.12.2022 14:31:58
     Title: LICENSER
-    Message: DS LEFT11
-    Time:19.12.2022 13:23:35
+    Message: DS LEFT1
+    Time:29.12.2022 14:31:58
     Title: LICENSER
-    Message: DT MARK PASSED11.00:00:00
-    Time:19.12.2022 13:23:35
+    Message: DT MARK PASSED1.00:00:00
+    Time:29.12.2022 14:31:59
     Title: L'accès au chemin d'accès 'C:\ProgramData\Telerik\Hash.lic' est refusé.
     Message:    à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
@@ -32,466 +32,699 @@
     Informational: Le niveau du journal est défini sur Information (par défaut).
     Informational: Le niveau du journal est défini sur Information (par défaut).
     Informational: Connecté à l’environnement de test « < Environnement Windows local > »
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :eedb1794-87b7-4473-8721-6f7945f4ef96
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :0d8aa3c6-3529-45ce-93fe-254382b36b49
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :8268f1d1-78a4-4f4d-b709-388299dd4e33
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :ef50eb8d-5000-4904-a67e-a61f1c2ac88f
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :b6cf9781-929d-4680-a17d-0c19190d8094
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
     given range is not current
     given range is not current
     given range is not current
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :0e0a50eb-abe8-4cee-b203-5e98828bf3f9
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :508ff72b-c4f2-43dc-aaf3-78eb477d2cd7
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :deab2948-0251-4563-8b88-1e3f4e1913da
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :cf542157-40e0-42b1-a2f4-b4e2f2647439
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
     given range is not current
     given range is not current
     given range is not current
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :c30741c6-95ba-451d-8949-e15dfd84a6bd
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :db77ff9a-d495-445f-8298-0d0c19122d42
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+ TableControl: QueueUpdate 29.12.2022 13:11:53:175
+    TableControl: Updating entries 29.12.2022 13:11:53:177
+    TableControl: QueueUpdate 29.12.2022 13:11:53:179
+    TableControl: QueueUpdate 29.12.2022 13:11:53:179
+    TableControl: QueueUpdate 29.12.2022 13:11:53:197
+    TableControl: QueueUpdate 29.12.2022 13:11:53:209
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:288
+    TableControl: Refreshing UI 29.12.2022 13:11:53:288
+    TableControl: QueueUpdate 29.12.2022 13:11:53:289
+    TableControl: About to update entries 29.12.2022 13:11:53:289
+    TableControl: Updating entries 29.12.2022 13:11:53:302
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:302
+    TableControl: QueueUpdate 29.12.2022 13:11:53:302
+    TableControl: QueueUpdate 29.12.2022 13:11:53:302
+    TableControl: Refreshing UI 29.12.2022 13:11:53:303
+    TableControl: QueueUpdate 29.12.2022 13:11:53:304
+    TableControl: About to update entries 29.12.2022 13:11:53:304
+    TableControl: Updating entries 29.12.2022 13:11:53:305
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:305
+    TableControl: Refreshing UI 29.12.2022 13:11:53:305
+    TableControl: QueueUpdate 29.12.2022 13:11:53:826
+    TableControl: About to update entries 29.12.2022 13:11:53:826
+    TableControl: Updating entries 29.12.2022 13:11:53:826
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:826
+    TableControl: Refreshing UI 29.12.2022 13:11:53:826
+    TableControl: QueueUpdate 29.12.2022 13:11:55:259
+    TableControl: About to update entries 29.12.2022 13:11:55:259
+    TableControl: Updating entries 29.12.2022 13:11:55:259
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:55:259
+    TableControl: Refreshing UI 29.12.2022 13:11:55:265
+    Informational: Génération de projets de test
+    TableControl: QueueUpdate 29.12.2022 13:11:56:153
+    TableControl: About to update entries 29.12.2022 13:11:56:153
+    TableControl: Updating entries 29.12.2022 13:11:56:153
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:56:153
+    TableControl: Refreshing UI 29.12.2022 13:11:56:160
+    TableControl: QueueUpdate 29.12.2022 13:11:56:656
+    TableControl: About to update entries 29.12.2022 13:11:56:656
+    TableControl: Updating entries 29.12.2022 13:11:56:657
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:56:658
+    TableControl: Refreshing UI 29.12.2022 13:11:56:658
+    TableControl: QueueUpdate 29.12.2022 13:11:57:5
+    TableControl: About to update entries 29.12.2022 13:11:57:5
+    TableControl: Updating entries 29.12.2022 13:11:57:5
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:57:16
+    TableControl: Refreshing UI 29.12.2022 13:11:57:16
+    TableControl: QueueUpdate 29.12.2022 13:11:57:666
+    TableControl: About to update entries 29.12.2022 13:11:57:666
+    TableControl: Updating entries 29.12.2022 13:11:57:666
+    TableControl: Updating entries (UI thread) 29.12.2022 13:11:57:666
+    TableControl: Refreshing UI 29.12.2022 13:11:57:666
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 16 tests trouvés en 941,7 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:12:01:988
+    TableControl: About to update entries 29.12.2022 13:12:01:988
+    TableControl: Updating entries 29.12.2022 13:12:01:989
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:01:989
+    TableControl: Refreshing UI 29.12.2022 13:12:01:989
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.ApplyFilterNullBitmap
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:12:04:175
+    TableControl: About to update entries 29.12.2022 13:12:04:277
+    TableControl: Updating entries 29.12.2022 13:12:04:277
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:04:277
+    TableControl: Refreshing UI 29.12.2022 13:12:04:277
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 87 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:12:04:839
+    TableControl: About to update entries 29.12.2022 13:12:04:940
+    TableControl: Updating entries 29.12.2022 13:12:04:940
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:04:940
+    TableControl: Refreshing UI 29.12.2022 13:12:04:940
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Informational: Version de Visual Studio introuvable : Un processus 32 bits ne peut pas accéder aux modules d'un processus 64 bits.
+    Warning: Avertissement : Impossible d'identifier la version de Visual Studio. Adaptateur de test pour Google Test nécessite au moins Visual Studio 2012 Update 1.
+    Informational: Adaptateur de test pour Google Test : démarrage de la découverte de tests...
+    Informational: Découverte de tests effectuée. Durée totale : 00:00:00.0586195
+    Warning: Avertissement : 
+================
+Les erreurs et avertissements suivants se sont produits durant la découverte de tests  (activez le mode débogage pour plus d'informations) :
+Avertissement : Impossible d'identifier la version de Visual Studio. Adaptateur de test pour Google Test nécessite au moins Visual Studio 2012 Update 1.
+    Warning: Symboles de débogage introuvables pour 'C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe'. Pour utiliser la découverte à l'aide de '--list_content', vérifiez que les symboles de débogage sont disponibles, ou utilisez '<ForceListContent>' via un fichier .runsettings.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,8 s ==========
+    Informational: Génération de projets de test
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:12:48:720
+    TableControl: About to update entries 29.12.2022 13:12:48:829
+    TableControl: Updating entries 29.12.2022 13:12:48:829
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:48:829
+    TableControl: Refreshing UI 29.12.2022 13:12:48:829
+    TableControl: QueueUpdate 29.12.2022 13:12:50:619
+    TableControl: About to update entries 29.12.2022 13:12:50:744
+    TableControl: Updating entries 29.12.2022 13:12:50:744
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:50:745
+    TableControl: Refreshing UI 29.12.2022 13:12:50:746
+    TableControl: QueueUpdate 29.12.2022 13:12:52:127
+    TableControl: About to update entries 29.12.2022 13:12:52:236
+    TableControl: Updating entries 29.12.2022 13:12:52:236
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:52:236
+    TableControl: Refreshing UI 29.12.2022 13:12:52:236
+    TableControl: QueueUpdate 29.12.2022 13:12:53:630
+    TableControl: About to update entries 29.12.2022 13:12:53:731
+    TableControl: Updating entries 29.12.2022 13:12:53:731
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:53:731
+    TableControl: Refreshing UI 29.12.2022 13:12:53:731
+    TableControl: QueueUpdate 29.12.2022 13:12:55:132
+    TableControl: About to update entries 29.12.2022 13:12:55:233
+    TableControl: Updating entries 29.12.2022 13:12:55:233
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:55:233
+    TableControl: Refreshing UI 29.12.2022 13:12:55:233
+    TableControl: QueueUpdate 29.12.2022 13:12:56:636
+    TableControl: About to update entries 29.12.2022 13:12:56:744
+    TableControl: Updating entries 29.12.2022 13:12:56:744
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:56:744
+    TableControl: Refreshing UI 29.12.2022 13:12:56:744
+    Informational: ========== Série de tests achevée : 16 tests (16 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 8,6 s ==========
+    Informational: Démarrage de la découverte de tests
+    TableControl: QueueUpdate 29.12.2022 13:12:57:805
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: About to update entries 29.12.2022 13:12:57:918
+    TableControl: Updating entries 29.12.2022 13:12:57:918
+    TableControl: Updating entries (UI thread) 29.12.2022 13:12:57:918
+    TableControl: Refreshing UI 29.12.2022 13:12:57:918
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    TableControl: QueueUpdate 29.12.2022 13:27:32:758
+    TableControl: About to update entries 29.12.2022 13:27:32:859
+    TableControl: Updating entries 29.12.2022 13:27:32:859
+    TableControl: Updating entries (UI thread) 29.12.2022 13:27:32:859
+    TableControl: Refreshing UI 29.12.2022 13:27:32:859
     given range is not current
     given range is not current
     given range is not current
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :6e76448a-a1e4-4d87-8bd7-ebe2fb5fc082
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :3992886f-7ac0-4092-a4de-29cb51a9c938
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   à System.Data.SqlClient.SqlConnection.Open()
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-ClientConnectionId :712e2cd3-c68a-474e-bcce-1b58e71e87c5
-Error Number :17892,State :1,Class :14
-   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
-   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
-   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
-   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
-   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
-   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
-   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
-   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
-
-Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
-  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
-
-Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
-Changed database context to 'master'.
-Changed language setting to us_english.
-   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
-   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+    given range is not current
+    given range is not current
+    given range is not current
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 451 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.SaveImageAppropriateFormat
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:31:26:44
+    TableControl: About to update entries 29.12.2022 13:31:26:156
+    TableControl: Updating entries 29.12.2022 13:31:26:156
+    TableControl: Updating entries (UI thread) 29.12.2022 13:31:26:156
+    TableControl: Refreshing UI 29.12.2022 13:31:26:156
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 116 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:31:26:686
+    TableControl: About to update entries 29.12.2022 13:31:26:792
+    TableControl: Updating entries 29.12.2022 13:31:26:792
+    TableControl: Updating entries (UI thread) 29.12.2022 13:31:26:792
+    TableControl: Refreshing UI 29.12.2022 13:31:26:792
+    TableControl: QueueUpdate 29.12.2022 13:37:27:270
+    TableControl: About to update entries 29.12.2022 13:37:27:375
+    TableControl: Updating entries 29.12.2022 13:37:27:375
+    TableControl: Updating entries (UI thread) 29.12.2022 13:37:27:375
+    TableControl: Refreshing UI 29.12.2022 13:37:27:375
+    TableControl: QueueUpdate 29.12.2022 13:39:28:244
+    TableControl: About to update entries 29.12.2022 13:39:28:350
+    TableControl: Updating entries 29.12.2022 13:39:28:350
+    TableControl: Updating entries (UI thread) 29.12.2022 13:39:28:350
+    TableControl: Refreshing UI 29.12.2022 13:39:28:350
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 423,9 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:40:03:445
+    TableControl: About to update entries 29.12.2022 13:40:03:561
+    TableControl: Updating entries 29.12.2022 13:40:03:561
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:03:561
+    TableControl: Refreshing UI 29.12.2022 13:40:03:561
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 342 ms ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: QueueUpdate 29.12.2022 13:40:04:309
+    TableControl: About to update entries 29.12.2022 13:40:04:416
+    TableControl: Updating entries 29.12.2022 13:40:04:416
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:04:416
+    TableControl: Refreshing UI 29.12.2022 13:40:04:416
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:40:25:503
+    TableControl: About to update entries 29.12.2022 13:40:25:604
+    TableControl: Updating entries 29.12.2022 13:40:25:604
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:25:604
+    TableControl: Refreshing UI 29.12.2022 13:40:25:604
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 347 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:40:26:290
+    TableControl: About to update entries 29.12.2022 13:40:26:391
+    TableControl: Updating entries 29.12.2022 13:40:26:391
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:26:391
+    TableControl: Refreshing UI 29.12.2022 13:40:26:391
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:40:34:59
+    TableControl: About to update entries 29.12.2022 13:40:34:168
+    TableControl: Updating entries 29.12.2022 13:40:34:168
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:34:168
+    TableControl: Refreshing UI 29.12.2022 13:40:34:168
+    TableControl: QueueUpdate 29.12.2022 13:40:37:297
+    TableControl: About to update entries 29.12.2022 13:40:37:402
+    TableControl: Updating entries 29.12.2022 13:40:37:402
+    TableControl: Updating entries (UI thread) 29.12.2022 13:40:38:749
+    TableControl: Refreshing UI 29.12.2022 13:40:38:749
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 30,3 s ==========
+    TableControl: QueueUpdate 29.12.2022 13:41:04:824
+    TableControl: About to update entries 29.12.2022 13:41:04:929
+    TableControl: Updating entries 29.12.2022 13:41:04:929
+    TableControl: Updating entries (UI thread) 29.12.2022 13:41:04:929
+    TableControl: Refreshing UI 29.12.2022 13:41:04:929
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,3 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:41:39:565
+    TableControl: About to update entries 29.12.2022 13:41:39:666
+    TableControl: Updating entries 29.12.2022 13:41:39:666
+    TableControl: Updating entries (UI thread) 29.12.2022 13:41:39:666
+    TableControl: Refreshing UI 29.12.2022 13:41:39:666
+    TableControl: QueueUpdate 29.12.2022 13:41:41:421
+    TableControl: About to update entries 29.12.2022 13:41:41:527
+    TableControl: Updating entries 29.12.2022 13:41:41:527
+    TableControl: Updating entries (UI thread) 29.12.2022 13:41:41:607
+    TableControl: Refreshing UI 29.12.2022 13:41:41:608
+    Error: La série de tests active a été abandonnée. Raison : Plantage du processus hôte de test
+    Informational: ========== Série de tests abandonnée : 0 tests (0 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en < 1 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:41:50:519
+    TableControl: About to update entries 29.12.2022 13:41:50:620
+    TableControl: Updating entries 29.12.2022 13:41:50:620
+    TableControl: Updating entries (UI thread) 29.12.2022 13:41:50:620
+    TableControl: Refreshing UI 29.12.2022 13:41:50:620
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,4 s ==========
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 447,1 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:46:01:23
+    TableControl: About to update entries 29.12.2022 13:46:01:136
+    TableControl: Updating entries 29.12.2022 13:46:01:136
+    TableControl: Updating entries (UI thread) 29.12.2022 13:46:01:136
+    TableControl: Refreshing UI 29.12.2022 13:46:01:136
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 13,3 s ==========
+    TableControl: QueueUpdate 29.12.2022 13:46:14:743
+    TableControl: About to update entries 29.12.2022 13:46:14:848
+    TableControl: Updating entries 29.12.2022 13:46:14:848
+    TableControl: Updating entries (UI thread) 29.12.2022 13:46:14:849
+    TableControl: Refreshing UI 29.12.2022 13:46:14:849
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:46:32:739
+    TableControl: About to update entries 29.12.2022 13:46:32:840
+    TableControl: Updating entries 29.12.2022 13:46:32:840
+    TableControl: Updating entries (UI thread) 29.12.2022 13:46:32:840
+    TableControl: Refreshing UI 29.12.2022 13:46:32:840
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 186 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:46:33:370
+    Informational: Démarrage de la découverte de tests
+    TableControl: About to update entries 29.12.2022 13:46:33:478
+    TableControl: Updating entries 29.12.2022 13:46:33:478
+    TableControl: Updating entries (UI thread) 29.12.2022 13:46:33:478
+    TableControl: Refreshing UI 29.12.2022 13:46:33:478
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 428,9 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:48:01:300
+    TableControl: About to update entries 29.12.2022 13:48:01:401
+    TableControl: Updating entries 29.12.2022 13:48:01:401
+    TableControl: Updating entries (UI thread) 29.12.2022 13:48:01:401
+    TableControl: Refreshing UI 29.12.2022 13:48:01:401
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 197 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:48:01:947
+    TableControl: About to update entries 29.12.2022 13:48:02:58
+    TableControl: Updating entries 29.12.2022 13:48:02:58
+    TableControl: Updating entries (UI thread) 29.12.2022 13:48:02:58
+    TableControl: Refreshing UI 29.12.2022 13:48:02:58
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:48:11:48
+    TableControl: About to update entries 29.12.2022 13:48:11:150
+    TableControl: Updating entries 29.12.2022 13:48:11:150
+    TableControl: Updating entries (UI thread) 29.12.2022 13:48:12:733
+    TableControl: Refreshing UI 29.12.2022 13:48:12:733
+    Error: La série de tests active a été abandonnée. Raison : Plantage du processus hôte de test
+    Informational: ========== Série de tests abandonnée : 0 tests (0 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en < 1 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:50:25:910
+    TableControl: About to update entries 29.12.2022 13:50:26:18
+    TableControl: Updating entries 29.12.2022 13:50:26:18
+    TableControl: Updating entries (UI thread) 29.12.2022 13:50:26:18
+    TableControl: Refreshing UI 29.12.2022 13:50:26:18
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 436,7 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:50:34:809
+    TableControl: About to update entries 29.12.2022 13:50:34:920
+    TableControl: Updating entries 29.12.2022 13:50:34:920
+    TableControl: Updating entries (UI thread) 29.12.2022 13:50:34:920
+    TableControl: Refreshing UI 29.12.2022 13:50:34:920
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 161 ms ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: QueueUpdate 29.12.2022 13:50:35:433
+    TableControl: About to update entries 29.12.2022 13:50:35:541
+    TableControl: Updating entries 29.12.2022 13:50:35:541
+    TableControl: Updating entries (UI thread) 29.12.2022 13:50:35:541
+    TableControl: Refreshing UI 29.12.2022 13:50:35:541
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 434,5 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:53:34:267
+    TableControl: About to update entries 29.12.2022 13:53:34:371
+    TableControl: Updating entries 29.12.2022 13:53:34:371
+    TableControl: Updating entries (UI thread) 29.12.2022 13:53:34:371
+    TableControl: Refreshing UI 29.12.2022 13:53:34:371
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 80 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:53:34:786
+    TableControl: About to update entries 29.12.2022 13:53:34:886
+    TableControl: Updating entries 29.12.2022 13:53:34:886
+    TableControl: Updating entries (UI thread) 29.12.2022 13:53:34:886
+    TableControl: Refreshing UI 29.12.2022 13:53:34:886
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 432,1 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 13:54:02:95
+    TableControl: About to update entries 29.12.2022 13:54:02:198
+    TableControl: Updating entries 29.12.2022 13:54:02:198
+    TableControl: Updating entries (UI thread) 29.12.2022 13:54:02:198
+    TableControl: Refreshing UI 29.12.2022 13:54:02:198
+    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 80 ms ==========
+    TableControl: QueueUpdate 29.12.2022 13:54:02:634
+    TableControl: About to update entries 29.12.2022 13:54:02:735
+    TableControl: Updating entries 29.12.2022 13:54:02:735
+    TableControl: Updating entries (UI thread) 29.12.2022 13:54:02:735
+    TableControl: Refreshing UI 29.12.2022 13:54:02:735
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    given range is not current
+    given range is not current
+    given range is not current
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 444,2 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:01:29:610
+    TableControl: About to update entries 29.12.2022 14:01:29:716
+    TableControl: Updating entries 29.12.2022 14:01:29:716
+    TableControl: Updating entries (UI thread) 29.12.2022 14:01:29:716
+    TableControl: Refreshing UI 29.12.2022 14:01:29:716
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 104 ms ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: QueueUpdate 29.12.2022 14:01:30:154
+    TableControl: About to update entries 29.12.2022 14:01:30:260
+    TableControl: Updating entries 29.12.2022 14:01:30:260
+    TableControl: Updating entries (UI thread) 29.12.2022 14:01:30:260
+    TableControl: Refreshing UI 29.12.2022 14:01:30:260
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:01:46:971
+    TableControl: About to update entries 29.12.2022 14:01:47:78
+    TableControl: Updating entries 29.12.2022 14:01:47:78
+    TableControl: Updating entries (UI thread) 29.12.2022 14:01:48:584
+    TableControl: Refreshing UI 29.12.2022 14:01:48:584
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 38 s ==========
+    TableControl: QueueUpdate 29.12.2022 14:02:25:330
+    TableControl: About to update entries 29.12.2022 14:02:25:446
+    TableControl: Updating entries 29.12.2022 14:02:25:446
+    TableControl: Updating entries (UI thread) 29.12.2022 14:02:25:446
+    TableControl: Refreshing UI 29.12.2022 14:02:25:446
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 439,7 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:03:02:683
+    TableControl: About to update entries 29.12.2022 14:03:02:790
+    TableControl: Updating entries 29.12.2022 14:03:02:790
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:04:228
+    TableControl: Refreshing UI 29.12.2022 14:03:04:228
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 11,5 s ==========
+    TableControl: QueueUpdate 29.12.2022 14:03:14:566
+    TableControl: About to update entries 29.12.2022 14:03:14:672
+    TableControl: Updating entries 29.12.2022 14:03:14:672
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:14:672
+    TableControl: Refreshing UI 29.12.2022 14:03:14:672
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,4 s ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,1 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:03:24:344
+    TableControl: About to update entries 29.12.2022 14:03:24:449
+    TableControl: Updating entries 29.12.2022 14:03:24:449
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:24:449
+    TableControl: Refreshing UI 29.12.2022 14:03:24:449
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 93 ms ==========
+    TableControl: QueueUpdate 29.12.2022 14:03:24:874
+    TableControl: About to update entries 29.12.2022 14:03:24:981
+    TableControl: Updating entries 29.12.2022 14:03:24:981
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:24:981
+    TableControl: Refreshing UI 29.12.2022 14:03:24:981
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 433,2 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:03:43:346
+    TableControl: About to update entries 29.12.2022 14:03:43:452
+    TableControl: Updating entries 29.12.2022 14:03:43:454
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:43:454
+    TableControl: Refreshing UI 29.12.2022 14:03:43:454
+    Informational: ========== Série de tests achevée : 1 tests (0 réussi(s), 1 non réussi(s), 0 ignoré(s)) exécutés en 302 ms ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: QueueUpdate 29.12.2022 14:03:44:107
+    TableControl: About to update entries 29.12.2022 14:03:44:213
+    TableControl: Updating entries 29.12.2022 14:03:44:213
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:44:214
+    TableControl: Refreshing UI 29.12.2022 14:03:44:214
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:03:56:866
+    TableControl: About to update entries 29.12.2022 14:03:56:974
+    TableControl: Updating entries 29.12.2022 14:03:56:974
+    TableControl: Updating entries (UI thread) 29.12.2022 14:03:58:113
+    TableControl: Refreshing UI 29.12.2022 14:03:58:113
+    Error: La série de tests active a été abandonnée. Raison : Plantage du processus hôte de test
+    Informational: ========== Série de tests abandonnée : 0 tests (0 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en < 1 ms ==========
+    TableControl: QueueUpdate 29.12.2022 14:04:44:36
+    TableControl: About to update entries 29.12.2022 14:04:44:144
+    TableControl: Updating entries 29.12.2022 14:04:44:144
+    TableControl: Updating entries (UI thread) 29.12.2022 14:04:44:144
+    TableControl: Refreshing UI 29.12.2022 14:04:44:144
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 440,5 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:04:48:232
+    TableControl: About to update entries 29.12.2022 14:04:48:340
+    TableControl: Updating entries 29.12.2022 14:04:48:340
+    TableControl: Updating entries (UI thread) 29.12.2022 14:04:49:703
+    TableControl: Refreshing UI 29.12.2022 14:04:49:703
+    Error: La série de tests active a été abandonnée. Raison : Plantage du processus hôte de test
+    Informational: ========== Série de tests abandonnée : 0 tests (0 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en < 1 ms ==========
+    TableControl: QueueUpdate 29.12.2022 14:05:03:797
+    TableControl: About to update entries 29.12.2022 14:05:03:905
+    TableControl: Updating entries 29.12.2022 14:05:03:905
+    TableControl: Updating entries (UI thread) 29.12.2022 14:05:03:905
+    TableControl: Refreshing UI 29.12.2022 14:05:03:905
+    Informational: Génération de projets de test
+    Informational: Démarrage de la découverte de tests pour la série de tests demandée
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Fin de la découverte de tests : 17 tests trouvés en 435,1 ms ==========
+    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.XyFilterException
+    Informational: Démarrage de la série de tests
+    TableControl: QueueUpdate 29.12.2022 14:05:11:626
+    TableControl: About to update entries 29.12.2022 14:05:11:737
+    TableControl: Updating entries 29.12.2022 14:05:11:737
+    TableControl: Updating entries (UI thread) 29.12.2022 14:05:13:135
+    TableControl: Refreshing UI 29.12.2022 14:05:13:135
+    Error: La série de tests active a été abandonnée. Raison : Plantage du processus hôte de test
+    Informational: ========== Série de tests abandonnée : 0 tests (0 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en < 1 ms ==========
+    TableControl: QueueUpdate 29.12.2022 14:06:03:632
+    TableControl: About to update entries 29.12.2022 14:06:03:737
+    TableControl: Updating entries 29.12.2022 14:06:03:737
+    TableControl: Updating entries (UI thread) 29.12.2022 14:06:03:737
+    TableControl: Refreshing UI 29.12.2022 14:06:03:737
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    Informational: Génération de projets de test
+    Informational: Abandon de la série de tests en raison d'échecs de build. Pour plus d'informations, consultez la sortie de build.
+    Informational: Vous pouvez changer ce comportement par défaut en accédant à Outils -> Options -> Projet et solution -> Générer et exécuter -> À l'exécution, lors d'erreurs de génération ou de déploiement
+    Warning: Abandon de la série de tests en raison d'échecs de build. Pour plus d'informations, consultez la sortie de build.
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    Informational: Génération de projets de test
+    Informational: Abandon de la série de tests en raison d'échecs de build. Pour plus d'informations, consultez la sortie de build.
+    Informational: Vous pouvez changer ce comportement par défaut en accédant à Outils -> Options -> Projet et solution -> Générer et exécuter -> À l'exécution, lors d'erreurs de génération ou de déploiement
+    Warning: Abandon de la série de tests en raison d'échecs de build. Pour plus d'informations, consultez la sortie de build.
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,1 s ==========
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    given range is not current
+    given range is not current
+    given range is not current
+    Informational: Démarrage de la découverte de tests
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
+    TableControl: QueueUpdate 29.12.2022 14:26:35:159
+    TableControl: About to update entries 29.12.2022 14:26:35:266
+    TableControl: Updating entries 29.12.2022 14:26:35:266
+    TableControl: Updating entries (UI thread) 29.12.2022 14:26:35:283
+    TableControl: Refreshing UI 29.12.2022 14:26:35:283
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    given range is not current
+    TableControl: QueueUpdate 29.12.2022 14:31:41:593
+    TableControl: QueueUpdate 29.12.2022 14:31:41:593
+    TableControl: QueueUpdate 29.12.2022 14:31:41:593
+    TableControl: About to update entries 29.12.2022 14:31:41:593
+    TableControl: QueueUpdate 29.12.2022 14:31:41:594
+    TableControl: QueueUpdate 29.12.2022 14:31:41:594
+    TableControl: Updating entries 29.12.2022 14:31:41:594
+nal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
    à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
    à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
    à System.Data.SqlClient.SqlConnection.Open()
