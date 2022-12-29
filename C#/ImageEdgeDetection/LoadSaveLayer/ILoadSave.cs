@@ -7,6 +7,6 @@ namespace ImageEdgeDetection.LoadSaveLayer
     public interface ILoadSave
     {
         Bitmap LoadImage(object sender, EventArgs e);
-        void SaveImageAppropriateFormat(Image filtered, SaveFileDialog saveFileDialog);
+        void SaveImageAppropriateFormat(Image filtered);
     }
 }

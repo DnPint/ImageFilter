@@ -28,19 +28,33 @@ namespace ImageEdgeDetection.LoadSaveLayer
             return null;
         }
 
-        public void SaveImageAppropriateFormat(Image filtered, SaveFileDialog saveFileDialog)
+        public void SaveImageAppropriateFormat(Image filtered)
         {
-            System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
-            switch (saveFileDialog.FilterIndex)
+            SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
+            if (saveFileDialog.FileName != "")
             {
-                case 1:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
-                    break;
-                case 2:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    break;
-            }
-            fs.Close();
+                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
+
+                switch (saveFileDialog.FilterIndex)
+                {
+                    case 1:
+                        filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
+                        break;
+                    case 2:
+                        filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        break;
+                }
+                fs.Close();
+            }           
+        }
+
+        private SaveFileDialog InitializeSaveFileDialog()
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
+            saveFileDialog.Title = "Save an Image File";
+            saveFileDialog.ShowDialog();
+            return saveFileDialog;
         }
     }
 }

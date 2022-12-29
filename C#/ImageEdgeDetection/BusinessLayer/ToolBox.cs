@@ -4,7 +4,6 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
-using System.Windows.Forms;
 
 namespace ImageEdgeDetection
 {
@@ -262,9 +261,9 @@ namespace ImageEdgeDetection
             return loadSave.LoadImage(sender, e);
         }
 
-        public void SaveImageAppropriateFormat(Image filtered, SaveFileDialog saveFileDialog)
+        public void SaveImageAppropriateFormat(Image filtered)
         {
-            loadSave.SaveImageAppropriateFormat(filtered, saveFileDialog);
+            loadSave.SaveImageAppropriateFormat(filtered);
         }
     }
 }

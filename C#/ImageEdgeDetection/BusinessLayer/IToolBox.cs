@@ -11,7 +11,7 @@ namespace ImageEdgeDetection
         Bitmap MagicMosaic(Bitmap bmp);
         Bitmap XyFilter(IFilter xfilter, IFilter yfilter, Image Original, int value);
         Bitmap LoadImage(object sender, EventArgs e);
-        void SaveImageAppropriateFormat(Image filtered, SaveFileDialog saveFileDialog);
+        void SaveImageAppropriateFormat(Image filtered);
         Bitmap ChooseFilter(IFilter filterName, Bitmap originalBitmap);
     }
 }

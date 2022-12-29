@@ -52,20 +52,6 @@ namespace ImageEdgeDetection
             picPreview.Image = originalBitmap;
         }
 
-        private SaveFileDialog InitializeSaveFileDialog()
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            saveFileDialog.Title = "Save an Image File";
-            saveFileDialog.ShowDialog();
-            return saveFileDialog;
-        }
-
-        private void SaveImageAppropriateFormat(SaveFileDialog saveFileDialog)
-        {
-            toolBox.SaveImageAppropriateFormat(filtered, saveFileDialog);
-        }
-
         public void buttonFilter_Click(object sender, EventArgs e)
         {
             if (picPreview.Image != null)
@@ -103,15 +89,13 @@ namespace ImageEdgeDetection
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
-            if (originalBitmap != null)
+            if (originalBitmap != null && filtered != null)
             {
-                SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
-                if (saveFileDialog.FileName != "")
-                    SaveImageAppropriateFormat(saveFileDialog);
+                toolBox.SaveImageAppropriateFormat(filtered);
             }
             else
             {
-                MessageBox.Show("There is no image to save");
+                MessageBox.Show("There is no filtered image to save");
             }
         }
 
