@@ -109,6 +109,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\Filter.cs" />
+    <Compile Include="BusinessLayer\IFilter.cs" />
     <Compile Include="BusinessLayer\IMatrix.cs" />
     <Compile Include="BusinessLayer\IToolBox.cs" />
     <Compile Include="BusinessLayer\ToolBox.cs" />

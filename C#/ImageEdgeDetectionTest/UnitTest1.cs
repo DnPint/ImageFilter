@@ -5,45 +5,19 @@ using System.Runtime.InteropServices;
 using System;
 using System.Resources;
 using ImageEdgeDetection;
+using NSubstitute;
+using ImageEdgeDetection.BusinessLayer;
+using System.IO;
+using System.Reflection;
 
 namespace ImageEdgeDetectionTest
 {
     [TestClass]
+    [System.Runtime.Versioning.SupportedOSPlatform("windows")]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestNightFilter()
+        private void compareImage(Bitmap bmpFiltered, Bitmap bmpOriginal)
         {
-
-            Image original = Image.FromFile("./Images/chad.png");
-            
-            Image filtered = Image.FromFile("./Images/nightchad.png");
-
-            //filter the original with the night filter
-            original = ToolBox.ApplyFilter(new Bitmap(original), 1, 1, 1, 25);
-
-            compareImage(original, filtered);
-                  
-        }
-
-        [TestMethod]
-        public void TestMiamiFilter()
-        {
-            Image original = Image.FromFile("./Images/chad.png");
-
-            Image filtered = Image.FromFile("./Images/miamichad.png");
-
-            //filter the original with the night filter
-            original = ToolBox.ApplyFilter(new Bitmap(original), 1, 1, 10, 1);           
-
-            compareImage(original, filtered);
-        }
-
-        private void compareImage(Image original, Image filtered)
-        {
-            Bitmap bmpFiltered = new Bitmap(filtered);
-            Bitmap bmpOriginal = new Bitmap(original);
-
             //Compare bitmaps to see if they are the same
             for (int i = 0; i < bmpOriginal.Width; i++)
             {
@@ -57,15 +31,56 @@ namespace ImageEdgeDetectionTest
                 }
             }
         }
-        
 
+        [TestMethod]
+        public void TestNightFilter()
+        {
+            var filter = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/nightchad.png");
+
+            //Ensure the user take the NightFilter to test the method
+            filter.getFilterName().Returns("NightFilter");
+
+            //filter the original with the night filter
+            original = tb.ChooseFilter(filter, original);
+
+            compareImage(original, filtered);   
+        }
+
+        [TestMethod]
+        public void TestMiamiFilter()
+        {
+            var filter = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/miamichad.png");
+
+            //Ensure the user take the NightFilter to test the method
+            filter.getFilterName().Returns("MiamiFilter");
+
+            //filter the original with the night filter
+            original = tb.ApplyFilter(new Bitmap(original), 1, 1, 10, 1);           
+
+            compareImage(original, filtered);
+        }
+
+        
+        
         [TestMethod]
         public void XKirsch3x3Vertical_YKirsch3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/xKirsh3x3Vert_yKirsh3x3Vert_Chad.png");
-            
-            original = ToolBox.XyFilter("Kirsch3x3Vertical", "Kirsch3x3Vertical", original, 100);
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/xKirsh3x3Vert_yKirsh3x3Vert_Chad.png");
+
+            filterX.getFilterName().Returns("Kirsch3x3Vertical");
+            filterY.getFilterName().Returns("Kirsch3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
             
             compareImage(original, filtered);
 
@@ -74,10 +89,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Vertical_YKirsch3x3Horizontal()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Vertical_YKirsch3x3Horizontal_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Vertical_YKirsch3x3Horizontal_Chad.png");
 
-            original = ToolBox.XyFilter("Kirsch3x3Vertical", "Kirsch3x3Horizontal", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Vertical");
+            filterY.getFilterName().Returns("Kirsch3x3Horizontal");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -85,10 +106,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Vertical_YPrewitt3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Vertical_YPrewitt3x3Vertical_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Vertical_YPrewitt3x3Vertical_Chad.png");
 
-            original = ToolBox.XyFilter("Kirsch3x3Vertical", "Prewitt3x3Vertical", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Vertical");
+            filterY.getFilterName().Returns("Prewitt3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -96,10 +123,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Horizontal_YKirsch3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Vertical_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Vertical_Chad.png");
 
-            original = ToolBox.XyFilter("Kirsch3x3Horizontal", "Kirsch3x3Vertical", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Horizontal");
+            filterY.getFilterName().Returns("Kirsch3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -107,10 +140,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Horizontal_Ykirsch3x3Horizontal()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
 
-            original = ToolBox.XyFilter("Kirsch3x3Horizontal", "Kirsch3x3Horizontal", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Horizontal");
+            filterY.getFilterName().Returns("Kirsch3x3Horizontal");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -118,10 +157,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XKirsch3x3Horizontal_YPrewitt3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YPrewitt3x3Vertical_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YPrewitt3x3Vertical_Chad.png");
 
-            original = ToolBox.XyFilter("Kirsch3x3Horizontal", "Prewitt3x3Vertical", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Horizontal");
+            filterY.getFilterName().Returns("Prewitt3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -129,10 +174,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XPrewitt3x3Vertical_YKirsch3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Vertical_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Vertical_Chad.png");
 
-            original = ToolBox.XyFilter("Prewitt3x3Vertical", "Kirsch3x3Vertical", original, 100);
+            filterX.getFilterName().Returns("Prewitt3x3Vertical");
+            filterY.getFilterName().Returns("Kirsch3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -140,10 +191,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XPrewitt3x3Vertical_YKirsch3x3Horizontal()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Horizontal_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XPrewitt3x3Vertical_YKirsch3x3Horizontal_Chad.png");
 
-            original = ToolBox.XyFilter("Prewitt3x3Vertical", "Kirsch3x3Horizontal", original, 100);
+            filterX.getFilterName().Returns("Prewitt3x3Vertical");
+            filterY.getFilterName().Returns("Kirsch3x3Horizontal");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -151,10 +208,16 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XPrewitt3x3Vertical_YPrewitt3x3Vertical()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XPrewitt3x3Vertical_YPrewitt3x3Vertical_Chad.png");
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XPrewitt3x3Vertical_YPrewitt3x3Vertical_Chad.png");
 
-            original = ToolBox.XyFilter("Prewitt3x3Vertical", "Prewitt3x3Vertical", original, 100);
+            filterX.getFilterName().Returns("Prewitt3x3Vertical");
+            filterY.getFilterName().Returns("Prewitt3x3Vertical");
+
+            original = tb.XyFilter(filterX, filterY, original, 100);
 
             compareImage(original, filtered);
         }
@@ -162,20 +225,39 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void ApplyFilterNullBitmap()
         {
+            IToolBox tb = new ToolBox();
+
             //filter the original with the night filter
-            Image original = ToolBox.ApplyFilter(null, 1, 1, 1, 25);
+            Image original = tb.ApplyFilter(null, 1, 1, 1, 25);
 
             Assert.IsNull(original);
+        }
+
+        [TestMethod]
+        public void XyfilterMatrixNotFound()
+        {
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IFilter filter = new Filter();
+            IToolBox tb = new ToolBox();
+            Image original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Image filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
+
+            filterX.When(x => x.setFilterName("NotFound")).Do(x => filter.setFilterName("NotFound"));
+            filter.setFilterName("NotFound");
+
+            Assert.AreEqual("NotFound", filter.getFilterName());
         }
 
 
         [TestMethod]
         public void ApplyFilterBelowZeroRGB()
         {
-            Image original = Image.FromFile("./Images/chad.png");
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
 
             //filter the original with the night filter
-            original = ToolBox.ApplyFilter(new Bitmap(original), -2, 1, 1, 25);
+            original = tb.ApplyFilter(original, -2, 1, 1, 25);
 
             Assert.IsNull(original);
         }
@@ -183,23 +265,34 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void ApplyFilterAboveMaxRGB()
         {
-            Image original = Image.FromFile("./Images/chad.png");
+            IToolBox tb = new ToolBox();
+            Image original = (Bitmap)Image.FromFile("./Images/chad.png");
 
             //filter the original with the night filter
-            original = ToolBox.ApplyFilter(new Bitmap(original), 1, 1, 259, 25);
+            original = tb.ApplyFilter(new Bitmap(original), 1, 1, 259, 25);
 
             Assert.IsNull(original);
         }
 
-        public void XyfilterMatrixNotFound()
+        [TestMethod]
+        public void NoLoadedImage()
         {
-            Image original = Image.FromFile("./Images/chad.png");
-            Image filtered = Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
+            //Bitmap bitmapResult = new Bitmap(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "chad.png"));
+            var filterX = Substitute.For<IFilter>();
+            var filterY = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
 
-            original = ToolBox.XyFilter("Kirsh3x3Horizontal", "Kirsh3x3Horizontal", original, 100);
+            filterX.getFilterName().Returns("Kirsch3x3Vertical");
+            filterY.getFilterName().Returns("Kirsch3x3Vertical");
 
-            Assert.IsNull(original);
+            try
+            {
+                tb.XyFilter(filterX, filterY, null, 100);
+            }
+            catch(Exception e)
+            {
+                Assert.AreEqual(e.Message,"There is no image to filter");
+            }
         }
-
     }
 }
