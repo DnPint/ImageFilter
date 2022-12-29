@@ -94,90 +94,1190 @@ Error Number :17892,State :1,Class :14
    à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
    à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
    à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
-s, puis réessayez.
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1 s ==========
-    Informational: Démarrage de la découverte de tests pour la série de tests demandée
-    Informational: Démarrage de la découverte de tests
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 14 tests trouvés en 1,2 s ==========
-    Informational: Démarrage de la série de tests
-    TableControl: QueueUpdate 26.11.2022 13:22:00:694
-    TableControl: About to update entries 26.11.2022 13:22:00:800
-    TableControl: Updating entries 26.11.2022 13:22:00:800
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:00:800
-    TableControl: Refreshing UI 26.11.2022 13:22:00:800
-    TableControl: QueueUpdate 26.11.2022 13:22:02:639
-    TableControl: About to update entries 26.11.2022 13:22:02:745
-    TableControl: Updating entries 26.11.2022 13:22:02:745
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:02:745
-    TableControl: Refreshing UI 26.11.2022 13:22:02:745
-    TableControl: QueueUpdate 26.11.2022 13:22:04:148
-    TableControl: About to update entries 26.11.2022 13:22:04:261
-    TableControl: Updating entries 26.11.2022 13:22:04:261
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:04:261
-    TableControl: Refreshing UI 26.11.2022 13:22:04:261
-    TableControl: QueueUpdate 26.11.2022 13:22:05:651
-    TableControl: About to update entries 26.11.2022 13:22:05:766
-    TableControl: Updating entries 26.11.2022 13:22:05:766
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:05:766
-    TableControl: Refreshing UI 26.11.2022 13:22:05:766
-    TableControl: QueueUpdate 26.11.2022 13:22:07:147
-    TableControl: About to update entries 26.11.2022 13:22:07:248
-    TableControl: Updating entries 26.11.2022 13:22:07:248
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:07:248
-    TableControl: Refreshing UI 26.11.2022 13:22:07:248
-    TableControl: QueueUpdate 26.11.2022 13:22:08:662
-    TableControl: About to update entries 26.11.2022 13:22:08:763
-    TableControl: Updating entries 26.11.2022 13:22:08:763
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:08:763
-    TableControl: Refreshing UI 26.11.2022 13:22:08:763
-    Informational: ========== Série de tests achevée : 14 tests (14 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 8,7 s ==========
-    Informational: Démarrage de la découverte de tests
-    TableControl: QueueUpdate 26.11.2022 13:22:09:880
-    TableControl: About to update entries 26.11.2022 13:22:09:981
-    TableControl: Updating entries 26.11.2022 13:22:09:981
-    TableControl: Updating entries (UI thread) 26.11.2022 13:22:09:981
-    TableControl: Refreshing UI 26.11.2022 13:22:09:981
-    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
-    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,1 s ==========
-    TableControl: QueueUpdate 26.11.2022 13:23:39:978
-    TableControl: About to update entries 26.11.2022 13:23:39:978
-    TableControl: QueueUpdate 26.11.2022 13:23:39:979
-    TableControl: QueueUpdate 26.11.2022 13:23:39:979
-    TableControl: Updating entries 26.11.2022 13:23:39:979
-    TableControl: QueueUpdate 26.11.2022 13:23:39:979
-    TableControl: QueueUpdate 26.11.2022 13:23:39:979
-sproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 2 s ==========
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
-    Exception : Format du presse-papiers incorrect. (Exception de HRESULT : 0x8004006A (DV_E_CLIPFORMAT))
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :8268f1d1-78a4-4f4d-b709-388299dd4e33
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :ef50eb8d-5000-4904-a67e-a61f1c2ac88f
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :b6cf9781-929d-4680-a17d-0c19190d8094
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
     given range is not current
     given range is not current
     given range is not current
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :0e0a50eb-abe8-4cee-b203-5e98828bf3f9
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :508ff72b-c4f2-43dc-aaf3-78eb477d2cd7
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :deab2948-0251-4563-8b88-1e3f4e1913da
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :cf542157-40e0-42b1-a2f4-b4e2f2647439
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
     given range is not current
     given range is not current
     given range is not current
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :c30741c6-95ba-451d-8949-e15dfd84a6bd
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :db77ff9a-d495-445f-8298-0d0c19122d42
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
     given range is not current
     given range is not current
     given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
-    Informational: Démarrage de la découverte de tests
-    TableControl: QueueUpdate 14.11.2022 14:50:18:899
-    TableControl: About to update entries 14.11.2022 14:50:18:999
-    TableControl: Updating entries 14.11.2022 14:50:18:999
-    TableControl: Updating entries (UI thread) 14.11.2022 14:50:18:999
-    TableControl: Refreshing UI 14.11.2022 14:50:18:999
-    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\ProjCheux\ImageFilter\C#\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
-    Informational: ========== Fin de la découverte de tests : 1 tests trouvés en 2,7 s ==========
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :6e76448a-a1e4-4d87-8bd7-ebe2fb5fc082
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :3992886f-7ac0-4092-a4de-29cb51a9c938
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :712e2cd3-c68a-474e-bcce-1b58e71e87c5
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :28312ba4-a821-4f2c-8fb0-b8101ed3cd81
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :95849f5b-1c11-41e4-84cb-db69bfbc4da1
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :6a59c0d2-15e0-4a12-bf17-eb4c56876cb0
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :74b9307e-6f6b-41ec-8298-efafe2604b3f
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :c285c4d2-4f3a-469e-aeef-ff9aa1d24303
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :61f3f755-329f-482d-8eec-8e44ed6d9b48
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :34fcbd81-7233-4113-b431-a1c26a06fac7
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :985b088c-0aac-41f3-b7da-0568de9f4b1c
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :bed7b629-ef02-489f-955f-d59c43f870b6
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :3557fc72-a2de-4ae4-92b6-8b1c71464448
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :bf0f06a7-1961-44ee-bb84-3ecdce28f70f
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :34db3dc6-3c5f-47eb-a4f5-4b3cbd0376aa
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :2608a0be-90f4-44b6-9ad4-e2aec715ce90
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :3b014749-7160-4b81-aad0-6538a65d4e3c
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :359f2ac4-7e60-4802-99e0-e1e1ecfcdd96
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :c49f7782-e07a-4571-a674-9d5f6c26decc
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :daa848e0-7efe-4eca-a569-7851959be88d
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :69ab0b4e-7fdf-4e81-a12a-a58ebebdb1ff
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :2b032f34-efd6-401a-b491-87262d6cecac
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :ccb4e191-eecd-40c3-a887-8502483607e8
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :73ffa8de-ae8f-4b54-ac60-554082a34869
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :989225e6-f12f-4dc1-a48b-e87c9a40dbf8
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :b36c6794-bd8a-4a9a-83c3-c66c4a02915a
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :d7a2ff73-7666-4880-a7bf-a43cc3aa63f1
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :dacdfd08-3c58-4a84-9827-4599863872d5
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()
+    Exception occurred in the Progression cache manager: Microsoft.Repository.RepositoryException (0x80004005): Impossible de se connecter à la base de données spécifiée.
+
+Une exception s'est produite lors de la tentative de connexion à la base de données à l'aide de la chaîne de connexion suivante :
+  Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=;Initial Catalog=master;Integrated Security=True;Enlist=False;Asynchronous Processing=True;MultipleActiveResultSets=True;Connect Timeout=30.
+
+Vérifiez que l'instance SQL Server existe et que le service est actuellement exécuté. ---> System.Data.SqlClient.SqlException (0x80131904): Logon failed for login 'LAPTOP-64HGAU1T\Daniel' due to trigger execution.
+Changed database context to 'master'.
+Changed language setting to us_english.
+   à System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   à System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   à System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   à System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   à System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   à System.Data.SqlClient.SqlConnection.Open()
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+ClientConnectionId :35e5bcf9-43a1-4f91-adf5-c80454d897f3
+Error Number :17892,State :1,Class :14
+   à Microsoft.Repository.SqlInteraction.OpenAndConfigureConnection(SqlConnection connection)
+   à Microsoft.Repository.SqlInteraction.<>c__DisplayClass7_0.<UsingConnection>b__0()
+   à Microsoft.Repository.SqlInteraction.ExecuteRepositoryAction(Action action)
+   à Microsoft.Repository.SqlInteraction.UsingMasterConnection(String connectionString, Action`1 act)
+   à Microsoft.Repository.Utilities.GetDbStateAndFileNames(SqlConnectionStringBuilder builder)
+   à Microsoft.Repository.Utilities.GetDatabaseState(String connectionString)
+   à Microsoft.VisualStudio.Progression.CacheUtilities.IsCacheAvailable(IProgressionCacheSettings cacheSettings)
+   à Microsoft.VisualStudio.Progression.CacheManager.PerformUnguardedExecute()

@@ -125,8 +125,6 @@ namespace ImageEdgeDetection
                             else
                                 greenTotal = 255;
 
-
-
                             resultbuff[byteOffset] = (byte)(blueTotal);
                             resultbuff[byteOffset + 1] = (byte)(greenTotal);
                             resultbuff[byteOffset + 2] = (byte)(redTotal);
