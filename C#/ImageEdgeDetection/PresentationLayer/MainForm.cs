@@ -113,13 +113,13 @@ namespace ImageEdgeDetection
             yIFilter.setFilterName(yfilter);
             try
             {
-               picPreview.Image = toolBox.XyFilter(xIFilter, yIFilter, filtered, Convert.ToInt32(trackBarThreshold.Value));             
+                filtered = toolBox.XyFilter(xIFilter, yIFilter, filtered, Convert.ToInt32(trackBarThreshold.Value));
+                picPreview.Image = filtered;
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-
         }
 
 

@@ -1,20 +1,15 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
 using System;
-using System.Resources;
 using ImageEdgeDetection;
 using NSubstitute;
 using ImageEdgeDetection.BusinessLayer;
 using System.IO;
-using System.Reflection;
 using ImageEdgeDetection.LoadSaveLayer;
 
 namespace ImageEdgeDetectionTest
 {
     [TestClass]
-    [System.Runtime.Versioning.SupportedOSPlatform("windows")]
     public class UnitTest1
     {
         private void compareImage(Bitmap bmpFiltered, Bitmap bmpOriginal)
@@ -306,7 +301,7 @@ namespace ImageEdgeDetectionTest
         }
 
         [TestMethod]
-        public void SaveMethodThrowIOException()
+        public void TestSaveMethodThrowIOException()
         {
             Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
             var tb = Substitute.For<IToolBox>();
@@ -336,6 +331,18 @@ namespace ImageEdgeDetectionTest
 
         [TestMethod]
         public void TestSaveImageAppropriateFormat()
+        {
+            var ls = Substitute.For<ILoadSave>();
+            Image image = new Bitmap("./Images/chad.png");
+
+            //Assume the user gave a name to his image
+            ls.SaveImageAppropriateFormat(image).Returns(true);
+
+            Assert.IsTrue(ls.SaveImageAppropriateFormat(image));
+        }
+
+        [TestMethod]
+        public void TestSaveImage()
         {
             var ls = Substitute.For<ILoadSave>();
             Image image = new Bitmap("./Images/chad.png");

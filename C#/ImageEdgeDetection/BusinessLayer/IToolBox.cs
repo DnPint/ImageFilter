@@ -1,5 +1,4 @@
 ﻿using ImageEdgeDetection.BusinessLayer;
-using System;
 using System.Drawing;
 
 namespace ImageEdgeDetection
