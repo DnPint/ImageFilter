@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ImageEdgeDetection.LoadSaveLayer
 {
     public class LoadSave : ILoadSave
     {
-        public Bitmap LoadImage(object sender, EventArgs e)
+        public Bitmap LoadImage()
         {
             //Open the dialog box to get an image on the screen
             OpenFileDialog op = new OpenFileDialog();
@@ -29,7 +25,7 @@ namespace ImageEdgeDetection.LoadSaveLayer
             return null;
         }
 
-        public void SaveImageAppropriateFormat(Image filtered)
+        public bool SaveImageAppropriateFormat(Image filtered)
         {
             SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
             if (saveFileDialog.FileName != "")
@@ -42,20 +38,25 @@ namespace ImageEdgeDetection.LoadSaveLayer
                     {
                         case 1:
                             filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
-                            break;
+                            return true;
                         case 2:
                             filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
-                            break;
+                            return true;
+                        default:
+                            return false;
                     }
-                    fs.Close();
+
                 }catch (IOException e)
                 {
-                    throw new Exception("The write operation could not " +
+                    throw new IOException("The write operation could not " +
                     "be performed because the specified " +
                     "part of the file is locked.");
                 }
-                
-            }           
+            }
+            else
+            {
+                return false;
+            }          
         }
 
         private SaveFileDialog InitializeSaveFileDialog()

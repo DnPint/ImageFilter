@@ -3,10 +3,6 @@
  * View Documentation at: http://softwarebydefault.com
  * Licensed under Ms-PL 
 */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 //https://fr.wikipedia.org/wiki/Noyau_(traitement_d%27image)
 //This class contains all the matrices used for the filters

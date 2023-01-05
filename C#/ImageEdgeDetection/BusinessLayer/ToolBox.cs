@@ -62,6 +62,9 @@ namespace ImageEdgeDetection
         {
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
+
+            try
+            {
             string xFilterName = xfilter.getFilterName();
             string yFilterName = yfilter.getFilterName();
 
@@ -69,8 +72,7 @@ namespace ImageEdgeDetection
             xFilterMatrix = (double[,])matrix.GetType().GetProperty(xFilterName).GetValue(matrix, null);
             yFilterMatrix = (double[,])matrix.GetType().GetProperty(yFilterName).GetValue(matrix, null);
 
-            try
-            {
+            
                 Bitmap originalBitmap = new Bitmap(Original);
 
                 if (originalBitmap.Size.Height > 0)
@@ -256,9 +258,9 @@ namespace ImageEdgeDetection
             }
         }
 
-        public Bitmap LoadImage(object sender, EventArgs e)
+        public Bitmap LoadImage()
         {
-            return loadSave.LoadImage(sender, e);
+            return loadSave.LoadImage();
         }
 
         public void SaveImageAppropriateFormat(Image filtered)

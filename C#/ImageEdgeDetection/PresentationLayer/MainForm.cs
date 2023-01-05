@@ -3,11 +3,9 @@
  * View Documentation at: http://softwarebydefault.com
  * Licensed under Ms-PL 
 */
-using DocumentFormat.OpenXml.Drawing.Charts;
 using ImageEdgeDetection.BusinessLayer;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace ImageEdgeDetection
@@ -48,7 +46,7 @@ namespace ImageEdgeDetection
 
         public void LoadImage(object sender, EventArgs e)
         {
-            originalBitmap = toolBox.LoadImage(sender, e);
+            originalBitmap = toolBox.LoadImage();
             picPreview.Image = originalBitmap;
         }
 
