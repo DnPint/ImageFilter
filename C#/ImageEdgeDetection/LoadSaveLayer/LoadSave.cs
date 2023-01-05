@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,18 +34,27 @@ namespace ImageEdgeDetection.LoadSaveLayer
             SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
             if (saveFileDialog.FileName != "")
             {
-                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
-
-                switch (saveFileDialog.FilterIndex)
+                try
                 {
-                    case 1:
-                        filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
-                        break;
-                    case 2:
-                        filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        break;
+                    System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
+
+                    switch (saveFileDialog.FilterIndex)
+                    {
+                        case 1:
+                            filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
+                            break;
+                        case 2:
+                            filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                            break;
+                    }
+                    fs.Close();
+                }catch (IOException e)
+                {
+                    throw new Exception("The write operation could not " +
+                    "be performed because the specified " +
+                    "part of the file is locked.");
                 }
-                fs.Close();
+                
             }           
         }
 

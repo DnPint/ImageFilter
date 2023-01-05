@@ -9,7 +9,6 @@ using NSubstitute;
 using ImageEdgeDetection.BusinessLayer;
 using System.IO;
 using System.Reflection;
-using System.Windows.Forms;
 
 namespace ImageEdgeDetectionTest
 {
@@ -239,15 +238,21 @@ namespace ImageEdgeDetectionTest
         {
             var filterX = Substitute.For<IFilter>();
             var filterY = Substitute.For<IFilter>();
-            IFilter filter = new Filter();
-            IToolBox tb = new ToolBox();
-            Image original = (Bitmap)Image.FromFile("./Images/chad.png");
-            Image filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
+            var tb = Substitute.For<IToolBox>();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
 
-            filterX.When(x => x.setFilterName("NotFound")).Do(x => filter.setFilterName("NotFound"));
-            filter.setFilterName("NotFound");
+            //Throw specific exception
+            tb.When(x => x.XyFilter(Arg.Any<IFilter>(), Arg.Any<IFilter>(), Arg.Any<Bitmap>(), Arg.Any<int>())).Do(x => { throw new Exception("An error occured"); });
 
-            Assert.AreEqual("NotFound", filter.getFilterName());
+            try
+            {
+                filtered = tb.XyFilter(filterX, filterY, original, 100);
+            }
+            catch(Exception e)
+            {
+                Assert.AreEqual(e.Message, "An error occured");
+            }
         }
 
 
@@ -311,6 +316,30 @@ namespace ImageEdgeDetectionTest
             tb.When(x => x.XyFilter(X, Y, original, 100)).Do(x => throw new Exception());
 
             Assert.ThrowsException<Exception>(() => tb.XyFilter(X, Y, original, 100));
+        }
+
+        [TestMethod]
+        public void SaveMethodThowIOException()
+        {
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            var tb = Substitute.For<IToolBox>();
+
+            tb.When(x => x.SaveImageAppropriateFormat(Arg.Any<Bitmap>())).
+                Do(x => { throw new IOException("The write operation could not " +
+              "be performed because the specified " +
+              "part of the file is locked.");
+                });
+
+            try
+            {
+                tb.SaveImageAppropriateFormat(original);
+            }
+            catch(IOException e)
+            {
+                Assert.AreEqual(e.Message, "The write operation could not " +
+                    "be performed because the specified " +
+                    "part of the file is locked.");
+            }
         }
     }
 }
