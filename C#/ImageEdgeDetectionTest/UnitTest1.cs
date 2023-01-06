@@ -10,6 +10,7 @@ using ImageEdgeDetection.LoadSaveLayer;
 namespace ImageEdgeDetectionTest
 {
     [TestClass]
+    [System.Runtime.Versioning.SupportedOSPlatform("windows")]
     public class UnitTest1
     {
         private void compareImage(Bitmap bmpFiltered, Bitmap bmpOriginal)
@@ -109,7 +110,6 @@ namespace ImageEdgeDetectionTest
             original = tb.XyFilter(filterX, filterY, original, 100);
             
             compareImage(original, filtered);
-
         }
 
         [TestMethod]
@@ -253,7 +253,7 @@ namespace ImageEdgeDetectionTest
         {
             IToolBox tb = new ToolBox();
 
-            //filter the original with the night filter
+            // Filter the original with the night filter
             Image original = tb.ApplyFilter(null, 1, 1, 1, 25);
 
             Assert.IsNull(original);
@@ -268,7 +268,7 @@ namespace ImageEdgeDetectionTest
             Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
             Bitmap filtered = (Bitmap)Image.FromFile("./Images/XKirsch3x3Horizontal_YKirsch3x3Horizontal_Chad.png");
 
-            //Throw specific exception
+            // Throw specific exception
             tb.When(x => x.XyFilter(filterX, filterY, original, 100)).Do(x => { throw new Exception("An error occured"); });
 
             Assert.ThrowsException<Exception>(() => tb.XyFilter(filterX, filterY, original, 100));
@@ -281,7 +281,7 @@ namespace ImageEdgeDetectionTest
             IToolBox tb = new ToolBox();
             Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
 
-            //filter the original with the night filter
+            // Filter the original with the night filter
             original = tb.ApplyFilter(original, -2, 1, 1, 25);
 
             Assert.IsNull(original);
@@ -293,7 +293,7 @@ namespace ImageEdgeDetectionTest
             IToolBox tb = new ToolBox();
             Image original = (Bitmap)Image.FromFile("./Images/chad.png");
 
-            //filter the original with the night filter
+            // Filter the original with the night filter
             original = tb.ApplyFilter(new Bitmap(original), 1, 1, 259, 25);
 
             Assert.IsNull(original);
@@ -302,7 +302,6 @@ namespace ImageEdgeDetectionTest
         [TestMethod]
         public void XyFilterNullBitmap()
         {
-            //Bitmap bitmapResult = new Bitmap(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "chad.png"));
             var filterX = Substitute.For<IFilter>();
             var filterY = Substitute.For<IFilter>();
             IToolBox tb = new ToolBox();
@@ -350,11 +349,11 @@ namespace ImageEdgeDetectionTest
         {
             var ls = Substitute.For<ILoadSave>();
 
-            //Assume the user clicked on the right image
+            // Assume the user clicked on the right image
             ls.LoadImage().Returns(new Bitmap("./Images/chad.png"));
             ls.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
 
-            //Verify if it is loaded and of the right type 
+            // Verify if it is loaded and of the right type 
             Assert.IsNotNull(ls.LoadImage());
             Assert.IsInstanceOfType(ls.LoadImage(), typeof(Bitmap));
         }
@@ -366,27 +365,15 @@ namespace ImageEdgeDetectionTest
             var tb = Substitute.For<IToolBox>();
             var ls = Substitute.For<ILoadSave>();
 
-            //check loadImage method works
+            // Check loadImage method works
             tb.LoadImage().Returns(new Bitmap("./Images/chad.png"));
             tb.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
 
             Image image = tb.LoadImage();
 
-            //Verify it is loaded and of the right type
+            // Verify it is loaded and of the right type
             Assert.IsNotNull(image);
             Assert.IsInstanceOfType(tb.LoadImage(), typeof(Bitmap));
-        }
-
-        [TestMethod]
-        public void TestSaveImageAppropriateFormatFromToolBox()
-        {
-            var ls = Substitute.For<ILoadSave>();
-            var tb = Substitute.For<IToolBox>();
-            Image image = new Bitmap("./Images/chad.png");
-
-            //check loadImage method works
-            tb.Save.Returns(new Bitmap("./Images/chad.png"));
-            tb.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
         }
 
         [TestMethod]
@@ -395,7 +382,7 @@ namespace ImageEdgeDetectionTest
             var ls = Substitute.For<ILoadSave>();
             Image image = new Bitmap("./Images/chad.png");
 
-            //Assume the user gave a name to his image
+            // Assume the user gave a name to his image
             ls.SaveImageAppropriateFormat(image).Returns(true);
 
             Assert.IsTrue(ls.SaveImageAppropriateFormat(image));

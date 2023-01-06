@@ -32,9 +32,10 @@ namespace ImageEdgeDetection
             return filtered;
         }
 
-        //apply color filter at your own taste
+        // Apply color filter that are required for the choosen filter
         public Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
+            //Verify that RGB color are not under/above the interval (0-255)
             if (alpha < 0 || alpha > 255 || red < 0 || red > 255 || blue < 0 || blue > 255 || green < 0 || green > 255)
             {
                 return null;
@@ -160,7 +161,6 @@ namespace ImageEdgeDetection
                     Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
                     resultbitmap.UnlockBits(resultData);
                     return resultbitmap;
-
             }
             catch
             {

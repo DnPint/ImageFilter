@@ -45,11 +45,13 @@ namespace ImageEdgeDetection.LoadSaveLayer
                             return false;
                     }
 
-                }catch (IOException e)
+                }
+                catch 
                 {
                     throw new IOException("The write operation could not " +
                     "be performed because the specified " +
                     "part of the file is locked.");
+
                 }
             }
             else
