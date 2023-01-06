@@ -51,6 +51,7 @@ namespace ImageEdgeDetection
             {
                 originalBitmap = toolBox.LoadImage();
                 picPreview.Image = originalBitmap;
+                filtered = null;
                 disableXY();
             }
             catch (OutOfMemoryException)
