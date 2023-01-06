@@ -64,6 +64,8 @@ namespace ImageEdgeDetection
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
 
+           
+
             try
             {
             string xFilterName = xfilter.getFilterName();
@@ -258,8 +260,16 @@ namespace ImageEdgeDetection
 
         public Bitmap LoadImage()
         {
-            Bitmap bitmap = loadSave.LoadImage();
-            return bitmap;
+            try
+            {
+                Bitmap bitmap = loadSave.LoadImage();
+                return bitmap;
+            }
+            catch (OutOfMemoryException)
+            {
+                throw new OutOfMemoryException();
+            }
+            return null;
         }
 
         public void SaveImageAppropriateFormat(Image filtered)

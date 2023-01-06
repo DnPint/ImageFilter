@@ -535,6 +535,18 @@ namespace ImageEdgeDetectionTest
 
         }
 
+        [TestMethod]
+        public void Test0x0Bitmap()
+        {
+            var tb = Substitute.For<ILoadSave>();
+
+            tb.When(x => x.LoadImage()).
+                Do(x => {
+                    throw new OutOfMemoryException("Image is not valid");
+                });
+
+            Assert.ThrowsException<OutOfMemoryException>(() => tb.LoadImage());
+        }
 
         private void CompareMatrices (double[,] matrixInit, double[,] resultMatrix)
         {

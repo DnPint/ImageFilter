@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -16,10 +17,18 @@ namespace ImageEdgeDetection.LoadSaveLayer
 
             DialogResult dr = op.ShowDialog();
 
-            if (dr == DialogResult.OK)
+
+            try
             {
-                string path = op.FileName;
-                return (Bitmap)Bitmap.FromFile(path);
+                if (dr == DialogResult.OK)
+                {
+                    string path = op.FileName;
+                    return (Bitmap)Bitmap.FromFile(path);
+                }   
+            }
+            catch (OutOfMemoryException)
+            {
+                throw new OutOfMemoryException();
             }
             return null;
         }

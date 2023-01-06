@@ -47,9 +47,17 @@ namespace ImageEdgeDetection
 
         public void LoadImage(object sender, EventArgs e)
         {
-            originalBitmap = toolBox.LoadImage();
-            picPreview.Image = originalBitmap;
-            disableXY();
+            try
+            {
+                originalBitmap = toolBox.LoadImage();
+                picPreview.Image = originalBitmap;
+                disableXY();
+            }
+            catch (OutOfMemoryException)
+            {
+                MessageBox.Show("Image is not valid");
+            }
+            
         }
 
         public void buttonFilter_Click(object sender, EventArgs e)
