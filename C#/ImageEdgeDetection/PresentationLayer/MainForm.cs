@@ -15,6 +15,7 @@ namespace ImageEdgeDetection
         //the original image
         private Bitmap originalBitmap = null;
         private Image filtered;
+        private Image filteredOriginal;
         private string xFilter;
         private string yFilter;
         private IFilter xIFilter = new Filter();
@@ -48,6 +49,7 @@ namespace ImageEdgeDetection
         {
             originalBitmap = toolBox.LoadImage();
             picPreview.Image = originalBitmap;
+            disableXY();
         }
 
         public void buttonFilter_Click(object sender, EventArgs e)
@@ -58,12 +60,15 @@ namespace ImageEdgeDetection
                 {
                     case "buttonNightFilter":
                         filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 1, 25);
+                        filteredOriginal = filtered;
                         break;
                     case "buttonMiamiFilter":
                         filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 10, 1);
+                        filteredOriginal = filtered;
                         break;
                     case "buttonMagicMosaic":
                         filtered = toolBox.MagicMosaic(new Bitmap(originalBitmap));
+                        filteredOriginal = filtered;
                         break;
                 }
                 picPreview.Image = filtered;
@@ -113,7 +118,7 @@ namespace ImageEdgeDetection
             yIFilter.setFilterName(yfilter);
             try
             {
-                filtered = toolBox.XyFilter(xIFilter, yIFilter, filtered, Convert.ToInt32(trackBarThreshold.Value));
+                filtered = toolBox.XyFilter(xIFilter, yIFilter, filteredOriginal, Convert.ToInt32(trackBarThreshold.Value));
                 picPreview.Image = filtered;
             }
             catch (Exception e)
