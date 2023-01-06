@@ -172,13 +172,13 @@ namespace ImageEdgeDetection
 
         public Bitmap MagicMosaic(Bitmap bmp)
         {
+            int razX = Convert.ToInt32(bmp.Width / 3);
+            int razY = Convert.ToInt32(bmp.Height / 3);
+
+            Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
+            
             if (bmp.Height > bmp.Width)
             {
-                int razX = Convert.ToInt32(bmp.Width / 3);
-                int razY = Convert.ToInt32(bmp.Height / 3);
-
-                Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
-
                 for (int i = 0; i < bmp.Width - 1; i++)
                 {
                     for (int x = 0; x < bmp.Height - 1; x++)
@@ -216,11 +216,6 @@ namespace ImageEdgeDetection
             }
             else
             {
-                int razX = Convert.ToInt32(bmp.Width / 3);
-                int razY = Convert.ToInt32(bmp.Height / 3);
-
-                Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
-
                 for (int i = 0; i < bmp.Width - 1; i++)
                 {
                     for (int x = 0; x < bmp.Height - 1; x++)
