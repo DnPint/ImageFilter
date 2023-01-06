@@ -94,7 +94,8 @@ namespace ImageEdgeDetection
         private void backButton_Click(object sender, EventArgs e)
         {
             picPreview.Image = originalBitmap;
-
+            filtered = null;
+            
             //make the list for XY edges disable before selecting a filter
             disableXY();
         }
@@ -127,7 +128,8 @@ namespace ImageEdgeDetection
             yIFilter.setFilterName(yfilter);
             try
             {
-                filtered = toolBox.XyFilter(xIFilter, yIFilter, filteredOriginal, Convert.ToInt32(trackBarThreshold.Value));
+                filtered = toolBox.XyFilter(xIFilter, yIFilter, filteredOriginal,
+                    Convert.ToInt32(trackBarThreshold.Value));
                 picPreview.Image = filtered;
             }
             catch (Exception e)

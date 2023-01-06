@@ -63,106 +63,100 @@ namespace ImageEdgeDetection
         {
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
-
-           
-
+        
             try
             {
-            string xFilterName = xfilter.getFilterName();
-            string yFilterName = yfilter.getFilterName();
+                string xFilterName = xfilter.getFilterName();
+                string yFilterName = yfilter.getFilterName();
 
-            // Assign user choices for x and y filters
-            xFilterMatrix = (double[,])matrix.GetType().GetProperty(xFilterName).GetValue(matrix, null);
-            yFilterMatrix = (double[,])matrix.GetType().GetProperty(yFilterName).GetValue(matrix, null);
-
+                // Assign user choices for x and y filters
+                xFilterMatrix = (double[,])matrix.GetType().GetProperty(xFilterName).GetValue(matrix, null);
+                yFilterMatrix = (double[,])matrix.GetType().GetProperty(yFilterName).GetValue(matrix, null);
             
                 Bitmap originalBitmap = new Bitmap(Original);
-
                
-                    Bitmap newbitmap = originalBitmap;
-                    BitmapData newbitmapData = new BitmapData();
-                    newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
+                Bitmap newbitmap = originalBitmap;
+                BitmapData newbitmapData = new BitmapData();
+                newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
 
-                    byte[] pixelbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
-                    byte[] resultbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
+                byte[] pixelbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
+                byte[] resultbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
 
-                    Marshal.Copy(newbitmapData.Scan0, pixelbuff, 0, pixelbuff.Length);
-                    newbitmap.UnlockBits(newbitmapData);
+                Marshal.Copy(newbitmapData.Scan0, pixelbuff, 0, pixelbuff.Length);
+                newbitmap.UnlockBits(newbitmapData);
 
-                    double greenX;
-                    double greenY;
+                double greenX;
+                double greenY;
 
-                    double blueTotal = 0.0;
-                    double greenTotal;
-                    double redTotal = 0.0;
+                double blueTotal = 0.0;
+                double greenTotal;
+                double redTotal = 0.0;
 
-                    int filterOffset = 1;
-                    int calcOffset;
+                int filterOffset = 1;
+                int calcOffset;
 
-                    int byteOffset;
+                int byteOffset;
 
-                    for (int offsetY = filterOffset; offsetY <
-                        newbitmap.Height - filterOffset; offsetY++)
+                for (int offsetY = filterOffset; offsetY <
+                    newbitmap.Height - filterOffset; offsetY++)
+                {
+                    for (int offsetX = filterOffset; offsetX <
+                        newbitmap.Width - filterOffset; offsetX++)
                     {
-                        for (int offsetX = filterOffset; offsetX <
-                            newbitmap.Width - filterOffset; offsetX++)
+                        greenX = 0;
+                        greenY = 0;
+
+                        greenTotal = 0.0;
+
+                        byteOffset = offsetY *
+                                        newbitmapData.Stride +
+                                        offsetX * 4;
+
+                        for (int filterY = -filterOffset;
+                            filterY <= filterOffset; filterY++)
                         {
-                            greenX = 0;
-                            greenY = 0;
-
-                            greenTotal = 0.0;
-
-                            byteOffset = offsetY *
-                                         newbitmapData.Stride +
-                                         offsetX * 4;
-
-                            for (int filterY = -filterOffset;
-                                filterY <= filterOffset; filterY++)
+                            for (int filterX = -filterOffset;
+                                filterX <= filterOffset; filterX++)
                             {
-                                for (int filterX = -filterOffset;
-                                    filterX <= filterOffset; filterX++)
-                                {
-                                    calcOffset = byteOffset +
-                                                 (filterX * 4) +
-                                                 (filterY * newbitmapData.Stride);
+                                calcOffset = byteOffset +
+                                                (filterX * 4) +
+                                                (filterY * newbitmapData.Stride);
 
-                                    greenX += (double)(pixelbuff[calcOffset + 1]) *
-                                              xFilterMatrix[filterY + filterOffset,
-                                                      filterX + filterOffset];
+                                greenX += (double)(pixelbuff[calcOffset + 1]) *
+                                            xFilterMatrix[filterY + filterOffset,
+                                                    filterX + filterOffset];
 
-                                    greenY += (double)(pixelbuff[calcOffset + 1]) *
-                                              yFilterMatrix[filterY + filterOffset,
-                                                      filterX + filterOffset];
-                                }
+                                greenY += (double)(pixelbuff[calcOffset + 1]) *
+                                            yFilterMatrix[filterY + filterOffset,
+                                                    filterX + filterOffset];
                             }
-
-                            greenTotal = Math.Sqrt((greenX * greenX) + (greenY * greenY));
-
-                            if (greenTotal > 255)
-                            { greenTotal = 255; }
-
-                            if (greenTotal < value)
-                                greenTotal = 0;
-                            else
-                                greenTotal = 255;
-
-                            resultbuff[byteOffset] = (byte)(blueTotal);
-                            resultbuff[byteOffset + 1] = (byte)(greenTotal);
-                            resultbuff[byteOffset + 2] = (byte)(redTotal);
-                            resultbuff[byteOffset + 3] = 255;
                         }
+
+                        greenTotal = Math.Sqrt((greenX * greenX) + (greenY * greenY));
+
+                        if (greenTotal > 255)
+                        { greenTotal = 255; }
+
+                        if (greenTotal < value)
+                            greenTotal = 0;
+                        else
+                            greenTotal = 255;
+
+                        resultbuff[byteOffset] = (byte)(blueTotal);
+                        resultbuff[byteOffset + 1] = (byte)(greenTotal);
+                        resultbuff[byteOffset + 2] = (byte)(redTotal);
+                        resultbuff[byteOffset + 3] = 255;
                     }
+                }
 
-                    Bitmap resultbitmap = new Bitmap(newbitmap.Width, newbitmap.Height);
-
-                    BitmapData resultData = resultbitmap.LockBits(new Rectangle(0, 0,
-                                             resultbitmap.Width, resultbitmap.Height),
-                                                              ImageLockMode.WriteOnly,
-                                                          PixelFormat.Format32bppArgb);
-
-                    Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
-                    resultbitmap.UnlockBits(resultData);
-                    return resultbitmap;
+                Bitmap resultbitmap = new Bitmap(newbitmap.Width, newbitmap.Height);
+                BitmapData resultData = resultbitmap.LockBits(new Rectangle(0, 0,
+                                            resultbitmap.Width, resultbitmap.Height),
+                                                            ImageLockMode.WriteOnly,
+                                                        PixelFormat.Format32bppArgb);
+                Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
+                resultbitmap.UnlockBits(resultData);
+                return resultbitmap;
             }
             catch
             {
