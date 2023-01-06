@@ -75,8 +75,7 @@ namespace ImageEdgeDetection
             
                 Bitmap originalBitmap = new Bitmap(Original);
 
-                if (originalBitmap.Size.Height > 0)
-                {
+               
                     Bitmap newbitmap = originalBitmap;
                     BitmapData newbitmapData = new BitmapData();
                     newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
@@ -161,13 +160,12 @@ namespace ImageEdgeDetection
                     Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
                     resultbitmap.UnlockBits(resultData);
                     return resultbitmap;
-                }
+
             }
             catch
             {
                 throw new Exception("An error occured"); 
             }
-            return null;
         }
 
         public Bitmap MagicMosaic(Bitmap bmp)
@@ -260,7 +258,8 @@ namespace ImageEdgeDetection
 
         public Bitmap LoadImage()
         {
-            return loadSave.LoadImage();
+            Bitmap bitmap = loadSave.LoadImage();
+            return bitmap;
         }
 
         public void SaveImageAppropriateFormat(Image filtered)

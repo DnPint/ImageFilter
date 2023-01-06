@@ -53,17 +53,47 @@ namespace ImageEdgeDetectionTest
             Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
             Bitmap filtered = (Bitmap)Image.FromFile("./Images/miamichad.png");
 
-            //Ensure the user take the NightFilter to test the method
+            //Ensure the user take the Miami filter to test the method
             filter.getFilterName().Returns("MiamiFilter");
 
-            //filter the original with the night filter
-            original = tb.ApplyFilter(new Bitmap(original), 1, 1, 10, 1);           
+            //filter the original with the Miami filter
+            original = tb.ChooseFilter(filter, original);           
 
             compareImage(original, filtered);
         }
 
-        
-        
+        [TestMethod]
+        public void TestMagicMosaicPortrait()
+        {
+            var filter = Substitute.For<IFilter>();
+            IToolBox tb = new ToolBox();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/chad.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/chadMagicMosaic.png");
+
+            //Ensure the user take the Magic Mosaic to test the method
+            filter.getFilterName().Returns("MagicMosaic");
+
+            //filter the original with the Magic Mosaic
+            original = tb.ChooseFilter(filter, original);
+
+            compareImage(original, filtered);
+        }
+
+        [TestMethod]
+        public void TestMagicMosaicLandscape()
+        {
+            IToolBox tb = new ToolBox();
+            var filter = Substitute.For<IFilter>();
+            Bitmap original = (Bitmap)Image.FromFile("./Images/honks.png");
+            Bitmap filtered = (Bitmap)Image.FromFile("./Images/honksMagicMosaic.png");
+
+            filter.getFilterName().Returns("MagicMosaic");
+
+            original = tb.ChooseFilter(filter, original);
+
+            compareImage(original, filtered);
+        }
+
         [TestMethod]
         public void XKirsch3x3Vertical_YKirsch3x3Vertical()
         {
@@ -324,9 +354,39 @@ namespace ImageEdgeDetectionTest
             ls.LoadImage().Returns(new Bitmap("./Images/chad.png"));
             ls.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
 
-            //Verify it is loaded and of the right type 
+            //Verify if it is loaded and of the right type 
             Assert.IsNotNull(ls.LoadImage());
             Assert.IsInstanceOfType(ls.LoadImage(), typeof(Bitmap));
+        }
+
+       
+        [TestMethod]
+        public void TestLoadImageFromToolBox()
+        {
+            var tb = Substitute.For<IToolBox>();
+            var ls = Substitute.For<ILoadSave>();
+
+            //check loadImage method works
+            tb.LoadImage().Returns(new Bitmap("./Images/chad.png"));
+            tb.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
+
+            Image image = tb.LoadImage();
+
+            //Verify it is loaded and of the right type
+            Assert.IsNotNull(image);
+            Assert.IsInstanceOfType(tb.LoadImage(), typeof(Bitmap));
+        }
+
+        [TestMethod]
+        public void TestSaveImageAppropriateFormatFromToolBox()
+        {
+            var ls = Substitute.For<ILoadSave>();
+            var tb = Substitute.For<IToolBox>();
+            Image image = new Bitmap("./Images/chad.png");
+
+            //check loadImage method works
+            tb.Save.Returns(new Bitmap("./Images/chad.png"));
+            tb.When(x => x.LoadImage()).Do(x => new Bitmap("./Images/chad.png"));
         }
 
         [TestMethod]
@@ -342,15 +402,162 @@ namespace ImageEdgeDetectionTest
         }
 
         [TestMethod]
-        public void TestSaveImage()
+        public void Get_Gaussian3x3()
         {
-            var ls = Substitute.For<ILoadSave>();
-            Image image = new Bitmap("./Images/chad.png");
+            var matrix = Substitute.For<Matrix>();
+            var matrixGaussian3x3 = new double[,]
+                { { 1, 2, 1, },
+                  { 2, 4, 2, },
+                  { 1, 2, 1, }, };
 
-            //assume the user gave a name to his image
-            ls.SaveImageAppropriateFormat(image).Returns(true);
+            var resultMatrix = matrix.Gaussian3x3;
 
-            Assert.IsTrue(ls.SaveImageAppropriateFormat(image));
+            CompareMatrices(matrixGaussian3x3, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Gaussian5x5Type1()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixGaussian5x5Type1 = new double[,]
+                { { 2, 04, 05, 04, 2 },
+                  { 4, 09, 12, 09, 4 },
+                  { 5, 12, 15, 12, 5 },
+                  { 4, 09, 12, 09, 4 },
+                  { 2, 04, 05, 04, 2 }, };
+
+            var resultMatrix = matrix.Gaussian5x5Type1;
+
+            CompareMatrices(matrixGaussian5x5Type1, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Gaussian5x5Type2()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixGaussian5x5Type2 = new double[,]
+                { {  1,   4,  6,  4,  1 },
+                  {  4,  16, 24, 16,  4 },
+                  {  6,  24, 36, 24,  6 },
+                  {  4,  16, 24, 16,  4 },
+                  {  1,   4,  6,  4,  1 }, };
+
+            var resultMatrix = matrix.Gaussian5x5Type2;
+
+            CompareMatrices(matrixGaussian5x5Type2, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Laplacian3x3()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixLaplacian3x3 = new double[,]
+                { { -1, -1, -1,  },
+                  { -1,  8, -1,  },
+                  { -1, -1, -1,  }, };
+
+            var resultMatrix = matrix.Laplacian3x3;
+
+            CompareMatrices(matrixLaplacian3x3, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Laplacian5x5()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixLaplacian5x5 = new double[,]
+                { { -1, -1, -1, -1, -1, },
+                  { -1, -1, -1, -1, -1, },
+                  { -1, -1, 24, -1, -1, },
+                  { -1, -1, -1, -1, -1, },
+                  { -1, -1, -1, -1, -1  }, };
+
+            var resultMatrix = matrix.Laplacian5x5;
+
+            CompareMatrices(matrixLaplacian5x5, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_LaplacianOfGaussian()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixLaplacianOfGaussian = new double[,]
+                { {  0,   0, -1,  0,  0 },
+                  {  0,  -1, -2, -1,  0 },
+                  { -1,  -2, 16, -2, -1 },
+                  {  0,  -1, -2, -1,  0 },
+                  {  0,   0, -1,  0,  0 }, };
+
+            var resultMatrix = matrix.LaplacianOfGaussian;
+
+            CompareMatrices(matrixLaplacianOfGaussian, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Prewitt3x3Horizontal()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixPrewitt3x3Horizontal = new double[,]
+                { { -1,  0,  1, },
+                  { -1,  0,  1, },
+                  { -1,  0,  1, }, };
+
+            var resultMatrix = matrix.Prewitt3x3Horizontal;
+
+            CompareMatrices(matrixPrewitt3x3Horizontal, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Sobel3x3Horizontal()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixSobel3x3Horizontal = new double[,]
+                { { -1,  0,  1, },
+                  { -2,  0,  2, },
+                  { -1,  0,  1, }, };
+
+            var resultMatrix = matrix.Sobel3x3Horizontal;
+
+            CompareMatrices(matrixSobel3x3Horizontal, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_Sobel3x3Vertical()
+        {
+            var matrix = Substitute.For<Matrix>();
+            var matrixSobel3x3Vertical = new double[,]
+                { {  1,  2,  1, },
+                  {  0,  0,  0, },
+                  { -1, -2, -1, }, };
+
+            var resultMatrix = matrix.Sobel3x3Vertical;
+
+            CompareMatrices(matrixSobel3x3Vertical, resultMatrix);
+        }
+
+        [TestMethod]
+        public void Get_FilterName()
+        {
+            Filter X = new();
+            Filter Y = new();
+            X.setFilterName("Kirsch3x3Vertical");
+            Y.setFilterName("Kirsch3x3Horizontal");
+
+            Assert.AreEqual("Kirsch3x3Vertical", X.getFilterName());
+            Assert.AreEqual("Kirsch3x3Horizontal", Y.getFilterName());
+
+        }
+
+
+        private void CompareMatrices (double[,] matrixInit, double[,] resultMatrix)
+        {
+            for (int i = 0; i < matrixInit.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrixInit.GetLength(1); j++)
+                {
+                    Assert.AreEqual(matrixInit[i, j], resultMatrix[i, j]);
+                }
+            }    
         }
     }
 }

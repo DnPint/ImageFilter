@@ -129,7 +129,6 @@ namespace ImageEdgeDetection
             if(xFilter != null && yFilter != null)
                 filter(xFilter, yFilter);
         }
-
     }
 }
 

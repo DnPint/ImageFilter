@@ -4,14 +4,14 @@ namespace ImageEdgeDetection.BusinessLayer
 {
     public class Filter : IFilter
     {
-        private String filterName;
+        private string filterName;
 
         public string getFilterName()
         {
             return filterName;
         }
 
-        public void setFilterName(String name)
+        public void setFilterName(string name)
         {
             filterName = name;
         }
