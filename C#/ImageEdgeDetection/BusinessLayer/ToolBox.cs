@@ -1,25 +1,41 @@
-﻿using DocumentFormat.OpenXml.Presentation;
+﻿using ImageEdgeDetection.BusinessLayer;
+using ImageEdgeDetection.LoadSaveLayer;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace ImageEdgeDetection
-{ 
-    
+{
     public class ToolBox : IToolBox
     {
         private IMatrix matrix = new Matrix();
-        
-        //apply color filter at your own taste
+        private ILoadSave loadSave = new LoadSave();
+
+        public Bitmap ChooseFilter(IFilter filterName, Bitmap originalBitmap)
+        {
+            Bitmap filtered = null;
+            string nameFilter = filterName.getFilterName();
+
+            switch (nameFilter)
+            {
+                case "NightFilter":
+                    filtered = ApplyFilter(new Bitmap(originalBitmap), 1, 1, 1, 25);
+                    break;
+                case "MiamiFilter":
+                    filtered = ApplyFilter(new Bitmap(originalBitmap), 1, 1, 10, 1);
+                    break;
+                case "MagicMosaic":
+                    filtered = MagicMosaic(new Bitmap(originalBitmap));
+                    break;
+            }
+            return filtered;
+        }
+
+        // Apply color filter that are required for the choosen filter
         public Bitmap ApplyFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
+            //Verify that RGB color are not under/above the interval (0-255)
             if (alpha < 0 || alpha > 255 || red < 0 || red > 255 || blue < 0 || blue > 255 || green < 0 || green > 255)
             {
                 return null;
@@ -43,21 +59,26 @@ namespace ImageEdgeDetection
             return null;
         }
 
-        public Image XyFilter(string xfilter, string yfilter, Image Original, int value)
+        public Bitmap XyFilter(IFilter xfilter, IFilter yfilter, Image Original, int value)
         {
             double[,] xFilterMatrix;
             double[,] yFilterMatrix;
 
-            // Assign user choices for x and y filters
-            xFilterMatrix = (double[,])matrix.GetType().GetProperty(xfilter).GetValue(matrix, null);
-            yFilterMatrix = (double[,])matrix.GetType().GetProperty(yfilter).GetValue(matrix, null);
-
-            Bitmap originalBitmap = new Bitmap(Original);
+           
 
             try
             {
-                if (originalBitmap.Size.Height > 0)
-                {
+            string xFilterName = xfilter.getFilterName();
+            string yFilterName = yfilter.getFilterName();
+
+            // Assign user choices for x and y filters
+            xFilterMatrix = (double[,])matrix.GetType().GetProperty(xFilterName).GetValue(matrix, null);
+            yFilterMatrix = (double[,])matrix.GetType().GetProperty(yFilterName).GetValue(matrix, null);
+
+            
+                Bitmap originalBitmap = new Bitmap(Original);
+
+               
                     Bitmap newbitmap = originalBitmap;
                     BitmapData newbitmapData = new BitmapData();
                     newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
@@ -125,8 +146,6 @@ namespace ImageEdgeDetection
                             else
                                 greenTotal = 255;
 
-
-
                             resultbuff[byteOffset] = (byte)(blueTotal);
                             resultbuff[byteOffset + 1] = (byte)(greenTotal);
                             resultbuff[byteOffset + 2] = (byte)(redTotal);
@@ -144,13 +163,11 @@ namespace ImageEdgeDetection
                     Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
                     resultbitmap.UnlockBits(resultData);
                     return resultbitmap;
-                }
             }
             catch
             {
-                throw new Exception("Error");
+                throw new Exception("An error occured"); 
             }
-            return null;
         }
 
         public Bitmap MagicMosaic(Bitmap bmp)
@@ -241,38 +258,23 @@ namespace ImageEdgeDetection
             }
         }
 
-        public Bitmap LoadImage(object sender, EventArgs e)
+        public Bitmap LoadImage()
         {
-            //Open the dialog box to get an image on the screen
-            OpenFileDialog op = new OpenFileDialog();
-            op.Title = "Select an image file.";
-            op.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            op.Filter += "|Bitmap Images(*.bmp)|*.bmp";
-
-            DialogResult dr = op.ShowDialog();
-
-            if (dr == DialogResult.OK)
+            try
             {
-                string path = op.FileName;
-                return (Bitmap)Bitmap.FromFile(path);              
+                Bitmap bitmap = loadSave.LoadImage();
+                return bitmap;
+            }
+            catch (OutOfMemoryException)
+            {
+                throw new OutOfMemoryException();
             }
             return null;
         }
 
-        public void SaveImageAppropriateFormat(Image filtered, SaveFileDialog saveFileDialog)
+        public void SaveImageAppropriateFormat(Image filtered)
         {
-            System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile();
-            switch (saveFileDialog.FilterIndex)
-            {
-                case 1:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
-                    break;
-                case 2:
-                    filtered.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    break;
-            }
-            fs.Close();
+            loadSave.SaveImageAppropriateFormat(filtered);
         }
-
     }
 }

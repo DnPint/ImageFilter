@@ -3,10 +3,9 @@
  * View Documentation at: http://softwarebydefault.com
  * Licensed under Ms-PL 
 */
-using DocumentFormat.OpenXml.Drawing.Charts;
+using ImageEdgeDetection.BusinessLayer;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace ImageEdgeDetection
@@ -16,8 +15,11 @@ namespace ImageEdgeDetection
         //the original image
         private Bitmap originalBitmap = null;
         private Image filtered;
+        private Image filteredOriginal;
         private string xFilter;
         private string yFilter;
+        private IFilter xIFilter = new Filter();
+        private IFilter yIFilter = new Filter();
         private IToolBox toolBox = new ToolBox();
 
         public MainForm()
@@ -45,39 +47,36 @@ namespace ImageEdgeDetection
 
         public void LoadImage(object sender, EventArgs e)
         {
-            originalBitmap = toolBox.LoadImage(sender, e);
-            picPreview.Image = originalBitmap;
-        }
-
-        private SaveFileDialog InitializeSaveFileDialog()
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
-            saveFileDialog.Title = "Save an Image File";
-            saveFileDialog.ShowDialog();
-            return saveFileDialog;
-        }
-
-        private void SaveImageAppropriateFormat(SaveFileDialog saveFileDialog)
-        {
-            toolBox.SaveImageAppropriateFormat(filtered, saveFileDialog);
+            try
+            {
+                originalBitmap = toolBox.LoadImage();
+                picPreview.Image = originalBitmap;
+                disableXY();
+            }
+            catch (OutOfMemoryException)
+            {
+                MessageBox.Show("Image is not valid");
+            }
+            
         }
 
         public void buttonFilter_Click(object sender, EventArgs e)
         {
             if (picPreview.Image != null)
             {
-                
                 switch (((Button)sender).Name)
                 {
                     case "buttonNightFilter":
                         filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 1, 25);
+                        filteredOriginal = filtered;
                         break;
                     case "buttonMiamiFilter":
                         filtered = toolBox.ApplyFilter(new Bitmap(originalBitmap), 1, 1, 10, 1);
+                        filteredOriginal = filtered;
                         break;
                     case "buttonMagicMosaic":
                         filtered = toolBox.MagicMosaic(new Bitmap(originalBitmap));
+                        filteredOriginal = filtered;
                         break;
                 }
                 picPreview.Image = filtered;
@@ -97,20 +96,17 @@ namespace ImageEdgeDetection
 
             //make the list for XY edges disable before selecting a filter
             disableXY();
-
         }
 
         private void btnSaveNewImage_Click(object sender, EventArgs e)
         {
-            if (originalBitmap != null)
+            if (originalBitmap != null && filtered != null)
             {
-                SaveFileDialog saveFileDialog = InitializeSaveFileDialog();
-                if (saveFileDialog.FileName != "")
-                    SaveImageAppropriateFormat(saveFileDialog);
+                toolBox.SaveImageAppropriateFormat(filtered);
             }
             else
             {
-                MessageBox.Show("There is no image to save");
+                MessageBox.Show("There is no filtered image to save");
             }
         }
 
@@ -126,15 +122,17 @@ namespace ImageEdgeDetection
 
         public void filter(string xfilter, string yfilter)
         {
+            xIFilter.setFilterName(xfilter);
+            yIFilter.setFilterName(yfilter);
             try
             {
-               picPreview.Image = toolBox.XyFilter(xfilter, yfilter, filtered, Convert.ToInt32(trackBarThreshold.Value));             
+                filtered = toolBox.XyFilter(xIFilter, yIFilter, filteredOriginal, Convert.ToInt32(trackBarThreshold.Value));
+                picPreview.Image = filtered;
             }
             catch (Exception e)
             {
-                MessageBox.Show("There is no image to filter");
+                MessageBox.Show(e.Message);
             }
-
         }
 
 
@@ -144,7 +142,6 @@ namespace ImageEdgeDetection
             if(xFilter != null && yFilter != null)
                 filter(xFilter, yFilter);
         }
-
     }
 }
 

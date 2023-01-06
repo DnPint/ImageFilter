@@ -105,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(275, 502);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 63;
             this.label2.Text = "Y Filter";
             // 
@@ -114,14 +114,13 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(148, 502);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 16);
+            this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 64;
             this.label1.Text = "X Filter";
             // 
             // listBoxXFilter
             // 
             this.listBoxXFilter.FormattingEnabled = true;
-            this.listBoxXFilter.ItemHeight = 16;
             this.listBoxXFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -131,16 +130,15 @@
             "Prewitt3x3Vertical",
             "Kirsch3x3Horizontal",
             "Kirsch3x3Vertical"});
-            this.listBoxXFilter.Location = new System.Drawing.Point(111, 527);
+            this.listBoxXFilter.Location = new System.Drawing.Point(99, 527);
             this.listBoxXFilter.Name = "listBoxXFilter";
-            this.listBoxXFilter.Size = new System.Drawing.Size(120, 52);
+            this.listBoxXFilter.Size = new System.Drawing.Size(132, 56);
             this.listBoxXFilter.TabIndex = 62;
             this.listBoxXFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
             // listBoxYFilter
             // 
             this.listBoxYFilter.FormattingEnabled = true;
-            this.listBoxYFilter.ItemHeight = 16;
             this.listBoxYFilter.Items.AddRange(new object[] {
             "Laplacian3x3",
             "Laplacian5x5",
@@ -152,7 +150,7 @@
             "Kirsch3x3Vertical"});
             this.listBoxYFilter.Location = new System.Drawing.Point(237, 527);
             this.listBoxYFilter.Name = "listBoxYFilter";
-            this.listBoxYFilter.Size = new System.Drawing.Size(120, 52);
+            this.listBoxYFilter.Size = new System.Drawing.Size(135, 56);
             this.listBoxYFilter.TabIndex = 61;
             this.listBoxYFilter.SelectedIndexChanged += new System.EventHandler(this.listBoxFilter_SelectedIndexChanged);
             // 
@@ -173,7 +171,7 @@
             this.trackBarThreshold.Location = new System.Drawing.Point(36, 604);
             this.trackBarThreshold.Maximum = 255;
             this.trackBarThreshold.Name = "trackBarThreshold";
-            this.trackBarThreshold.Size = new System.Drawing.Size(410, 56);
+            this.trackBarThreshold.Size = new System.Drawing.Size(410, 45);
             this.trackBarThreshold.TabIndex = 66;
             this.trackBarThreshold.Value = 100;
             this.trackBarThreshold.Scroll += new System.EventHandler(this.trackBarThreshold_Scroll);
@@ -183,7 +181,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(33, 588);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 16);
+            this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 67;
             this.label6.Text = "Threshold";
             // 
