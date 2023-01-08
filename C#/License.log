@@ -1,121 +1,113 @@
     ======  ======
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: Initiate log
     Message: 
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: Initiate InternalManager
     Message: Trying to Validate License
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: Requesting EVT
     Message: EVTP
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: Requesting Validation
     Message: ILMValidate
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: LICENSER
     Message: TRL MODE
-    Time:29.12.2022 14:31:58
+    Time:08.01.2023 18:00:09
     Title: LICENSER
-    Message: DS LEFT1
-    Time:29.12.2022 14:31:58
+    Message: DS LEFT-9
+    Time:08.01.2023 18:00:09
     Title: LICENSER
-    Message: DT MARK PASSED1.00:00:00
-    Time:29.12.2022 14:31:59
+    Message: DT MARK PASSED-9.00:00:00
+    Time:08.01.2023 18:00:09
+    Title: ILMValidate action
+    Message: LIC
+    Time:08.01.2023 18:00:10
     Title: L'accès au chemin d'accès 'C:\ProgramData\Telerik\Hash.lic' est refusé.
     Message:    à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
    à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
    à Telerik.Licensing.Licenser.ReadHashPass()
+    Time:08.01.2023 18:00:10
+    Title: LICENSER - TGO
+    Message: Start
+    Time:08.01.2023 18:00:11
+    Title: LICENSER - TGO
+    Message: UserCredential missing.
     Entering constructor for: Telerik.CommonPackage.VSPackage
     Entering Initialize() of: Telerik.CommonPackage.VSPackage
-    TestWindow package loaded
-    Informational: Le niveau du journal est défini sur Information (par défaut).
-    Informational: Le niveau du journal est défini sur Information (par défaut).
-    Informational: Connecté à l’environnement de test « < Environnement Windows local > »
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
-    given range is not current
- TableControl: QueueUpdate 29.12.2022 13:11:53:175
-    TableControl: Updating entries 29.12.2022 13:11:53:177
-    TableControl: QueueUpdate 29.12.2022 13:11:53:179
-    TableControl: QueueUpdate 29.12.2022 13:11:53:179
-    TableControl: QueueUpdate 29.12.2022 13:11:53:197
-    TableControl: QueueUpdate 29.12.2022 13:11:53:209
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:288
-    TableControl: Refreshing UI 29.12.2022 13:11:53:288
-    TableControl: QueueUpdate 29.12.2022 13:11:53:289
-    TableControl: About to update entries 29.12.2022 13:11:53:289
-    TableControl: Updating entries 29.12.2022 13:11:53:302
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:302
-    TableControl: QueueUpdate 29.12.2022 13:11:53:302
-    TableControl: QueueUpdate 29.12.2022 13:11:53:302
-    TableControl: Refreshing UI 29.12.2022 13:11:53:303
-    TableControl: QueueUpdate 29.12.2022 13:11:53:304
-    TableControl: About to update entries 29.12.2022 13:11:53:304
-    TableControl: Updating entries 29.12.2022 13:11:53:305
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:305
-    TableControl: Refreshing UI 29.12.2022 13:11:53:305
-    TableControl: QueueUpdate 29.12.2022 13:11:53:826
-    TableControl: About to update entries 29.12.2022 13:11:53:826
-    TableControl: Updating entries 29.12.2022 13:11:53:826
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:53:826
-    TableControl: Refreshing UI 29.12.2022 13:11:53:826
-    TableControl: QueueUpdate 29.12.2022 13:11:55:259
-    TableControl: About to update entries 29.12.2022 13:11:55:259
-    TableControl: Updating entries 29.12.2022 13:11:55:259
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:55:259
-    TableControl: Refreshing UI 29.12.2022 13:11:55:265
-    Informational: Génération de projets de test
-    TableControl: QueueUpdate 29.12.2022 13:11:56:153
-    TableControl: About to update entries 29.12.2022 13:11:56:153
-    TableControl: Updating entries 29.12.2022 13:11:56:153
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:56:153
-    TableControl: Refreshing UI 29.12.2022 13:11:56:160
-    TableControl: QueueUpdate 29.12.2022 13:11:56:656
-    TableControl: About to update entries 29.12.2022 13:11:56:656
-    TableControl: Updating entries 29.12.2022 13:11:56:657
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:56:658
-    TableControl: Refreshing UI 29.12.2022 13:11:56:658
-    TableControl: QueueUpdate 29.12.2022 13:11:57:5
-    TableControl: About to update entries 29.12.2022 13:11:57:5
-    TableControl: Updating entries 29.12.2022 13:11:57:5
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:57:16
-    TableControl: Refreshing UI 29.12.2022 13:11:57:16
-    TableControl: QueueUpdate 29.12.2022 13:11:57:666
-    TableControl: About to update entries 29.12.2022 13:11:57:666
-    TableControl: Updating entries 29.12.2022 13:11:57:666
-    TableControl: Updating entries (UI thread) 29.12.2022 13:11:57:666
-    TableControl: Refreshing UI 29.12.2022 13:11:57:666
-    Informational: Démarrage de la découverte de tests pour la série de tests demandée
-    Informational: Démarrage de la découverte de tests
-    Informational: ========== Fin de la découverte de tests : 16 tests trouvés en 941,7 ms ==========
-    TableControl: QueueUpdate 29.12.2022 13:12:01:988
-    TableControl: About to update entries 29.12.2022 13:12:01:988
-    TableControl: Updating entries 29.12.2022 13:12:01:989
-    TableControl: Updating entries (UI thread) 29.12.2022 13:12:01:989
-    TableControl: Refreshing UI 29.12.2022 13:12:01:989
-    Informational: Exécution de la méthode de test : ImageEdgeDetectionTest.UnitTest1.ApplyFilterNullBitmap
+coverage will be enabled. If report is missing some C++ projects please enable /PROFILE linker option. More information: https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis#static-and-dynamic-native-instrumentation
     Informational: Démarrage de la série de tests
-    TableControl: QueueUpdate 29.12.2022 13:12:04:175
-    TableControl: About to update entries 29.12.2022 13:12:04:277
-    TableControl: Updating entries 29.12.2022 13:12:04:277
-    TableControl: Updating entries (UI thread) 29.12.2022 13:12:04:277
-    TableControl: Refreshing UI 29.12.2022 13:12:04:277
-    Informational: ========== Série de tests achevée : 1 tests (1 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 87 ms ==========
-    TableControl: QueueUpdate 29.12.2022 13:12:04:839
-    TableControl: About to update entries 29.12.2022 13:12:04:940
-    TableControl: Updating entries 29.12.2022 13:12:04:940
-    TableControl: Updating entries (UI thread) 29.12.2022 13:12:04:940
-    TableControl: Refreshing UI 29.12.2022 13:12:04:940
+    TableControl: QueueUpdate 06.01.2023 16:03:54:352
+    TableControl: About to update entries 06.01.2023 16:03:54:352
+    TableControl: Updating entries 06.01.2023 16:03:54:352
+    TableControl: Updating entries (UI thread) 06.01.2023 16:03:54:353
+    TableControl: Refreshing UI 06.01.2023 16:03:54:353
+    Time:06.01.2023 16:03:55
+    Title: LICENSER - TGO
+    Message: UserCredential missing.
+    TableControl: QueueUpdate 06.01.2023 16:03:56:442
+    Entering constructor for: Telerik.CommonPackage.VSPackage
+    Entering Initialize() of: Telerik.CommonPackage.VSPackage
+    TableControl: About to update entries 06.01.2023 16:03:56:549
+    TableControl: Updating entries 06.01.2023 16:03:56:549
+    TableControl: Updating entries (UI thread) 06.01.2023 16:03:56:685
+    TableControl: Refreshing UI 06.01.2023 16:03:56:685
+    TableControl: QueueUpdate 06.01.2023 16:03:57:909
+    TableControl: About to update entries 06.01.2023 16:03:58:25
+    TableControl: Updating entries 06.01.2023 16:03:58:25
+    TableControl: Updating entries (UI thread) 06.01.2023 16:03:58:34
+    TableControl: Refreshing UI 06.01.2023 16:03:58:34
+    TableControl: QueueUpdate 06.01.2023 16:03:59:413
+    TableControl: About to update entries 06.01.2023 16:03:59:519
+    TableControl: Updating entries 06.01.2023 16:03:59:519
+    TableControl: Updating entries (UI thread) 06.01.2023 16:03:59:519
+    TableControl: Refreshing UI 06.01.2023 16:03:59:519
+    TableControl: QueueUpdate 06.01.2023 16:04:00:913
+    TableControl: About to update entries 06.01.2023 16:04:01:22
+    TableControl: Updating entries 06.01.2023 16:04:01:22
+    TableControl: Updating entries (UI thread) 06.01.2023 16:04:01:22
+    TableControl: Refreshing UI 06.01.2023 16:04:01:22
+    TableControl: QueueUpdate 06.01.2023 16:04:02:429
+    TableControl: About to update entries 06.01.2023 16:04:02:538
+    TableControl: Updating entries 06.01.2023 16:04:02:538
+    TableControl: Updating entries (UI thread) 06.01.2023 16:04:02:538
+    TableControl: Refreshing UI 06.01.2023 16:04:02:538
+    TableControl: QueueUpdate 06.01.2023 16:04:03:931
+    TableControl: About to update entries 06.01.2023 16:04:04:39
+    TableControl: Updating entries 06.01.2023 16:04:04:40
+    TableControl: Updating entries (UI thread) 06.01.2023 16:04:04:40
+    TableControl: Refreshing UI 06.01.2023 16:04:04:40
+    TableControl: QueueUpdate 06.01.2023 16:04:05:447
+    TableControl: About to update entries 06.01.2023 16:04:05:555
+    TableControl: Updating entries 06.01.2023 16:04:05:555
+    TableControl: Updating entries (UI thread) 06.01.2023 16:04:05:555
+    TableControl: Refreshing UI 06.01.2023 16:04:05:555
+    TableControl: QueueUpdate 06.01.2023 16:04:06:960
+    TableControl: About to update entries 06.01.2023 16:04:07:69
+    TableControl: Updating entries 06.01.2023 16:04:07:69
+    TableControl: Updating entries (UI thread) 06.01.2023 16:04:07:70
+    TableControl: Refreshing UI 06.01.2023 16:04:07:70
+    Informational: ========== Série de tests achevée : 34 tests (34 réussi(s), 0 non réussi(s), 0 ignoré(s)) exécutés en 11,4 s ==========
+    Informational: Démarrage de la découverte de tests
+    Informational: ========== Découverte de tests ignorée : tous les conteneurs de tests sont à jour ==========
+    Informational: Reprise de la découverte de tests abandonnée
     Informational: Démarrage de la découverte de tests
     Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
   Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
     Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
   Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
-    Warning: Plusieurs versions de la même extension ont été trouvées. Sélection de la version la plus élevée.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetectionTest\ImageEdgeDetectionTest.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Warning: Aucun test n'est disponible dans C:\HEVS\SoftTest\GigaChadFilter\C#\ImageEdgeDetection\ImageEdgeDetection.csproj. Vérifiez que les découvreurs et exécuteurs de tests sont inscrits. Vérifiez également que les paramètres de version de plateforme et de framework sont appropriés, puis réessayez.
+    Informational: ========== Fin de la découverte de tests : 0 tests trouvés en 1,2 s ==========
+    TableControl: QueueUpdate 06.01.2023 16:05:17:933
+    TableControl: QueueUpdate 06.01.2023 16:05:17:933
+    TableControl: About to update entries 06.01.2023 16:05:17:933
+    TableControl: Updating entries 06.01.2023 16:05:17:933
+on de la version la plus élevée.
   Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter : 14.0.7906.4
     Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.
     Error: La section de paramètres d'exécution nommée 'TestLink' est dupliquée. Les paramètres dupliqués sont ignorés.

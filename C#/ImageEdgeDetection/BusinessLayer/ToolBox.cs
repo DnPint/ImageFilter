@@ -258,7 +258,6 @@ namespace ImageEdgeDetection
             {
                 throw new OutOfMemoryException();
             }
-            return null;
         }
 
         public void SaveImageAppropriateFormat(Image filtered)
